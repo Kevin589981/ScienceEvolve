@@ -21,7 +21,7 @@
 
 ---
 
-ScienceEvolve is the fully autonomous research framework presented in [Rethinking Scientific Discovery in the Agentic Era](https://arxiv.org/abs/2607.03863). Build an Agent team, follow its execution, improve the task using real feedback, and authorize Main to evolve the workflow itself.
+ScienceEvolve is the autonomous version of the research framework presented in [Rethinking Scientific Discovery in the Agentic Era](https://arxiv.org/abs/2607.03863). Build an Agent team, follow its execution, improve the task using real feedback, and authorize Main to evolve the workflow itself.
 
 <a id="sdk"></a>
 
