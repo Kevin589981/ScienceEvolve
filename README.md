@@ -67,7 +67,17 @@ The **task loop** runs a method, collects real feedback, improves the method, an
 
 <a id="features"></a>
 
-## Run, refine, and deliver research
+## Features
+
+### Let Main evolve the workflow
+
+Authorized Main can add or remove Agents, change responsibilities and paths, switch Harnesses, and submit an updated workflow. SDK Runtime validates before applying the proposal so the team can adapt to the task. [Editable scope](sdk/skills/scienceevolve-sdk/references/workflow.md#main-自修改).
+
+<div align="center">
+
+<img src="docs/readme/03-main-revises-the-workflow.svg" alt="The original workflow reports boundary failure and high error; Main changes the Harness, group and connections, then reruns validation, resolving the issue and improving the illustrative score from 62 to 91" width="96%">
+
+</div>
 
 ### Set Loop rounds and the exit Agent
 
@@ -86,16 +96,6 @@ With Git collaboration enabled, Idea proposes a larger simulation time step. Exe
 <div align="center">
 
 <img src="docs/readme/07-git-rollback.svg" alt="Idea → Execution → Review: Review directly reverts the candidate PR, restores a41 code from m42, adds commit r43, and verifies score 78" width="96%">
-
-</div>
-
-### Let Main evolve the workflow
-
-Authorized Main can add or remove Agents, change responsibilities and paths, switch Harnesses, and submit an updated workflow. SDK Runtime validates before applying the proposal so the team can adapt to the task. [Editable scope](sdk/skills/scienceevolve-sdk/references/workflow.md#main-自修改).
-
-<div align="center">
-
-<img src="docs/readme/03-main-revises-the-workflow.svg" alt="The original workflow reports boundary failure and high error; Main changes the Harness, group and connections, then reruns validation, resolving the issue and improving the illustrative score from 62 to 91" width="96%">
 
 </div>
 
