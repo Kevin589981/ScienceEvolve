@@ -1,0 +1,101 @@
+# SDK main 内核同步记录（2026-10-13）
+
+> 本文为当时版本的验收记录；当前版本已移除 legacy 引擎及相关测试。
+
+本轮将独立 SDK 默认 main 内核从 `764257b3db49ebbcf6b08746278120adbe66a95e`
+更新至 `4ae079fe51faefed850b5b9873979f44b60a7806`。范围是 SDK 实际使用的运行时依赖闭包、
+相关资源及回归测试。`@scienceevolve/sdk`、`@scienceevolve/sdk/main` 和默认 CLI 使用此内核；
+`@scienceevolve/sdk/legacy` 保留独立历史实现，不以本次同步宣称与 main 等价。
+
+## 适用于 SDK 的修复
+
+| 范围 | 同步后的行为与边界 |
+| --- | --- |
+| 工作流与共享状态机 | 同步串行和 scoped 工作流的配置调整、持久化日志、发布与恢复机制，保留配置版本检查和实际运行状态之间的约束。 |
+| 会话连续性 | 同步工作流调整后的会话兼容性、历史绑定和原生输入接收证据；已存在 Agent 的会话不能因普通恢复而被随意替换。 |
+| Git 交付收尾 | 同步 operation 查询、已知结果回执、push supersession、未打开执行的准备状态，以及受限 worktree closing 的授权、交付和结算。已完成报告与后续必要收尾分别记录。 |
+| 工具调用与停止 | 同步原始调用的结果回执、授权输入绑定和正在处理的控制写入排空；停止或撤销权限不能被误当作原有写入已经完成。公开 `pause/resume/cancel` 仍委托 main。 |
+| 输入身份 | 同步原生用户输入观测、会话和输入标识核对，避免把显示预览或发送意图当作已接收证明。SDK 的原始文件材料仍由宿主在启动前安装到共享 `user_inputs/`。 |
+| 工具与权限 | 工具发现目录不自动授予能力；权限、工作流上下文和调用范围仍由内核检查。SII 使用显式 `experimentMcp` 选择，而非从 Skill 名或 compute 权限推断。 |
+| 进度与遥测 | 同步运行状态、模型请求活动与工作流位置估计等核心修复；不以 Project Explainer 的旧进度建议决定百分比。 |
+
+这些修复进入共享内核，不新增 SDK 的网页编辑、HTTP 路由或配置推荐 API。
+当前独立 SDK 不含 Config Recommendation、Agent Tool Recommendation 或 Project Explainer 服务导出，
+因此本轮不迁入这些 Web 宿主服务。现有公开 API 不因内核存在新的内部方法而自动扩大。
+
+## SDK 宿主兼容
+
+保留外部 workspace、Git 源目录导入和完成回写、部署提供的 native Codex profile、
+Hermes Harness、共享输入文件和宿主拥有的 SII 生命周期等扩展。
+这些扩展在 main 来源之上明确登记，不能被整体复制主线时覆盖。
+Windows 的 Codex JavaScript CLI 入口通过 Node 启动，与其他 Harness 的启动约定一致。
+
+旧 workflow 中的 `agents.<name>.proxy` 仍可读取，TypeScript 保留原 `inherit | direct`
+结构作为弃用兼容字段。验证器通过 main 的 `withoutLegacyAgentProxy` 去掉该字段，
+规范化输出不再携带它，也不恢复已移除的逐 Agent 代理策略。历史示例无需批量改写才能载入。
+
+SII 需要同时满足宿主的 `sii` 配置和 Agent 的 `experimentMcp: true`。
+`false` 或省略都不授予内置实验工具；`builtin:inspire` 或 `permission: "compute"` 不能替代该选择。
+可执行文件和平台部署路径仍放在宿主配置中。
+
+外部 Git-off 工作区的 Main 草稿改为稳定的项目路径：
+
+```text
+<workspace>/.scienceevolve/management/<projectId>/proposal/workflow.json
+```
+
+跨 invocation 保留 Main 已写入的草稿，包括未完成或暂时无效的 JSON；
+当前已生效配置使用独立的 `.scienceevolve/workflow-current.json` 参考文件，位于同一隔离 proposal 目录内。
+发布和后续调用更新该参考，不重置草稿，也不覆盖用户工作区根目录的 `workflow.json`。
+输入准备、完整 Agent 提示和文件工具引用都使用这一路径；Git-on 的固定 Agent 工作区
+继续沿用主线的参考文件位置。
+
+## 来源与数据版本
+
+来源仍固定到完整提交 SHA，不动态跟随分支。构建和 `check:main-runtime` 检查
+`sdk/resources/main-runtime/manifest.json`、登记的源文件哈希及 SDK 扩展。
+对于有上游来源的补丁，反向应用登记变更后须恢复原始上游哈希；SDK 自有文件单独登记。
+`MAIN_RUNTIME_REVISION` 反映实际运行时内容，不能仅凭上游提交号推断两份包完全相同。
+本轮清单包含 205 个文件、38 组可逆宿主补丁（167 处替换），运行时 revision 为
+`4ae079fe51faefed850b5b9873979f44b60a7806+46104c22ff275d97`。
+
+维护者切换来源基线时可使用 `node sdk/scripts/sync-main-runtime.mjs --source <main-checkout> --upgrade`。
+升级先校验旧文件、来源和完整清单，拒绝脏文件及未登记目标冲突，再移除已验证的废弃来源。
+此命令只更新源码，不迁移 dataDir。
+
+现有 dataDir 的严格版本锁继续保留。来源提交或运行时 revision 不一致时，宿主拒绝直接打开；
+本轮不自动迁移，也不让新内核重新解释旧运行数据。升级应使用新的专属 dataDir，
+或另行完成明确的数据迁移。不要通过删除版本标记绕过检查。外部业务 workspace 与 dataDir
+是不同目录；重新使用业务文件不等于恢复旧运行记录。
+
+## 验证记录
+
+环境：Windows、PowerShell 7、Node 24.20.0。测试包含真实本地 Git、SQLite、MCP 和受控原生进程。
+
+| 检查 | 本轮结果 |
+| --- | --- |
+| 固定来源、可逆补丁与清单检查 | 通过；205 个文件，来源重新提取保持幂等，无未登记 core 文件 |
+| TypeScript 类型检查 | `npm run typecheck` 和构建中的 `tsc` 均通过 |
+| 主线代表性回归测试 | 引入的 20 份主线测试文件均完成验证；包括工作流调整/重启、输入历史、控制回执、草稿、SII、Git closing、push supersession |
+| SDK 配置、原生 profile、外部工作区与会话恢复回归 | 通过；保留 SDK 宿主扩展，覆盖真实输入准备、完整提示和文件引用 |
+| 完整 SDK 测试 | 分批覆盖 88 份测试文件：最终 1279 通过，12 环境相关跳过；无未解决失败 |
+| 构建与安装包烟测 | `npm run build`、`npm run smoke:package` 通过；独立安装后的默认/显式 main API、CLI、MCP、SQLite、工作区重开、示例及 legacy 检查通过 |
+
+全量测试分两组执行：普通套件 1262 项，Git closing delivery/settlement 29 项。
+普通套件初次有 1 项真实 Git checkpoint 用例在 Windows 超过 30 秒；增加仅 Windows 的
+有界时限后，所属 authorization 文件 135 项全部复测通过。上表是去重后的最终结果。
+12 项跳过包含 4 项未启用的真实 Hermes 安装测试，以及 8 项本机不支持的文件符号链接相关测试；
+目录 junction、hardlink 和其他边界用例正常执行。
+
+```sh
+npm run typecheck
+npm run build
+node sdk/scripts/sync-main-runtime.mjs --source <main-checkout>
+npm run test -w sdk -- --exclude tests/main-core/scoped-worktree-closing-delivery.test.ts --exclude tests/main-core/scoped-worktree-closing-settlement.test.ts
+npm run test -w sdk -- tests/main-core/scoped-worktree-closing-delivery.test.ts tests/main-core/scoped-worktree-closing-settlement.test.ts
+npm run test -w sdk -- tests/main-core/scoped-worktree-closing-authorization.test.ts
+npm run smoke:package
+```
+
+测试数量以本轮实际输出为准。确定性夹具和本地 Git/SQLite/MCP 测试不能作为真实模型、
+真实 GitHub 交付、平台实验或全部操作系统的端到端验收证据。既有验收报告保留其原日期和范围。

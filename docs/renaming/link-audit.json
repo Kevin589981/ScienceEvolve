@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "scope": "All tracked and non-ignored untracked Markdown relative file/anchor links, excluding code fences and external URLs",
+  "baseline": "ff776f1e82f04fdb51d9cb4d4fa275b965d89703",
+  "markdownFiles": 722,
+  "checkedRelativeLinks": 1128,
+  "failures": [
+    {
+      "doc": ".agents/skills/inspire/references/dev/browser-api.md",
+      "line": 5,
+      "target": "../../cli/inspire/platform/web/browser_api/",
+      "resolved": ".agents/skills/inspire/cli/inspire/platform/web/browser_api/",
+      "kind": "missing-path",
+      "baselineBroken": true,
+      "classification": "pre-existing-third-party-gap"
+    },
+    {
+      "doc": ".agents/skills/inspire/references/dev/browser-api.md",
+      "line": 13,
+      "target": "../../cli/inspire/platform/web/browser_api/",
+      "resolved": ".agents/skills/inspire/cli/inspire/platform/web/browser_api/",
+      "kind": "missing-path",
+      "baselineBroken": true,
+      "classification": "pre-existing-third-party-gap"
+    },
+    {
+      "doc": ".agents/skills/inspire/references/dev/browser-api.md",
+      "line": 24,
+      "target": "../../cli/inspire/platform/web/session/",
+      "resolved": ".agents/skills/inspire/cli/inspire/platform/web/session/",
+      "kind": "missing-path",
+      "baselineBroken": true,
+      "classification": "pre-existing-third-party-gap"
+    },
+    {
+      "doc": ".agents/skills/inspire/references/dev/browser-api.md",
+      "line": 39,
+      "target": "../../cli/scripts/reverse_capture/known_endpoints.py",
+      "resolved": ".agents/skills/inspire/cli/scripts/reverse_capture/known_endpoints.py",
+      "kind": "missing-path",
+      "baselineBroken": true,
+      "classification": "pre-existing-third-party-gap"
+    },
+    {
+      "doc": ".agents/skills/inspire/references/dev/browser-api.md",
+      "line": 170,
+      "target": "../../cli/inspire/platform/web/browser_api/ray_jobs.py",
+      "resolved": ".agents/skills/inspire/cli/inspire/platform/web/browser_api/ray_jobs.py",
+      "kind": "missing-path",
+      "baselineBroken": true,
+      "classification": "pre-existing-third-party-gap"
+    },
+    {
+      "doc": "example/aris/skills/scienceevolve-aris/upstream/skills/pixel-art/SKILL.md",
+      "line": 129,
+      "target": "filename.svg",
+      "resolved": "example/aris/skills/scienceevolve-aris/upstream/skills/pixel-art/filename.svg",
+      "kind": "missing-path",
+      "baselineBroken": true,
+      "classification": "pre-existing-third-party-gap"
+    },
+    {
+      "doc": "example/aris/skills/scienceevolve-aris/upstream/skills/render-html/SKILL.md",
+      "line": 246,
+      "target": "url",
+      "resolved": "example/aris/skills/scienceevolve-aris/upstream/skills/render-html/url",
+      "kind": "missing-path",
+      "baselineBroken": true,
+      "classification": "pre-existing-third-party-gap"
+    },
+    {
+      "doc": "example/aris/skills/scienceevolve-aris/upstream/skills/render-html/SKILL.md",
+      "line": 246,
+      "target": "url",
+      "resolved": "example/aris/skills/scienceevolve-aris/upstream/skills/render-html/url",
+      "kind": "missing-path",
+      "baselineBroken": true,
+      "classification": "pre-existing-third-party-gap"
+    },
+    {
+      "doc": "example/aris/skills/scienceevolve-aris/upstream/skills/shared-references/reviewer-routing.md",
+      "line": 28,
+      "target": "#copilot-cli-custom-agent-profiles-reviewer-copilot-compatibility-drive-mode",
+      "resolved": "example/aris/skills/scienceevolve-aris/upstream/skills/shared-references/reviewer-routing.md",
+      "kind": "missing-anchor",
+      "baselineBroken": true,
+      "classification": "pre-existing-third-party-gap"
+    },
+    {
+      "doc": "example/aris/skills/scienceevolve-aris/upstream/skills/shared-references/reviewer-routing.md",
+      "line": 397,
+      "target": "../skills-codex/",
+      "resolved": "example/aris/skills/scienceevolve-aris/upstream/skills/skills-codex/",
+      "kind": "missing-path",
+      "baselineBroken": true,
+      "classification": "pre-existing-third-party-gap"
+    },
+    {
+      "doc": "example/aris/skills/scienceevolve-aris/upstream/skills/skills-codex-claude-review/auto-review-loop/SKILL.md",
+      "line": 198,
+      "target": "../shared-references/review-scope-limits.md",
+      "resolved": "example/aris/skills/scienceevolve-aris/upstream/skills/skills-codex-claude-review/shared-references/review-scope-limits.md",
+      "kind": "missing-path",
+      "baselineBroken": true,
+      "classification": "pre-existing-third-party-gap"
+    },
+    {
+      "doc": "example/aris/skills/scienceevolve-aris/upstream/skills/skills-codex-claude-review/research-review/SKILL.md",
+      "line": 146,
+      "target": "../shared-references/output-composition.md",
+      "resolved": "example/aris/skills/scienceevolve-aris/upstream/skills/skills-codex-claude-review/shared-references/output-composition.md",
+      "kind": "missing-path",
+      "baselineBroken": true,
+      "classification": "pre-existing-third-party-gap"
+    },
+    {
+      "doc": "example/biomni/skills/scienceevolve-biomni/upstream/README.md",
+      "line": 354,
+      "target": "know_how/single_cell_annotation.md",
+      "resolved": "example/biomni/skills/scienceevolve-biomni/upstream/know_how/single_cell_annotation.md",
+      "kind": "missing-path",
+      "baselineBroken": true,
+      "classification": "pre-existing-third-party-gap"
+    },
+    {
+      "doc": "example/biomni/skills/scienceevolve-biomni/upstream/README.md",
+      "line": 370,
+      "target": "CONTRIBUTION.md",
+      "resolved": "example/biomni/skills/scienceevolve-biomni/upstream/CONTRIBUTION.md",
+      "kind": "missing-path",
+      "baselineBroken": true,
+      "classification": "pre-existing-third-party-gap"
+    },
+    {
+      "doc": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/README.md",
+      "line": 85,
+      "target": "applications/model/",
+      "resolved": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/applications/model/",
+      "kind": "missing-path",
+      "baselineBroken": true,
+      "classification": "pre-existing-third-party-gap"
+    },
+    {
+      "doc": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/README.md",
+      "line": 115,
+      "target": "applications/model/",
+      "resolved": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/applications/model/",
+      "kind": "missing-path",
+      "baselineBroken": true,
+      "classification": "pre-existing-third-party-gap"
+    },
+    {
+      "doc": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/README.md",
+      "line": 661,
+      "target": "SECURITY.md",
+      "resolved": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/SECURITY.md",
+      "kind": "missing-path",
+      "baselineBroken": true,
+      "classification": "pre-existing-third-party-gap"
+    },
+    {
+      "doc": "example/rrsi/skills/scienceevolve-rrsi/upstream/README.md",
+      "line": 179,
+      "target": "CONTRIBUTING.md",
+      "resolved": "example/rrsi/skills/scienceevolve-rrsi/upstream/CONTRIBUTING.md",
+      "kind": "missing-path",
+      "baselineBroken": true,
+      "classification": "pre-existing-third-party-gap"
+    },
+    {
+      "doc": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/README.md",
+      "line": 81,
+      "target": "frontend/README.md",
+      "resolved": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/frontend/README.md",
+      "kind": "missing-path",
+      "baselineBroken": true,
+      "classification": "pre-existing-third-party-gap"
+    }
+  ],
+  "renamingOrPrimaryFailures": [],
+  "limitations": [
+    "Conservative Markdown regex parser; raw HTML links and complex nested link syntax are not validated",
+    "Third-party remote links and live authentication are outside this local link check",
+    "SDK package-relative navigation must additionally be checked against the actual unpacked npm package"
+  ],
+  "generatedAt": "2026-10-15T16:26:09.509Z",
+  "inspectedSourceHead": "05d84e8870f0926157883f7a7b49279e53c623df",
+  "reproduction": {
+    "script": "D:/openfars/.cache/scienceevolve-refactor/branding-evidence/audit-relative-links.mjs",
+    "scriptSha256": "ee55255dd573a9d2ee37eadacabbbcd0eb9690ce08cb1b85718ff2d74555f31d"
+  }
+}

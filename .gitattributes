@@ -1,0 +1,11 @@
+# Vendored main blobs and pinned regression fixtures must keep their exact
+# bytes on every host; core.autocrlf must not invalidate the SHA-256 manifest.
+sdk/src/core/** -text
+sdk/resources/main-runtime/** -text
+sdk/tests/main-core/** -text
+sdk/scripts/scienceevolve-branding.mjs -text
+sdk/scripts/scienceevolve-runtime-pins.mjs -text
+# Pinned example sources must retain their upstream bytes on Windows too.
+example/*/skills/*/upstream/** -text
+example/*/skills/*/integrity-upstream/** -text
+example/*/skills/*/LICENSE -text

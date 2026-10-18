@@ -1,0 +1,17 @@
+{
+  "git": { "enabled": false },
+  "agents": {
+    "main": { "harness": "codex", "model": "replace-with-your-model", "proxy": { "mode": "inherit" }, "skills": [], "autoSkills": [], "instructions": "Inspect the caller's existing project and acceptance criteria, delegate implementation and independent audit, then inspect actual evidence before formally completing. Never replace the user's root workflow.json or claim tests that were not executed." },
+    "execution": { "harness": "codex", "model": "replace-with-your-model", "permission": "yolo", "proxy": { "mode": "inherit" }, "skills": [], "autoSkills": [], "instructions": "Work only within the authorized existing project. Read current files before editing, preserve unrelated changes, implement the requested change and run the requested tests with real tools. Record exact commands, exit status and limitations in implementation.md. If tests are unavailable, report the gap." },
+    "review": { "harness": "codex", "model": "replace-with-your-model", "permission": "yolo", "proxy": { "mode": "inherit" }, "skills": [], "autoSkills": [], "instructions": "Independently inspect the implementation and execute available checks. Write audit.md identifying defects, evidence and remaining risks. Do not overwrite the implementation report or original workflow.json. Return evidence to Main for the final completion decision." }
+  },
+  "orchestration": {
+    "schemaVersion": 2, "collaborations": [],
+    "agents": [{ "name": "main", "template": "main" }, { "name": "execution", "template": "execution" }, { "name": "review", "template": "review" }],
+    "input": { "source": "input", "target": "main" },
+    "routes": { "main": [{ "kind": "weak", "target": "execution" }, { "kind": "weak", "target": "review" }], "execution": [{ "kind": "strong", "target": "review" }], "review": [{ "kind": "weak", "target": "execution" }, { "kind": "weak", "target": "finish" }] },
+    "decisionPlans": { "review": "Return to execution when a material defect remains; finish only after Main accepts the exact output and verification record." },
+    "allowMainReconfiguration": false, "allowUserIntervention": true,
+    "termination": { "agent": "review", "condition": "Requested outputs exist, independent audit has no blocking defect and real execution evidence satisfies the user's acceptance criteria.", "decisionBy": "main", "automatic": false }
+  }
+}

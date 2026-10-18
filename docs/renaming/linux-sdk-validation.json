@@ -1,0 +1,504 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "checkpoint": "05d84e8870f0926157883f7a7b49279e53c623df",
+  "sourcePayloadFrozenAt": "05d84e8870f0926157883f7a7b49279e53c623df",
+  "completeHistory": true,
+  "freshClone": true,
+  "sourceVolume": "scienceevolve-sdk-canonical-linux-05d84e88",
+  "dependencyInstall": {
+    "command": "npm ci --offline --ignore-scripts --no-audit --no-fund",
+    "packages": 256,
+    "network": "none",
+    "freshNodeModules": true,
+    "sharedWindowsNodeModules": false,
+    "log": "D:/openfars/.cache/scienceevolve-refactor/linux-results/sdk-linux-canonical-install.log"
+  },
+  "environment": {
+    "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+    "node": "v24.22.0",
+    "python": "3.12.15 (main, Oct  6 2026, 02:02:31) [GCC 12.2.0]",
+    "npm": "11.19.1",
+    "git": "git version 2.39.5",
+    "image": "sha256:9d7320de2bb373ce097ea5bc3c2b095ef05412fb95979c00d88e20dcd35aca7e",
+    "init": true,
+    "rootFilesystem": "readonly",
+    "temporaryFilesystem": "/tmp:exec,mode=1777",
+    "deterministicTestNetwork": "none with loopback fixtures",
+    "packageInstallNetwork": "bridge for npm registry dependencies"
+  },
+  "checks": {
+    "checkpoint": "05d84e8870f0926157883f7a7b49279e53c623df",
+    "shallow": "false",
+    "node": "v24.22.0",
+    "platform": "linux",
+    "arch": "x64",
+    "startedAt": "2026-10-15T15:56:49.951Z",
+    "checks": [
+      {
+        "name": "source-delivery",
+        "command": "node",
+        "args": [
+          "scripts/validation/check-source-delivery.mjs",
+          "--git-revision",
+          "05d84e8870f0926157883f7a7b49279e53c623df",
+          "--json",
+          "/results/sdk-linux-final-source-delivery.json"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "elapsedSeconds": 0.822,
+        "log": "/results/sdk-linux-final-source-delivery.log"
+      },
+      {
+        "name": "main-runtime",
+        "command": "npm",
+        "args": [
+          "run",
+          "check:main-runtime"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "elapsedSeconds": 2.562,
+        "log": "/results/sdk-linux-final-main-runtime.log"
+      },
+      {
+        "name": "generation",
+        "command": "node",
+        "args": [
+          "sdk/scripts/sync-main-runtime.mjs",
+          "--source",
+          "/workspace",
+          "--verify-generation"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "elapsedSeconds": 6.606,
+        "log": "/results/sdk-linux-final-generation.log"
+      },
+      {
+        "name": "semantic-proof",
+        "command": "node",
+        "args": [
+          "sdk/scripts/check-example-semantics.mjs"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "elapsedSeconds": 0.198,
+        "log": "/results/sdk-linux-final-semantic-proof.log"
+      },
+      {
+        "name": "environment-static",
+        "command": "node",
+        "args": [
+          "scripts/validation/audit-environment.mjs",
+          "--python-report",
+          "/results/python-linux-canonical.json",
+          "--output",
+          "/results/sdk-linux-canonical-environment-static.json"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "elapsedSeconds": 1.543,
+        "log": "/results/sdk-linux-final-environment-static.log"
+      },
+      {
+        "name": "typecheck",
+        "command": "npm",
+        "args": [
+          "run",
+          "typecheck"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "elapsedSeconds": 13.678,
+        "log": "/results/sdk-linux-final-typecheck.log"
+      },
+      {
+        "name": "test",
+        "command": "npm",
+        "args": [
+          "run",
+          "test",
+          "-w",
+          "sdk",
+          "--",
+          "--reporter=verbose",
+          "--reporter=json",
+          "--outputFile=/results/sdk-linux-final-vitest.json"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "elapsedSeconds": 396.429,
+        "log": "/results/sdk-linux-final-test.log"
+      },
+      {
+        "name": "build",
+        "command": "npm",
+        "args": [
+          "run",
+          "build"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "elapsedSeconds": 31.877,
+        "log": "/results/sdk-linux-final-build.log"
+      },
+      {
+        "name": "environment-probes",
+        "command": "node",
+        "args": [
+          "scripts/validation/probe-environment.mjs",
+          "--temp-root",
+          "/tmp/scienceevolve-env-probes",
+          "--report",
+          "/results/sdk-linux-canonical-environment-probes.json"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "elapsedSeconds": 12.496,
+        "log": "/results/sdk-linux-final-environment-probes.log"
+      },
+      {
+        "name": "research-node",
+        "command": "node",
+        "args": [
+          "scripts/validation/run-research-node-tests.mjs",
+          "--temp-root",
+          "/tmp/scienceevolve-research-node",
+          "--report",
+          "/results/sdk-linux-canonical-research-node.json"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "elapsedSeconds": 2.284,
+        "log": "/results/sdk-linux-final-research-node.log"
+      },
+      {
+        "name": "environment-evidence",
+        "command": "node",
+        "args": [
+          "scripts/validation/audit-environment.mjs",
+          "--python-report",
+          "/results/python-linux-canonical.json",
+          "--probe-report",
+          "/results/sdk-linux-canonical-environment-probes.json",
+          "--research-report",
+          "/results/sdk-linux-canonical-research-node.json",
+          "--output",
+          "/results/sdk-linux-canonical-environment.json"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "elapsedSeconds": 1.654,
+        "log": "/results/sdk-linux-final-environment-evidence.log"
+      }
+    ],
+    "finishedAt": "2026-10-15T16:04:40.160Z",
+    "trackedChanges": ""
+  },
+  "unitTests": {
+    "testFiles": 114,
+    "passed": 2790,
+    "failed": 0,
+    "skipped": 10,
+    "total": 2800,
+    "originalTimeoutsAndAssertionsUnchanged": true,
+    "workers": 4,
+    "optionalNativeSkips": [
+      {
+        "file": "sdk/tests/hermes-native.test.ts",
+        "name": "real installed Hermes ACP (local deterministic provider, not model-quality acceptance) uses the common ProcessHost, real tools and native resume (yolo)",
+        "status": "skipped"
+      },
+      {
+        "file": "sdk/tests/hermes-native.test.ts",
+        "name": "real installed Hermes ACP (local deterministic provider, not model-quality acceptance) uses the common ProcessHost, real tools and native resume (workspace)",
+        "status": "skipped"
+      },
+      {
+        "file": "sdk/tests/hermes-native.test.ts",
+        "name": "real installed Hermes ACP (local deterministic provider, not model-quality acceptance) uses the common ProcessHost, real tools and native resume (resident)",
+        "status": "skipped"
+      },
+      {
+        "file": "sdk/tests/hermes-native.test.ts",
+        "name": "real installed Hermes ACP (local deterministic provider, not model-quality acceptance) uses the common ProcessHost, real tools and native resume (probe)",
+        "status": "skipped"
+      },
+      {
+        "file": "sdk/tests/main-core/claude-stream-native.test.ts",
+        "name": "installed Claude stream-json protocol retains the original slow MCP call through its native progress heartbeat and actual result",
+        "status": "skipped"
+      },
+      {
+        "file": "sdk/tests/main-core/resident-adapter-factory.test.ts",
+        "name": "openBuiltinResidentAdapter recovers an actual never-input Pi reservation through production I/H (restart=false, cancellation=false)",
+        "status": "skipped"
+      },
+      {
+        "file": "sdk/tests/main-core/resident-adapter-factory.test.ts",
+        "name": "openBuiltinResidentAdapter recovers an actual never-input Pi reservation through production I/H (restart=false, cancellation=true)",
+        "status": "skipped"
+      },
+      {
+        "file": "sdk/tests/main-core/resident-adapter-factory.test.ts",
+        "name": "openBuiltinResidentAdapter recovers an actual never-input Pi reservation through production I/H (restart=true, cancellation=false)",
+        "status": "skipped"
+      },
+      {
+        "file": "sdk/tests/main-core/resident-adapter-factory.test.ts",
+        "name": "openBuiltinResidentAdapter recovers an actual never-input Pi reservation through production I/H (restart=true, cancellation=true)",
+        "status": "skipped"
+      },
+      {
+        "file": "sdk/tests/main-core/resident-adapter-factory.test.ts",
+        "name": "openBuiltinResidentAdapter runs an explicitly selected MCP write tool through the real installed Codex approval boundary",
+        "status": "skipped"
+      }
+    ],
+    "report": "D:/openfars/.cache/scienceevolve-refactor/linux-results/sdk-linux-final-vitest.json",
+    "log": "D:/openfars/.cache/scienceevolve-refactor/linux-results/sdk-linux-final-test.log"
+  },
+  "pythonExamples": {
+    "tests": 69,
+    "passed": 69,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "elapsedSeconds": 11.066278283000003,
+    "inputFiles": 474,
+    "inputSnapshotSha256": "dbe8f4ca751cb256252d97a77ac65762ec42918ca0c4c148d45d1dc998d9d6c1",
+    "report": "python-linux-validation.json",
+    "log": "D:/openfars/.cache/scienceevolve-refactor/linux-results/python-linux-canonical.log"
+  },
+  "sourceDelivery": {
+    "schemaVersion": 1,
+    "baselineCommit": "ff776f1e82f04fdb51d9cb4d4fa275b965d89703",
+    "mode": "git-delivery",
+    "gitRevision": "05d84e8870f0926157883f7a7b49279e53c623df",
+    "expectedSourceFiles": 1996,
+    "executableFiles": 78,
+    "manifests": 12,
+    "vendorFiles": 836,
+    "missingFiles": [],
+    "untrackedFiles": [],
+    "modeMismatches": [],
+    "invalidPaths": [],
+    "vendorIssues": [],
+    "executableModesChecked": true,
+    "passed": true
+  },
+  "semanticProof": {
+    "workflows": 18,
+    "reversibleEdits": 282,
+    "originalSemanticHashesUnchanged": true,
+    "log": "D:/openfars/.cache/scienceevolve-refactor/linux-results/sdk-linux-final-semantic-proof.log"
+  },
+  "environmentAudit": {
+    "success": true,
+    "denominator": {
+      "baselineTrackedFiles": 1996,
+      "baselineCandidateFiles": 1277,
+      "environmentCandidateFiles": 110,
+      "originalSymbolCount": 90,
+      "originalEnvironmentOccurrences": 1678,
+      "occurrencesByRoot": {
+        ".agents": 5,
+        "README.md": 10,
+        "README_zh-CN.md": 10,
+        "docs": 2,
+        "example": 492,
+        "research": 669,
+        "sdk": 490
+      },
+      "renamedOccurrences": 1627,
+      "retainedOriginalEvidenceOccurrences": 51,
+      "originalOccurrencesPreciselyLinkedToCandidate": 1678,
+      "currentCandidateFilesWithExactRecordedRawBytes": 30,
+      "currentCandidateFilesWithGitAttributeEolEquivalence": 80,
+      "currentAuthoredFilesEnumerated": 2035,
+      "currentEnvironmentSourceFiles": 111,
+      "workflowFilesEnumerated": 30,
+      "mcpDefinitions": 106,
+      "distinctEnvFromFamilies": 7
+    },
+    "collisions": 0,
+    "unresolved": 0,
+    "probesPassed": 23,
+    "probesFailed": 0,
+    "probeInputMismatches": 0,
+    "researchTests": {
+      "tests": 11,
+      "pass": 11,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "researchInputMismatches": 0,
+    "pythonWorkflowInputMismatches": 0,
+    "report": "D:/openfars/.cache/scienceevolve-refactor/linux-results/sdk-linux-canonical-environment.json"
+  },
+  "packageSmoke": {
+    "checkpoint": "05d84e8870f0926157883f7a7b49279e53c623df",
+    "exitCode": 0,
+    "signal": null,
+    "elapsedSeconds": 153.745,
+    "log": "/results/sdk-linux-final-smoke.log",
+    "artifacts": [
+      {
+        "source": "/tmp/scienceevolve-sdk-consumer-ZgGZPR/scienceevolve-sdk-0.1.1.tgz",
+        "target": "/results/scienceevolve-sdk-linux-05d84e88.tgz",
+        "bytes": 33245469,
+        "sha256": "bba320502ce3963c43361fcd0bbc945ed5804f6058f42a88d5b1962cb26cdc9d"
+      }
+    ],
+    "package": {
+      "name": "@scienceevolve/sdk",
+      "version": "0.1.1",
+      "private": true,
+      "type": "module",
+      "description": "Config-driven ScienceEvolve research workflow runtime, without the Web/HTTP application.",
+      "bin": {
+        "scienceevolve": "./cli/scienceevolve.mjs"
+      },
+      "exports": {
+        ".": {
+          "types": "./dist/index.d.ts",
+          "import": "./dist/index.js"
+        },
+        "./main": {
+          "types": "./dist/main.d.ts",
+          "import": "./dist/main.js"
+        },
+        "./legacy": {
+          "types": "./dist/legacy.d.ts",
+          "import": "./dist/legacy.js"
+        },
+        "./application/runtime": {
+          "types": "./dist/runtime.d.ts",
+          "import": "./dist/runtime.js"
+        },
+        "./application/main-runtime": {
+          "types": "./dist/main-runtime.d.ts",
+          "import": "./dist/main-runtime.js"
+        },
+        "./application/*": {
+          "types": "./dist/internal/*.d.ts",
+          "import": "./dist/internal/*.js"
+        }
+      },
+      "files": [
+        "cli",
+        "dist",
+        "assets",
+        "docs",
+        "skills",
+        "README.md",
+        "README_zh-CN.md",
+        "examples",
+        "resources/main-runtime"
+      ],
+      "scripts": {
+        "dev": "tsc -p tsconfig.json --watch --preserveWatchOutput",
+        "build": "node scripts/sync-main-runtime.mjs --check && tsc -p tsconfig.json && node scripts/copy-assets.mjs && node scripts/check-branding.mjs",
+        "typecheck": "tsc -p tsconfig.json --noEmit",
+        "check:main-runtime": "node scripts/sync-main-runtime.mjs --check",
+        "check:branding": "node scripts/check-branding.mjs",
+        "pretest": "node scripts/sync-main-runtime.mjs --check && node scripts/copy-assets.mjs && node scripts/check-branding.mjs",
+        "test": "vitest run",
+        "smoke:package": "node scripts/package-smoke.mjs",
+        "prepack": "npm run build"
+      },
+      "dependencies": {
+        "@earendil-works/pi-ai": "0.74.2",
+        "@earendil-works/pi-coding-agent": "0.74.2",
+        "@modelcontextprotocol/sdk": "^1.30.1",
+        "smol-toml": "^1.7.1",
+        "yaml": "^2.9.1",
+        "zod": "^3.25.76"
+      },
+      "devDependencies": {
+        "@types/node": "^24.1.0",
+        "diff": "8.0.4",
+        "tsx": "^4.20.3",
+        "typescript": "5.9.3",
+        "vitest": "^3.2.4"
+      },
+      "engines": {
+        "node": ">=24.0.0"
+      }
+    },
+    "artifactHostPaths": [
+      "D:/openfars/.cache/scienceevolve-refactor/linux-results/scienceevolve-sdk-linux-05d84e88.tgz"
+    ],
+    "packageJson": "D:/openfars/.cache/scienceevolve-refactor/linux-results/sdk-linux-final-package.json",
+    "brandingReport": "D:/openfars/.cache/scienceevolve-refactor/linux-results/sdk-linux-final-branding-package.json",
+    "brandingCoverage": {
+      "discoveredFiles": 1314,
+      "inspectedFiles": 1314,
+      "textFiles": 1257,
+      "nonTextFiles": 57,
+      "symlinks": 0,
+      "missingTrackedFiles": 0,
+      "generatedFiles": 0,
+      "pathHitUnits": 0,
+      "contentHitUnits": 520,
+      "totalMatches": 552,
+      "retainedMatches": 552,
+      "unexplainedMatches": 0,
+      "staleExceptions": 0,
+      "inspectedBytes": 52235362
+    }
+  },
+  "history": [
+    {
+      "checkpoint": "d99427d7ad6c6a641a5d24bba12fedd58bb86864",
+      "testFiles": 114,
+      "passed": 2767,
+      "failed": 23,
+      "skipped": 10,
+      "report": "D:/openfars/.cache/scienceevolve-refactor/linux-results/sdk-linux-full-attempt1-vitest.json",
+      "log": "D:/openfars/.cache/scienceevolve-refactor/linux-results/sdk-linux-full-attempt1-test.log",
+      "findings": [
+        {
+          "count": 16,
+          "kind": "Missing naming normalization in pre-migration semantic-hash tests",
+          "resolution": "An exact reversible naming proof preserves every immutable original semantic digest; 18 workflows and 282 edits now verify."
+        },
+        {
+          "count": 1,
+          "kind": "Two required pinned RRsi data files existed locally but were absent from Git delivery",
+          "resolution": "Original pinned bytes were committed; the fresh clone passed all 836 vendor pins and 1996 original-path checks."
+        },
+        {
+          "count": 1,
+          "kind": "Pre-existing AI Scientist v2 TODO test expected design files not to exist",
+          "resolution": "The test now protects the existing incomplete design boundary and its original source instead of asserting absence."
+        },
+        {
+          "count": 4,
+          "kind": "Lease/deadline failures during recorded host sleep",
+          "resolution": "All four unchanged cases passed the post-sleep targeted run and the complete canonical run.",
+          "control": "D:/openfars/.cache/scienceevolve-refactor/linux-results/sdk-linux-post-sleep-targeted.json"
+        },
+        {
+          "count": 1,
+          "kind": "Container without init retained orphaned processes after forced shutdown",
+          "resolution": "The no-init control retained a Node zombie with PPid 1; --init reaped it and the unchanged test passed.",
+          "controls": [
+            "D:/openfars/.cache/scienceevolve-refactor/linux-results/sdk-linux-project-mcp-noinit.json",
+            "D:/openfars/.cache/scienceevolve-refactor/linux-results/sdk-linux-project-mcp-init.json"
+          ]
+        }
+      ]
+    }
+  ],
+  "scopeLimits": [
+    "The 10 existing opt-in installed-native-CLI tests were not enabled; their names are recorded above.",
+    "No paid models, external scientific services or scientific benchmark acceptance was performed.",
+    "macOS was not executed."
+  ],
+  "evidenceRoot": "D:/openfars/.cache/scienceevolve-refactor/linux-results"
+}

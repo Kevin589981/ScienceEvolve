@@ -1,0 +1,26 @@
+{
+  "git": { "enabled": true, "repositoryName": "replace-with-dedicated-private-repository", "repositoryVisibility": "private" },
+  "agents": {
+    "main": { "harness": "codex", "model": "replace-with-your-model", "proxy": { "mode": "inherit" }, "skills": [], "autoSkills": [], "instructions": "Run both independent audit nodes concurrently using the official task controls and their supplied assignments. Require real per-task Git commits, PRs and integrations, inspect both reports and integrate the group result before formal completion. Do not call a group finished after only one branch succeeds. Preserve imported source files and workflow.json." },
+    "code_audit": { "harness": "codex", "model": "replace-with-your-model", "proxy": { "mode": "inherit" }, "skills": [], "autoSkills": [], "instructions": "Independently review the imported project's code without editing it. Write only audits/code.md with concrete evidence, risks and test gaps. Use the task-scoped Git tools to commit, create/merge the permitted PR, then finish_task. Do not edit another audit's path or claim unexecuted tests." },
+    "contract_audit": { "harness": "codex", "model": "replace-with-your-model", "proxy": { "mode": "inherit" }, "skills": [], "autoSkills": [], "instructions": "Independently review the imported project's documented interfaces and acceptance requirements. Write only audits/contract.md with concrete evidence and discrepancies. Use task-scoped Git tools to commit, create/merge the permitted PR, then finish_task. Preserve all source files and the other audit's paths." }
+  },
+  "orchestration": {
+    "schemaVersion": 3,
+    "agents": [{ "name": "main", "template": "main" }, { "name": "code_audit", "template": "review" }, { "name": "contract_audit", "template": "review" }],
+    "collaborations": [{ "id": "audit", "displayName": "Independent parallel audits", "memberAgentIds": [], "renamePolicy": "editable" }],
+    "scopedWorkflow": { "schemaVersion": 1, "rootAgentIds": ["main"], "groups": [{
+      "id": "audit", "leaderAgentId": "main", "allowLeaderReconfiguration": false,
+      "workflow": {
+        "nodes": [{ "kind": "agent", "nodeId": "code", "agentId": "code_audit" }, { "kind": "agent", "nodeId": "contract", "agentId": "contract_audit" }],
+        "input": { "source": "input", "edges": [{ "kind": "parallel", "target": "code" }, { "kind": "parallel", "target": "contract" }] },
+        "routes": { "code": [{ "kind": "strong", "target": "finish" }], "contract": [{ "kind": "strong", "target": "finish" }] }
+      }
+    }] },
+    "input": { "source": "input", "target": "audit" },
+    "routes": { "main": [], "audit": [{ "kind": "weak", "target": "finish" }] },
+    "decisionPlans": { "audit": "Require both independent audits and an integrated group result. Report defects honestly; an audit task may complete with documented risks, not fabricated repairs." },
+    "allowMainReconfiguration": false, "allowUserIntervention": true,
+    "termination": { "agent": "audit", "condition": "Both audit reports exist in the integrated project and Main has inspected their concrete evidence and disclosed remaining risks.", "decisionBy": "main", "automatic": false }
+  }
+}

@@ -1,0 +1,661 @@
+{
+  "schemaVersion": 1,
+  "imagesReviewed": [
+    "docs/images/dual-loop.png",
+    "docs/images/self-evolving-workflow.png"
+  ],
+  "visualReview": "Both project-authored diagrams were visually inspected; neither contains a product brand. Third-party resources retain original bytes and attribution.",
+  "files": [
+    {
+      "path": ".agents/skills/nature-figure/assets/chart-atlas/atlas-01-bar-charts.png",
+      "originalPath": ".agents/skills/nature-figure/assets/chart-atlas/atlas-01-bar-charts.png",
+      "bytes": 125370,
+      "sha256": "4a0e3040bbdbfe5ec48b66515f719f83ad7304fadb2e56432cd3e8f7ccbabd65",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/chart-atlas/atlas-02-line-trends.png",
+      "originalPath": ".agents/skills/nature-figure/assets/chart-atlas/atlas-02-line-trends.png",
+      "bytes": 423651,
+      "sha256": "9a8189149180a68679738bc4be152ee40b17d71261d71b3759d315a7169da0d9",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/chart-atlas/atlas-03-heatmaps.png",
+      "originalPath": ".agents/skills/nature-figure/assets/chart-atlas/atlas-03-heatmaps.png",
+      "bytes": 159834,
+      "sha256": "40dd7c7c14c45b45cc22ee23e19f2dc1901f38b26a1fb4b0f26a30dbd10c0423",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/chart-atlas/atlas-04-scatter-bubble.png",
+      "originalPath": ".agents/skills/nature-figure/assets/chart-atlas/atlas-04-scatter-bubble.png",
+      "bytes": 485091,
+      "sha256": "1bbfbc38a3f246e4fd7c59b9ed1003ddbc7280ee160b7c38abf8d410b27fe6f8",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/chart-atlas/atlas-05-radar-polar.png",
+      "originalPath": ".agents/skills/nature-figure/assets/chart-atlas/atlas-05-radar-polar.png",
+      "bytes": 630054,
+      "sha256": "e7fa7d98cd4f5263f5550d7ac8824e60071c20b2927aef52ac6d18d62fd29ffa",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/chart-atlas/atlas-06-distributions.png",
+      "originalPath": ".agents/skills/nature-figure/assets/chart-atlas/atlas-06-distributions.png",
+      "bytes": 233827,
+      "sha256": "a1fe533d07dae36d11c997577ded61adb16bf5d4dd5c0dee2ff92ae570f0f01e",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/chart-atlas/atlas-07-forest-interval.png",
+      "originalPath": ".agents/skills/nature-figure/assets/chart-atlas/atlas-07-forest-interval.png",
+      "bytes": 270166,
+      "sha256": "dc61a5257eae4748348c72c51f2e70e59979c6892f52dadf7bb4ba6f8b98b00b",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/chart-atlas/atlas-08-area-stacked.png",
+      "originalPath": ".agents/skills/nature-figure/assets/chart-atlas/atlas-08-area-stacked.png",
+      "bytes": 334735,
+      "sha256": "350c25e427d945dee5fd98316eb6ebe307304b9d187d954a88c05852d664a60b",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/chart-atlas/atlas-09-image-plates.png",
+      "originalPath": ".agents/skills/nature-figure/assets/chart-atlas/atlas-09-image-plates.png",
+      "bytes": 359027,
+      "sha256": "bbc8c0b8708d42465e57cb7c56b4d2ecfbaa63340a5a6dfefbcb51189cd1a995",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/chart-atlas/atlas-10-network-matrix.png",
+      "originalPath": ".agents/skills/nature-figure/assets/chart-atlas/atlas-10-network-matrix.png",
+      "bytes": 312125,
+      "sha256": "cd384abe10aa86bd310c1288a42f33735cb555c267bddae1ecd262905a7a1de5",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/assets/Dispersion_motivation.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/assets/Dispersion_motivation.png",
+      "bytes": 837657,
+      "sha256": "04c2f6ab2bedf8e6a19449f0260ef36f8ab736a93dccf19458cdc80d4b593547",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/assets/Dispersion_observation.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/assets/Dispersion_observation.png",
+      "bytes": 808992,
+      "sha256": "59846b700abcf89c2779abce27b5d667637f6429cf4a52ca1892c687359f2aa7",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/assets/Dispersion_observation_distillation.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/assets/Dispersion_observation_distillation.png",
+      "bytes": 616612,
+      "sha256": "134b0fcb07dbab1baa769854100fc9791b846f6f6c50591485564fc8492b6660",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/assets/ImmunoStruct_contrastive.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/assets/ImmunoStruct_contrastive.png",
+      "bytes": 502211,
+      "sha256": "c2590ba1ecac5e1d0976df3be6e9fa4056dcdd78670201c6db461e3e4f18b0d0",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/assets/ImmunoStruct_results_CEDAR.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/assets/ImmunoStruct_results_CEDAR.png",
+      "bytes": 1281557,
+      "sha256": "f1f564e0c7221f24f4bffe14cce5b5df6786c75f7dfcf1b6d2be7566820050ec",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/assets/ImmunoStruct_results_IEDB.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/assets/ImmunoStruct_results_IEDB.png",
+      "bytes": 956273,
+      "sha256": "2768b1a5ef0c501dc03c53c594a28e028df2cd57b51c4fd80c9a57906f6195c5",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/assets/ImmunoStruct_schematic.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/assets/ImmunoStruct_schematic.png",
+      "bytes": 972870,
+      "sha256": "2d3ddf56ae63b34ead168cb95b484881f934e61204a8740c67d6dc1678bbaf7d",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/assets/RNAGenScape_schematic.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/assets/RNAGenScape_schematic.png",
+      "bytes": 1000298,
+      "sha256": "ef85b974a990b74c230dc1a80d3bb357f4f8a430d13c12c6120927c9fb797287",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_CellSpliceNet/figures/ablation.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_CellSpliceNet/figures/ablation.png",
+      "bytes": 355284,
+      "sha256": "3373085ababf07481a352fe542fd79a58701e0e052c5593ca56984008ddad027",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_CellSpliceNet/figures/comparison.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_CellSpliceNet/figures/comparison.png",
+      "bytes": 813084,
+      "sha256": "49d4ebc7d1867918b9d0167d8e821d8ce7845459a9da55a6fefcef87eeb7024d",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_CellSpliceNet/figures/comparison_human.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_CellSpliceNet/figures/comparison_human.png",
+      "bytes": 880800,
+      "sha256": "131654637e894c12f441ad4a9cf5533999939971e3f051f81e46ba802f75d854",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_CellSpliceNet/figures/comparison_worm.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_CellSpliceNet/figures/comparison_worm.png",
+      "bytes": 925266,
+      "sha256": "137841e62d5eaa48998a97246849b8ede08d2d165c8bb4ad3fd6a18d6b6c65e2",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_Cflows/figures/diffusion_swiss_roll.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_Cflows/figures/diffusion_swiss_roll.png",
+      "bytes": 1794980,
+      "sha256": "9f02fa4603dae748e3745b95b0ed252f2ba386da6101dc1be6c4a2a886c78eb0",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_Cflows/figures/fig2_comparison_GeneRegulatory.pdf",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_Cflows/figures/fig2_comparison_GeneRegulatory.pdf",
+      "bytes": 24757,
+      "sha256": "30b1efaf3293a240c6646f076a14f702bb3556fd10a1fb791c23deb90d3ff40e",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_Cflows/figures/fig2_comparison_GeneRegulatory.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_Cflows/figures/fig2_comparison_GeneRegulatory.png",
+      "bytes": 287419,
+      "sha256": "96075eb70285f4f72869b99398c9a923336fbc3a5188883d9e8415e1cc027a46",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_Cflows/figures/fig2_comparison_Trajectory.pdf",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_Cflows/figures/fig2_comparison_Trajectory.pdf",
+      "bytes": 19791,
+      "sha256": "465050a8f8c8be85eb3e8d17c16eaef3df50acc41b2bd212d2b6176d97efc78c",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_Cflows/figures/fig2_comparison_Trajectory.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_Cflows/figures/fig2_comparison_Trajectory.png",
+      "bytes": 388293,
+      "sha256": "91b214f745a99f1f2b472ddae7661dfa2d9241791768767180219315b89047ec",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_Cflows/figures/figX_comparison_Ablation.pdf",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_Cflows/figures/figX_comparison_Ablation.pdf",
+      "bytes": 19233,
+      "sha256": "d4c7b8013a24aa830a0f83b8cf5ffd917a932458e6a265f4b5f29e9a4389960a",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_Cflows/figures/figX_comparison_Ablation.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_Cflows/figures/figX_comparison_Ablation.png",
+      "bytes": 328952,
+      "sha256": "4f7b7b4b01a1b498540850ddabc217fd964eb37142e99a6ee6b5c26cf12aba7f",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_Dispersion/figures/idea.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_Dispersion/figures/idea.png",
+      "bytes": 384839,
+      "sha256": "e805fb0f7ccdf8aa3ae764e8156cf6b61b6d56ef7dded0fc7556566e316649a3",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_Dispersion/figures/illustration.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_Dispersion/figures/illustration.png",
+      "bytes": 762950,
+      "sha256": "2528309a41ba6edab9c377a2304c144813c0e99565239a849c427ab00a14643b",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_FPGM/figures/freq_prior.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_FPGM/figures/freq_prior.png",
+      "bytes": 641033,
+      "sha256": "0f8f77c4de67324cf7ddd7ee370a8ef39f10417b241142b9bacbc830677ff0fe",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_ImmunoStruct/figures/bars_ablation_Cancer.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_ImmunoStruct/figures/bars_ablation_Cancer.png",
+      "bytes": 816715,
+      "sha256": "46c9e05df9d7c941628791ac447c5d84a29d942896ce3a13d00432e9f5c720ef",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_ImmunoStruct/figures/bars_ablation_IEDB.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_ImmunoStruct/figures/bars_ablation_IEDB.png",
+      "bytes": 1160225,
+      "sha256": "854fe931bde6ca6c50eda6b147907f00d8f10d74c3b40bad1714b903bf945f00",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_ImmunoStruct/figures/bars_comparison_Cancer.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_ImmunoStruct/figures/bars_comparison_Cancer.png",
+      "bytes": 799770,
+      "sha256": "0c35bb8a1fb21d5e30e16be152fc92959af580d9e24f04ccc61444adba8c7aa2",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_ImmunoStruct/figures/bars_comparison_IEDB.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_ImmunoStruct/figures/bars_comparison_IEDB.png",
+      "bytes": 757551,
+      "sha256": "18a52f7a910fe9c9ff06015f5a1e63527458a86c847f573eb96ba254d4645ac1",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_RNAGenScape/figures/manifold.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_RNAGenScape/figures/manifold.png",
+      "bytes": 108276,
+      "sha256": "83e55ca23d8aa2fa591a46d3fe4f9d6ac11e17cbc9657e2615d883ea6deb937c",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_RNAGenScape/figures/manifold_holes.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_RNAGenScape/figures/manifold_holes.png",
+      "bytes": 1019896,
+      "sha256": "2ad2be6fa9c9165e800dba4d997850c9a426cbe9b441c78b76518335bcc3f948",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_RNAGenScape/figures/results_comparison_optimization.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_RNAGenScape/figures/results_comparison_optimization.png",
+      "bytes": 850446,
+      "sha256": "4cf8539d0521b7268f0227b56cecddf2f70c1bb4bbcf9b5e3be886e95a54927a",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_RNAGenScape/figures/results_comparison_speed.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_RNAGenScape/figures/results_comparison_speed.png",
+      "bytes": 92362,
+      "sha256": "cd1fec84f615a43dbe91cc94bfbb94fe07e086fdd5d8191fbff2ec990e38d4f5",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_RNAGenScape/figures/results_sweep.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_RNAGenScape/figures/results_sweep.png",
+      "bytes": 142120,
+      "sha256": "4db30b32b65e6b7160ebe025993c2ffdaf6e240d836c253419e91649d3da8deb",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_VIGIL/figures/ablation_curves.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_VIGIL/figures/ablation_curves.png",
+      "bytes": 600708,
+      "sha256": "302b8f53795653bf7ebe74ca508319c073325bdda1f106ca9eb3cd7c690da7c7",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_VIGIL/figures/comparison_posttraining.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_VIGIL/figures/comparison_posttraining.png",
+      "bytes": 249289,
+      "sha256": "a6f2e75e7d8361754445d86ce04386b5764a46bf2cbc94e8df0c75ecf1bab142",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_VIGIL/figures/comparison_radar.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_VIGIL/figures/comparison_radar.png",
+      "bytes": 809841,
+      "sha256": "d6613715d9d4564fb0c7354430b227d43c9df04032e32b346601971381e5ba2d",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_VIGIL/figures/concept.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_VIGIL/figures/concept.png",
+      "bytes": 1643817,
+      "sha256": "3554b9af671886dfbbe985016440c5ba1633b4e8b08d50539d992982c5cc2bf5",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_brainteaser/figures/brute_force.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_brainteaser/figures/brute_force.png",
+      "bytes": 1753162,
+      "sha256": "abb63055b0d49edbe9002e820294a622db1429d31b1d2446340036cf1db92607",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_brainteaser/figures/correctness_by_category.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_brainteaser/figures/correctness_by_category.png",
+      "bytes": 655498,
+      "sha256": "bc2cc547f15430bc9af2ebdfba0b8cf1c73702e8fbea35d8b2953cc960da117b",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_brainteaser/figures/correctness_by_subcategory.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_brainteaser/figures/correctness_by_subcategory.png",
+      "bytes": 1100554,
+      "sha256": "b6639239da2fa9f2bec3eb096ec0db3942965ed38e57446de4b8a240a77c02c6",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_brainteaser/figures/rewriting.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_brainteaser/figures/rewriting.png",
+      "bytes": 410105,
+      "sha256": "0460f09210bc23c272602ecb8b3fcf3984f42fc055df3b0e4982eab50303607f",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_brainteaser/figures/selfcorrection_math.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_brainteaser/figures/selfcorrection_math.png",
+      "bytes": 611488,
+      "sha256": "71133ed59cc16f8c36a4e8b2325575d185f36a8534c29579d2eff177544e9e53",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_ophthal_review/figures/composition_heatmap.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_ophthal_review/figures/composition_heatmap.png",
+      "bytes": 279533,
+      "sha256": "38a9c4e8fd691cbd7dcb4f5b5abb69398b4974d32cad19a4a33819db1cb34f3a",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/figures4papers/figure_ophthal_review/figures/trend_by_month.png",
+      "originalPath": ".agents/skills/nature-figure/assets/figures4papers/figure_ophthal_review/figures/trend_by_month.png",
+      "bytes": 364102,
+      "sha256": "66fe0f27f44697547b6cb219ff90696f54a6fef48984c9578ace258e0ebce4d4",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/gallery/fig1-material-mechanism-rich.png",
+      "originalPath": ".agents/skills/nature-figure/assets/gallery/fig1-material-mechanism-rich.png",
+      "bytes": 570018,
+      "sha256": "2e0706fae3256e1de2388f8605f35b9b6ac23cfc397161a952f34cc5fa2f2192",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/gallery/fig2-spatial-imaging-rich.png",
+      "originalPath": ".agents/skills/nature-figure/assets/gallery/fig2-spatial-imaging-rich.png",
+      "bytes": 643666,
+      "sha256": "90081b3f778b9ede2dba41c60b6abf0c28a239060c69428344539529cd7f3257",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/gallery/fig3-in-vivo-efficacy-rich.png",
+      "originalPath": ".agents/skills/nature-figure/assets/gallery/fig3-in-vivo-efficacy-rich.png",
+      "bytes": 371419,
+      "sha256": "25d6fc50f5808104a7cb19f4795cea4229fbc6159fa7509f716a94f7c160a033",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/gallery/fig4-single-cell-systems-rich.png",
+      "originalPath": ".agents/skills/nature-figure/assets/gallery/fig4-single-cell-systems-rich.png",
+      "bytes": 392735,
+      "sha256": "999edb06b942f988a51b11f947845e42e4c346b2f9e5d5a6425def9e43bb69d1",
+      "category": "third-party-original"
+    },
+    {
+      "path": ".agents/skills/nature-figure/assets/gallery/fig5-validation-perturbation-rich.png",
+      "originalPath": ".agents/skills/nature-figure/assets/gallery/fig5-validation-perturbation-rich.png",
+      "bytes": 408275,
+      "sha256": "245ad31f97b2054628987444e44d6a007f352f65ae6254189f5ed8ba9b0301c6",
+      "category": "third-party-original"
+    },
+    {
+      "path": "docs/images/dual-loop.png",
+      "originalPath": "docs/images/dual-loop.png",
+      "bytes": 1208504,
+      "sha256": "dba2081eaabc0cdecf252f749fcb7d769cc86edb08623dabe8ff381aefb219a2",
+      "category": "project-owned-visual"
+    },
+    {
+      "path": "docs/images/self-evolving-workflow.png",
+      "originalPath": "docs/images/self-evolving-workflow.png",
+      "bytes": 1021790,
+      "sha256": "fb1bfacb421395e140b0675cde7846193ff6042a31f2c1dee3b51a8545f11b79",
+      "category": "project-owned-visual"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/docs/wechat_group.jpg",
+      "originalPath": "example/aris/skills/scion-aris/integrity-upstream/docs/wechat_group.jpg",
+      "bytes": 163335,
+      "sha256": "13efad920c42e0690bd8fccd9ece9a49b94f4c81336dbf4b954cb23b4ba6647a",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/cbioportal.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/cbioportal.pkl",
+      "bytes": 4471,
+      "sha256": "05e71595da284510d503eaf4c647fae0c453ba4782c4d100d3105ec46c014b5a",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/chembl.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/chembl.pkl",
+      "bytes": 8673,
+      "sha256": "202f5cb04e527e04411288226cdb9f559f98bb183a464031924b02045d48514b",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/clinicaltrials.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/clinicaltrials.pkl",
+      "bytes": 3154,
+      "sha256": "8ca574bd6e5e637f0f56b60a3bbf42512f77d8e95996eb7c495d78f29352d570",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/clinvar.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/clinvar.pkl",
+      "bytes": 3623,
+      "sha256": "e3c3b918acd066fedd0b73869bdd74414f399d307bed7dedc266384f3b88cb6f",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/dailymed.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/dailymed.pkl",
+      "bytes": 5705,
+      "sha256": "ce83974f67d30ace179ce36636291ffa39ce7a47904f4f0efb73592ec4f36418",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/dbsnp.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/dbsnp.pkl",
+      "bytes": 1844,
+      "sha256": "9cdfd93084882ed8c3b415a968c81604a8641361fadb78bd06f1095783d6706b",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/emdb.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/emdb.pkl",
+      "bytes": 2269,
+      "sha256": "0c3d262f5eaaacade9915585facd9219d63f4167c685922dae5c41847f5a20e2",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/encode.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/encode.pkl",
+      "bytes": 6696,
+      "sha256": "0b60dbb6b4af89c54e2ae6562e004fb94f057df92b4e3084816c7583040bbb4c",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/ensembl.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/ensembl.pkl",
+      "bytes": 15635,
+      "sha256": "6c5e9f39940ff59ac858533b2db594b96b03c27037f3922a1f579120605186ca",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/geo.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/geo.pkl",
+      "bytes": 931,
+      "sha256": "f03e83b4ee218b2dfab6cf0c29c07b6f47a9c221ffc776cdd3f2f041f7dae132",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/gnomad.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/gnomad.pkl",
+      "bytes": 1051,
+      "sha256": "ddfb761e9d21699b0358fd01d33455e9133f94b18f3d6b6682f991d621b509fb",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/gtopdb.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/gtopdb.pkl",
+      "bytes": 8559,
+      "sha256": "3c6cfb6600d0a79b8b2099f3543a68ac97baaad1f973781b36402a0e7e423292",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/gwas_catalog.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/gwas_catalog.pkl",
+      "bytes": 3321,
+      "sha256": "9028da5291b0c0f9b2fe7326d1f1a15bbe1a9f74f2a932735147f903dd22f81f",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/interpro.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/interpro.pkl",
+      "bytes": 3255,
+      "sha256": "dac1cd4394b9718dfa491c127a292fd694d5960edbb31de2ddeeeb572ba02ea2",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/iucn.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/iucn.pkl",
+      "bytes": 7157,
+      "sha256": "ce46bd8180ed39f74aacd18484e6974a69ad0af5473e085e81e135d52dd72255",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/jaspar.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/jaspar.pkl",
+      "bytes": 3378,
+      "sha256": "17a2076cf0033ef0af04aad40a2d5fef12d216982789372e717247d4ee5fadf3",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/kegg.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/kegg.pkl",
+      "bytes": 5155,
+      "sha256": "cf1a438cd0798c8fd1f1f09a46a6ce90ba4a2ff278f0874e8f59c8c106d81c0a",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/monarch.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/monarch.pkl",
+      "bytes": 5083,
+      "sha256": "88f65c156ee7aed106c306ed9cfbc482be763d343c5d6fee6b06c2a2412684e9",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/mpd.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/mpd.pkl",
+      "bytes": 4792,
+      "sha256": "fe1d11a8d1ca90241053a89f0fdb434e3275f230dcf46121ae147c0cd7e690f0",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/openfda.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/openfda.pkl",
+      "bytes": 3043,
+      "sha256": "9220a2104e6088a71b7b5f89e6c162a3261e8a461147fd59b4b3a989bf8f36f6",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/opentarget.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/opentarget.pkl",
+      "bytes": 39595,
+      "sha256": "88a14dfd471600cd854c1ec8323392155cf647c8db6a37812ffd733fa0787e61",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/paleobiology.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/paleobiology.pkl",
+      "bytes": 7106,
+      "sha256": "ad32eaac20b64e5eb131de13ecb20e055f037d094d19d7b038990f3f078b77da",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/pdb.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/pdb.pkl",
+      "bytes": 2703,
+      "sha256": "5c3f8eb8ad61172e0f7936bf0343aae958b7b5c03825bd11220ca003081ac35e",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/pride.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/pride.pkl",
+      "bytes": 3924,
+      "sha256": "2f7387abf4429b9dae055549a3e953ba95ad72514f17ebe9c9da2fa92c4d1ced",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/pubchem.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/pubchem.pkl",
+      "bytes": 306,
+      "sha256": "39ba41379e1966815857b1339d040400c60906c5aa6ea9ef037b0bb86371473e",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/quickgo.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/quickgo.pkl",
+      "bytes": 5204,
+      "sha256": "77ba934bddb6af7b4c11d5a7b782559c9da738b8268d09d2071a0f293e69678e",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/reactome.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/reactome.pkl",
+      "bytes": 15182,
+      "sha256": "ab9664147737530ede0b212f29e7a9d0c23646a81886ff34febd2cd5a2f2939b",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/remap.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/remap.pkl",
+      "bytes": 2196,
+      "sha256": "6817b49c4ae84f97814b488a4b8f7d86c84970b8a3b517f4be54a6bac32bad64",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/stringdb.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/stringdb.pkl",
+      "bytes": 3446,
+      "sha256": "caccddb5eb81f7e4f0b5e92d50c2d1a2d50d5161903f4fbbdddc66c28b6d9de8",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/ucsc.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/ucsc.pkl",
+      "bytes": 1556,
+      "sha256": "af792884bcaacf02d8c42813f98bbfcf0ce87e17a212a3f51ca8478a65efc7b1",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/unichem.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/unichem.pkl",
+      "bytes": 2585,
+      "sha256": "30ff7a6bc97522b725c2c3cfef9bff8de242fdf7cfd5e659e1dc0dd6c5489cd3",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/uniprot.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/uniprot.pkl",
+      "bytes": 6023,
+      "sha256": "3f16c1616c2b89067b15ec1b64bb6867dc4c0afc9851566f9da8ea2cf165729a",
+      "category": "third-party-original"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/schema_db/worms.pkl",
+      "originalPath": "example/biomni/skills/scion-biomni/upstream/biomni/tool/schema_db/worms.pkl",
+      "bytes": 4756,
+      "sha256": "0b518c6236c48f227943bba7b89af4de58390beaa0de26fbc51c6e2d3425f6b0",
+      "category": "third-party-original"
+    }
+  ]
+}

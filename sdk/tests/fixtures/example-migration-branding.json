@@ -1,0 +1,1526 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "ff776f1e82f04fdb51d9cb4d4fa275b965d89703",
+  "semanticBaselineCommit": "eaeaad1",
+  "method": "Exact declared naming edits on canonical semantic bytes; inverse replay recovers every unchanged pre-migration semantic digest.",
+  "brandingDigest": "a8a98aff64705d1bec8f0071fc38608c0692f9e8a4d2230c9832fb530a038725",
+  "brandingVersion": "scienceevolve-v1",
+  "workflows": {
+    "example/01-ahe-evolve/workflow.json": {
+      "originalSemanticSha256": "0e583c85d8dfa0b61e8f633ffd8405d336c0092efac9d5a33a7fd052e81d3f13",
+      "brandedSemanticSha256": "71c381de7806200c11465f359fcb278576d049492bb31bab78645d2f1080050b",
+      "edits": [
+        {
+          "offset": 274,
+          "before": "scion-ar",
+          "after": "scienceevolve"
+        }
+      ]
+    },
+    "example/02-software-development/workflow.json": {
+      "originalSemanticSha256": "df927f73f65e289e53b9fa4fc39e24cb90607d432e34d01061dbcbf41e0b3c47",
+      "brandedSemanticSha256": "df927f73f65e289e53b9fa4fc39e24cb90607d432e34d01061dbcbf41e0b3c47",
+      "edits": []
+    },
+    "example/agent-laboratory/workflow.json": {
+      "originalSemanticSha256": "d7b9972951ecfa1705b4b28566d4316ec3458b1b5d42a54f41c037731a04aae2",
+      "brandedSemanticSha256": "7b36c76cbfc6e71b3f857b67f6f3989f894d4192b3d54afa6ef9501988e26b3b",
+      "edits": [
+        {
+          "offset": 522,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1139,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1637,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2139,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 3423,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 3924,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 4476,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 5157,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 5677,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 6210,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 6726,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 7181,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 7688,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 8189,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 8690,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 9175,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        }
+      ]
+    },
+    "example/agentrxiv/workflow.json": {
+      "originalSemanticSha256": "56fde0924350e20cba47349212693455208ea4b7e74dae66ef0577f0f315a2b2",
+      "brandedSemanticSha256": "1cdcba9d8457fe210bd1b4a6d24f58723099a448a2fb4d50d7f0d3b7aa9a4af5",
+      "edits": [
+        {
+          "offset": 351,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 980,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1672,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2245,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2822,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 4370,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 4946,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 5573,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 6329,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 6924,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 7532,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 8123,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 8653,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 9235,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 9811,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 10387,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 10947,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        }
+      ]
+    },
+    "example/aris/workflow.json": {
+      "originalSemanticSha256": "5f1c4550e4178974f16c1edf6d61226810a51836644ef270e7d1ab43a9e2349d",
+      "brandedSemanticSha256": "896795c5a0bb22e12293d33be0f6851e1c53fa0ef16ee8a01f5e0e8bd244d986",
+      "edits": [
+        {
+          "offset": 360,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 867,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1227,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1734,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2082,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2589,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2882,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 3389,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 4694,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 5201,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 5481,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 5988,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 6428,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 7153,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 7488,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 8130,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 8482,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 8989,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 9333,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 9840,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 10381,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 10887,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 11185,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 11692,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 12056,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 12563,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 12952,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 13459,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 13871,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 14295,
+          "before": "SCION",
+          "after": "SCIENCEEVOLVE"
+        },
+        {
+          "offset": 14494,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 14876,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 15383,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        }
+      ]
+    },
+    "example/autoresearch/workflow.json": {
+      "originalSemanticSha256": "f6141f0f83b77826ca3580667fcd209721bb45d651fa1504ed3395df3546d51a",
+      "brandedSemanticSha256": "6eb13a1f9cca2fc54ca3c0f8ec6dc261b9bdb200dc2105bf5d456bf7cfca6da1",
+      "edits": [
+        {
+          "offset": 617,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1146,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1718,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2302,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        }
+      ]
+    },
+    "example/biomni/workflow.json": {
+      "originalSemanticSha256": "3750ebf89db2e5fa2aa65378704e0b038a0610c9c039aeef59e4312580aef2e1",
+      "brandedSemanticSha256": "7c51bbd910b1fc95817d2a37c4bf285d14817b96e3dff4f9e88805742ae025c5",
+      "edits": [
+        {
+          "offset": 504,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1064,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1332,
+          "before": "SCION",
+          "after": "SCIENCEEVOLVE"
+        },
+        {
+          "offset": 1797,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2360,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2911,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 3475,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        }
+      ]
+    },
+    "example/co-scientist/workflow.json": {
+      "originalSemanticSha256": "bf12ce5caeda05e6a6d2511c5e25a597f1af88c33cb12d26702d187b3d0fc639",
+      "brandedSemanticSha256": "b9abc08c4c1eb421521734ed0076d6a11face7817b2a22883e1220d4610694ad",
+      "edits": [
+        {
+          "offset": 527,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1073,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2058,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2642,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 3168,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 3736,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 4426,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 5047,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        }
+      ]
+    },
+    "example/drugevolve/workflow.json": {
+      "originalSemanticSha256": "cd27456803b291bd942f6c7083e82511f455f042cd22978d90c8dd560dfbc1b8",
+      "brandedSemanticSha256": "3fff34241b567bc0cfe5b6b67a702e1754cc2401c5116e878a152d30e7f107ed",
+      "edits": [
+        {
+          "offset": 252,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 651,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 998,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1397,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1720,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2119,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2479,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2878,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 3142,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 3541,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 3827,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 4226,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 4758,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 5156,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 5417,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 5816,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 6168,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 6567,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        }
+      ]
+    },
+    "example/dynamic-research-workflow/workflow.json": {
+      "originalSemanticSha256": "c618c75e879faa6c6fe4bc98f465a642e5eb6fee4f9a94cb8cdc83478773064c",
+      "brandedSemanticSha256": "c9b5036caf888088d7e9e31d8a60d27b453661fcaeb8c3cfdd3d9ed6ee092a66",
+      "edits": [
+        {
+          "offset": 862,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 892,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 2126,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 3933,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 3963,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 5197,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 7783,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 7813,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 9047,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 10283,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 10313,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 11547,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        }
+      ]
+    },
+    "example/funsearch/workflow.json": {
+      "originalSemanticSha256": "ed5b132ec171f4a55a16cce1466509b3805d0ccc2914812b6402bcea9736d5f9",
+      "brandedSemanticSha256": "44408ca34c7ceb3461e23f1603d4156b28a7a38f41a0774102c91011fab6512b",
+      "edits": [
+        {
+          "offset": 508,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1206,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1435,
+          "before": "SCION",
+          "after": "SCIENCEEVOLVE"
+        },
+        {
+          "offset": 1818,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        }
+      ]
+    },
+    "example/metaharness/workflow.json": {
+      "originalSemanticSha256": "16ccc97a480aef61c7cb423091bea35e7ac808e7c2e2237cae3ca8ead8b04c33",
+      "brandedSemanticSha256": "88acc5e80dfdc8cfea3813bce6530bb3e90ee9241d0fcb78ddcff2b20cf965f1",
+      "edits": [
+        {
+          "offset": 585,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1194,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1978,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2651,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        }
+      ]
+    },
+    "example/robin/workflow.json": {
+      "originalSemanticSha256": "cfce615e0567d265b06f607578c92cb3e6154c03ea0a5e8d4ee23ce0758d5e01",
+      "brandedSemanticSha256": "78a23c0cf6396853883a86c45969a3432c9087404596baea0f82beded52996c4",
+      "edits": [
+        {
+          "offset": 484,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 984,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1467,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1915,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2514,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2984,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 3455,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 4005,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 4540,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 5138,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 5642,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 6137,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 6650,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 7221,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 8143,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        }
+      ]
+    },
+    "example/rrsi/workflow.json": {
+      "originalSemanticSha256": "32b25dd78379ec6030c9a085bc40652292dd46941d9a9036bec53e1732c4d40a",
+      "brandedSemanticSha256": "b6afc72180ff4ae0ede630bc770b1c3a1d182d42abd7c2bf5a5b36e9bf2e9f02",
+      "edits": [
+        {
+          "offset": 306,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 599,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 861,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1154,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1430,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1723,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1981,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2274,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2559,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2852,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2965,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 3553,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 3856,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 4149,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 4542,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 4835,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 5139,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 5432,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 5891,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 6184,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        }
+      ]
+    },
+    "example/sciagents/workflow.json": {
+      "originalSemanticSha256": "9908b7682540975aa4201aae8e006b06261b359fea85369b63e94dec1bb2d998",
+      "brandedSemanticSha256": "79e3d9f1d875e538cd4bc0cab52a4b00d04d3ef2b745e5f1e3852d7673d50ef8",
+      "edits": [
+        {
+          "offset": 1100,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2536,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 4273,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 5751,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 7169,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 8176,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 9606,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 11024,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 12939,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 14614,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 16040,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 17224,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 17727,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 21888,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 23390,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        }
+      ]
+    },
+    "example/scientist-two/workflow.json": {
+      "originalSemanticSha256": "8cfb84908555a34661fc97f8adcc822752056a6bbedee888a27ec2f11434b28c",
+      "brandedSemanticSha256": "56f3890beb9f5601bb2ac600d544a6220d08b2f0d5f6cd0913554e13e6cd40ea",
+      "edits": [
+        {
+          "offset": 202,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 551,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 785,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1134,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1401,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1750,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 1996,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2345,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 2670,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 3084,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 3387,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 3736,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 4275,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 4624,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 4978,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 5327,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 5977,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 6542,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 6872,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 7221,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 7515,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 7864,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 8096,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 8445,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 8651,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 9000,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 9267,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 9616,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 9877,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 10226,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 10449,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 10798,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 11117,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 11466,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 11747,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 12096,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 12345,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 12694,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 12927,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 13276,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 13495,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 13844,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 13966,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 14523,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 14772,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 15121,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 15380,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 15729,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 16056,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 16405,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 16683,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 17032,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 17333,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 17682,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 17918,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 18267,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 18657,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 19073,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 19305,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 19654,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 19882,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 20231,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 20480,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 20829,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 21092,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 21441,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 21659,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 22008,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 22223,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 22572,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 22792,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 23141,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 23394,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 23743,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 23979,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 24328,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 24601,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 24950,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 25193,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 25542,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 25772,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 26121,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 26392,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 26741,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 27002,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 27351,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 27611,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 27960,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 28185,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 28534,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 28777,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 29126,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 29361,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 29710,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 30089,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        },
+        {
+          "offset": 30438,
+          "before": "scion-",
+          "after": "scienceevolve-"
+        }
+      ]
+    },
+    "sdk/examples/default-workflow.json": {
+      "originalSemanticSha256": "c618c75e879faa6c6fe4bc98f465a642e5eb6fee4f9a94cb8cdc83478773064c",
+      "brandedSemanticSha256": "c9b5036caf888088d7e9e31d8a60d27b453661fcaeb8c3cfdd3d9ed6ee092a66",
+      "edits": [
+        {
+          "offset": 862,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 892,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 2126,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 3933,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 3963,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 5197,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 7783,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 7813,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 9047,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 10283,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 10313,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        },
+        {
+          "offset": 11547,
+          "before": "scion_",
+          "after": "scienceevolve_"
+        }
+      ]
+    },
+    "sdk/skills/scienceevolve-sdk/assets/workflow.json": {
+      "originalSemanticSha256": "55f028213fb2a21774d7f7f637ead2d3726a65f97e858a7872b537700a10ce9e",
+      "brandedSemanticSha256": "55f028213fb2a21774d7f7f637ead2d3726a65f97e858a7872b537700a10ce9e",
+      "edits": []
+    }
+  }
+}

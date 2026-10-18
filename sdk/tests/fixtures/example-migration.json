@@ -1,0 +1,864 @@
+{
+  "sourceCommit": "eaeaad1",
+  "description": "Pre-migration research semantics. Hash excludes deployment fields gatewaySource/reasoningEffort, proxy default, and permission; all other Agent fields and original orchestration are preserved. Permission/reasoning expectations are recorded separately.",
+  "workflows": {
+    "example/01-ahe-evolve/workflow.json": {
+      "sha256": "0e583c85d8dfa0b61e8f633ffd8405d336c0092efac9d5a33a7fd052e81d3f13",
+      "agents": {
+        "main": {
+          "reasoning": "high",
+          "permission": "yolo"
+        },
+        "execute": {
+          "reasoning": "high",
+          "permission": "yolo"
+        },
+        "judge": {
+          "reasoning": "high",
+          "permission": "yolo"
+        },
+        "optimizer": {
+          "reasoning": "high",
+          "permission": "yolo"
+        }
+      }
+    },
+    "example/02-software-development/workflow.json": {
+      "sha256": "df927f73f65e289e53b9fa4fc39e24cb90607d432e34d01061dbcbf41e0b3c47",
+      "agents": {
+        "main": {
+          "reasoning": "high",
+          "permission": "yolo"
+        },
+        "coding": {
+          "reasoning": "high",
+          "permission": "yolo"
+        },
+        "testing": {
+          "reasoning": "high",
+          "permission": "yolo"
+        }
+      }
+    },
+    "example/agent-laboratory/workflow.json": {
+      "sha256": "d7b9972951ecfa1705b4b28566d4316ec3458b1b5d42a54f41c037731a04aae2",
+      "agents": {
+        "main": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "phd": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "postdoc": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "ml_engineer": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "sw_engineer": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "professor": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "code_propose": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "code_execute": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "code_reward": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "code_reflect": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "paper_propose": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "paper_execute": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "paper_reward": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "review_1": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "review_2": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "review_3": {
+          "reasoning": "high",
+          "permission": "workspace"
+        }
+      }
+    },
+    "example/agentrxiv/workflow.json": {
+      "sha256": "56fde0924350e20cba47349212693455208ea4b7e74dae66ef0577f0f315a2b2",
+      "agents": {
+        "main": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "phd": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "postdoc": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "ml_engineer": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "sw_engineer": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "professor": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "code_propose": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "code_execute": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "code_reward": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "code_reflect": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "paper_propose": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "paper_execute": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "paper_reward": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "review_1": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "review_2": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "review_3": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "archive": {
+          "reasoning": "high",
+          "permission": "workspace"
+        }
+      }
+    },
+    "example/aris/workflow.json": {
+      "sha256": "5f1c4550e4178974f16c1edf6d61226810a51836644ef270e7d1ab43a9e2349d",
+      "agents": {
+        "main": {
+          "reasoning": "high",
+          "permission": "compute"
+        },
+        "literature": {
+          "reasoning": "high",
+          "permission": "compute"
+        },
+        "ideas": {
+          "reasoning": "high",
+          "permission": "compute"
+        },
+        "novelty": {
+          "reasoning": "high",
+          "permission": "compute"
+        },
+        "refine": {
+          "reasoning": "high",
+          "permission": "compute"
+        },
+        "bridge": {
+          "reasoning": "high",
+          "permission": "compute"
+        },
+        "research_loop": {
+          "reasoning": "high",
+          "permission": "compute"
+        },
+        "summary": {
+          "reasoning": "high",
+          "permission": "compute"
+        },
+        "paper_plan": {
+          "reasoning": "high",
+          "permission": "compute"
+        },
+        "figures": {
+          "reasoning": "high",
+          "permission": "compute"
+        },
+        "paper_write": {
+          "reasoning": "high",
+          "permission": "compute"
+        },
+        "paper_compile": {
+          "reasoning": "high",
+          "permission": "compute"
+        },
+        "paper_improve": {
+          "reasoning": "high",
+          "permission": "compute"
+        },
+        "paper_assurance": {
+          "reasoning": "high",
+          "permission": "compute"
+        },
+        "reviewer": {
+          "reasoning": "xhigh",
+          "permission": "workspace"
+        },
+        "paper_reviewer": {
+          "reasoning": "xhigh",
+          "permission": "workspace"
+        }
+      }
+    },
+    "example/autoresearch/workflow.json": {
+      "sha256": "f6141f0f83b77826ca3580667fcd209721bb45d651fa1504ed3395df3546d51a",
+      "agents": {
+        "main": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "propose": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "train": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "select": {
+          "reasoning": "high",
+          "permission": "workspace"
+        }
+      }
+    },
+    "example/biomni/workflow.json": {
+      "sha256": "3750ebf89db2e5fa2aa65378704e0b038a0610c9c039aeef59e4312580aef2e1",
+      "agents": {
+        "main": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "retrieval": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "researcher": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "execute": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "critic": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "wetlab": {
+          "reasoning": "high",
+          "permission": "workspace"
+        }
+      }
+    },
+    "example/co-scientist/workflow.json": {
+      "sha256": "bf12ce5caeda05e6a6d2511c5e25a597f1af88c33cb12d26702d187b3d0fc639",
+      "agents": {
+        "main": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "generation": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "reflection": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "proximity": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "ranking": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "evolution": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "meta_review": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "wetlab": {
+          "reasoning": "high",
+          "permission": "workspace"
+        }
+      }
+    },
+    "example/drugevolve/workflow.json": {
+      "sha256": "cd27456803b291bd942f6c7083e82511f455f042cd22978d90c8dd560dfbc1b8",
+      "agents": {
+        "main": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "generator": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "inspector": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "implementer": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "trainer": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "debugger": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "judger": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "analyzer": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "summarizer": {
+          "reasoning": "high",
+          "permission": "workspace"
+        }
+      }
+    },
+    "example/dynamic-research-workflow/workflow.json": {
+      "sha256": "c618c75e879faa6c6fe4bc98f465a642e5eb6fee4f9a94cb8cdc83478773064c",
+      "agents": {
+        "main": {
+          "reasoning": "high",
+          "permission": "yolo"
+        },
+        "idea": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "execution": {
+          "reasoning": "high",
+          "permission": "compute"
+        },
+        "writing": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "review": {
+          "reasoning": "high",
+          "permission": "workspace"
+        }
+      }
+    },
+    "example/funsearch/workflow.json": {
+      "sha256": "ed5b132ec171f4a55a16cce1466509b3805d0ccc2914812b6402bcea9736d5f9",
+      "agents": {
+        "main": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "sample": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "evaluate": {
+          "reasoning": "high",
+          "permission": "workspace"
+        }
+      }
+    },
+    "example/metaharness/workflow.json": {
+      "sha256": "16ccc97a480aef61c7cb423091bea35e7ac808e7c2e2237cae3ca8ead8b04c33",
+      "agents": {
+        "main": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "propose": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "evaluate": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "analyze": {
+          "reasoning": "high",
+          "permission": "workspace"
+        }
+      }
+    },
+    "example/robin/workflow.json": {
+      "sha256": "cfce615e0567d265b06f607578c92cb3e6154c03ea0a5e8d4ee23ce0758d5e01",
+      "agents": {
+        "main": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "assay_queries": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "assay_literature": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "assay_proposals": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "assay_reports": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "assay_rank": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "candidate_queries": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "candidate_literature": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "candidate_proposals": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "candidate_reports": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "candidate_rank": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "analysis": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "consensus": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "interpret": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "followup": {
+          "reasoning": "high",
+          "permission": "workspace"
+        }
+      }
+    },
+    "example/rrsi/workflow.json": {
+      "sha256": "32b25dd78379ec6030c9a085bc40652292dd46941d9a9036bec53e1732c4d40a",
+      "agents": {
+        "main": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "task_setup": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "analyst": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "digester": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "proposer": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "critic": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "measurement": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "selector": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "heldout": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "audit": {
+          "reasoning": "high",
+          "permission": "workspace"
+        }
+      }
+    },
+    "example/sciagents/workflow.json": {
+      "sha256": "9908b7682540975aa4201aae8e006b06261b359fea85369b63e94dec1bb2d998",
+      "agents": {
+        "main": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "planner": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "assistant": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "ontologist": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "scientist": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "hypothesis_agent": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "outcome_agent": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "mechanism_agent": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "design_principles_agent": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "unexpected_properties_agent": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "comparison_agent": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "novelty_agent": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "critic_agent": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "novelty_assistant": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "report": {
+          "reasoning": "high",
+          "permission": "workspace"
+        }
+      }
+    },
+    "example/scientist-two/workflow.json": {
+      "sha256": "8cfb84908555a34661fc97f8adcc822752056a6bbedee888a27ec2f11434b28c",
+      "agents": {
+        "main": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "task_setup": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "limitation_extract": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "limitation_verify": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "seed_generate": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "novelty_check": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "baseline_coding": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "subset_coding": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "subset_critic": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "subset_engineering": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "full_coding": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "full_critic": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "full_engineering": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "spec_filter": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "idea_evolve": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "selector": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "ablation_plan": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "ablation_coding": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "ablation_critic": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "result_comparison": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "draft_outline": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "draft_literature": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "draft_figures": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "draft_sections": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "draft_quality": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "content_refine": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "format_review": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "format_fix": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "review_summary": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "review_literature": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "review_expand": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "review_historian": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "review_baselines": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "novelty_questions": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "soundness_questions": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "novelty_answer": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "soundness_answer": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "peer_review": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "rebuttal_plan": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "rebuttal_coding": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "paper_enhancer": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "meta_review": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "reference_verify": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "method_audit": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "integrity_writer": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "score_reproduce": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "final_spec_audit": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "export": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "draft_quality_merge": {
+          "reasoning": "high",
+          "permission": "workspace"
+        }
+      }
+    },
+    "sdk/examples/default-workflow.json": {
+      "sha256": "c618c75e879faa6c6fe4bc98f465a642e5eb6fee4f9a94cb8cdc83478773064c",
+      "agents": {
+        "main": {
+          "reasoning": "high",
+          "permission": "yolo"
+        },
+        "idea": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "execution": {
+          "reasoning": "high",
+          "permission": "compute"
+        },
+        "writing": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "review": {
+          "reasoning": "high",
+          "permission": "workspace"
+        }
+      }
+    },
+    "sdk/skills/scienceevolve-sdk/assets/workflow.json": {
+      "sha256": "55f028213fb2a21774d7f7f637ead2d3726a65f97e858a7872b537700a10ce9e",
+      "agents": {
+        "main": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "coding": {
+          "reasoning": "high",
+          "permission": "workspace"
+        },
+        "testing": {
+          "reasoning": "high",
+          "permission": "workspace"
+        }
+      }
+    }
+  }
+}

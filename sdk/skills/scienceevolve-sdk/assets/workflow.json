@@ -1,0 +1,126 @@
+{
+  "agents": {
+    "main": {
+      "model": "REPLACE_WITH_AVAILABLE_MODEL",
+      "harness": "codex",
+      "proxy": {
+        "mode": "direct"
+      },
+      "skills": [],
+      "autoSkills": [],
+      "mcpServers": [],
+      "permission": "workspace",
+      "webSearch": false,
+      "sessionPersistence": true,
+      "decisionBy": "main",
+      "instructions": "协调故障恢复和用户补充输入，依据证据交 coding 修复或 testing 验收；不绕过 testing 的验收职责。尊重 workspace 已有改动和需求中的修改范围。",
+      "gatewayReasoningOption": "high"
+    },
+    "coding": {
+      "model": "REPLACE_WITH_AVAILABLE_MODEL",
+      "harness": "codex",
+      "proxy": {
+        "mode": "direct"
+      },
+      "skills": [],
+      "autoSkills": [],
+      "mcpServers": [],
+      "permission": "workspace",
+      "webSearch": false,
+      "sessionPersistence": false,
+      "decisionBy": "main",
+      "instructions": "读取需求和现有项目，实现允许范围内的改动，运行相关检查，记录改动与证据路径后交 testing；收到失败反馈后修复，不降低验收标准。",
+      "gatewayReasoningOption": "high"
+    },
+    "testing": {
+      "model": "REPLACE_WITH_AVAILABLE_MODEL",
+      "harness": "codex",
+      "proxy": {
+        "mode": "direct"
+      },
+      "skills": [],
+      "autoSkills": [],
+      "mcpServers": [],
+      "permission": "workspace",
+      "webSearch": false,
+      "sessionPersistence": false,
+      "decisionBy": "main",
+      "instructions": "独立执行需求中的验收与相关回归，保存命令、退出码、日志和报告。全部标准有实际证据支持才 complete_project；否则给出失败分析交 coding。达到需求中的尝试或预算上限时报告阻断，不能假报通过。",
+      "gatewayReasoningOption": "high"
+    }
+  },
+  "orchestration": {
+    "agents": [
+      {
+        "name": "main",
+        "template": "main",
+        "description": "异常恢复与用户输入协调，正常循环不调用"
+      },
+      {
+        "name": "coding",
+        "template": "general",
+        "description": "按需求设计软件、实现代码并修复测试反馈"
+      },
+      {
+        "name": "testing",
+        "template": "general",
+        "description": "独立对照测试用例，全部通过后直接结束"
+      }
+    ],
+    "input": {
+      "source": "input",
+      "target": "coding"
+    },
+    "routes": {
+      "main": [
+        {
+          "target": "coding",
+          "kind": "weak"
+        },
+        {
+          "target": "testing",
+          "kind": "weak"
+        }
+      ],
+      "coding": [
+        {
+          "target": "testing",
+          "kind": "strong"
+        }
+      ],
+      "testing": [
+        {
+          "target": "coding",
+          "kind": "weak"
+        },
+        {
+          "target": "finish",
+          "kind": "weak"
+        }
+      ]
+    },
+    "decisionPlans": {
+      "main": "仅在异常恢复或用户补充输入时协调，保持 testing 的最终验收职责。",
+      "coding": "完成本轮后交 testing 独立验收。",
+      "testing": "按当前代码的真实执行结果判断：全部用例通过则 complete_project；否则交接失败分析，SDK 直接返回 coding。"
+    },
+    "allowUserIntervention": true,
+    "allowMainReconfiguration": false,
+    "termination": {
+      "agent": "testing",
+      "condition": "需求中的交付与验收标准全部满足；相关检查在当前版本上实际执行并通过，无未解决的必测项或环境阻断，证据可追溯。",
+      "decisionBy": "main",
+      "automatic": true
+    },
+    "resultFormat": {
+      "presets": [
+        "代码",
+        "测试报告"
+      ],
+      "custom": "在 workspace 中保留交付代码及使用说明，在 development/ 下保存测试日志和 final.md。"
+    }
+  },
+  "git": {
+    "enabled": false
+  }
+}

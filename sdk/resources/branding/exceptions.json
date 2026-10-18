@@ -1,0 +1,697 @@
+{
+  "schemaVersion": 1,
+  "description": "Reviewed exact historical evidence, reproducible provenance, naming rules and regression fixtures. No directory-level exemptions; object fields are pinned by canonical JSON digest and exact aggregate occurrence count.",
+  "exceptions": [
+    {
+      "id": "baseline-evidence-b9c62f9e0da361e8",
+      "path": "docs/renaming/baseline-inventory.json",
+      "selector": {
+        "kind": "json-pointer",
+        "pointer": "/candidates"
+      },
+      "contentSha256": "523ce6f4090d4eae363804738ea1986021f68ab93613a548892ea255016fa886",
+      "expectedMatches": 4456,
+      "category": "baseline-evidence",
+      "reason": "Immutable pre-refactor inventory of original paths, retired tokens, dispositions and Git-byte normalization; current after-values are separately validated by the refactor checks."
+    },
+    {
+      "id": "baseline-evidence-502c7acb54f9d3fd",
+      "path": "docs/renaming/baseline-inventory.json",
+      "selector": {
+        "kind": "json-pointer",
+        "pointer": "/movedRoots"
+      },
+      "contentSha256": "a83d66defe9793c14f853e00bda7d9952ae3962d2c6eb4846b8c35db7b1337ab",
+      "expectedMatches": 15,
+      "category": "baseline-evidence",
+      "reason": "Immutable pre-refactor inventory of original paths, retired tokens, dispositions and Git-byte normalization; current after-values are separately validated by the refactor checks."
+    },
+    {
+      "id": "baseline-evidence-e167b6592463b45d",
+      "path": "docs/renaming/baseline-inventory.json",
+      "selector": {
+        "kind": "json-pointer",
+        "pointer": "/pinnedCheckoutNormalization"
+      },
+      "contentSha256": "f9a1d06cd8889783f1eb275823ed2e4da5e2a6bf820a9448fce2218ec5f4edad",
+      "expectedMatches": 798,
+      "category": "baseline-evidence",
+      "reason": "Immutable pre-refactor inventory of original paths, retired tokens, dispositions and Git-byte normalization; current after-values are separately validated by the refactor checks."
+    },
+    {
+      "id": "asset-evidence-24b32aecfb5ea91b",
+      "path": "docs/renaming/binary-inventory.json",
+      "selector": {
+        "kind": "json-pointer",
+        "pointer": "/files"
+      },
+      "contentSha256": "1875962771bb5dc09bda432845d2499997af4538807a8801dfb0c92dd0e3e0ff",
+      "expectedMatches": 34,
+      "category": "asset-evidence",
+      "reason": "Immutable source-asset inventory retains original wrapper paths as attribution evidence alongside current paths and exact byte hashes."
+    },
+    {
+      "id": "historical-report-c55c8aa12b00620a",
+      "path": "docs/sdk/main-sync-20261014.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "42d584bdc60ca8223bafa9c8e1e5b92adbd18743a33eccf1d79d88a2720cdc2c"
+      },
+      "contentSha256": "42d584bdc60ca8223bafa9c8e1e5b92adbd18743a33eccf1d79d88a2720cdc2c",
+      "expectedMatches": 1,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-report-110f5e93fe23d872",
+      "path": "docs/sdk/real-acceptance-20260923.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "adb541af7e0736079a5ea5238633f4e280aa82276885114d11f397f6aa456e20"
+      },
+      "contentSha256": "adb541af7e0736079a5ea5238633f4e280aa82276885114d11f397f6aa456e20",
+      "expectedMatches": 2,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-report-d4ff7f0b6b5cdaac",
+      "path": "docs/sdk/real-model-acceptance-20260921.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "562946c551dd37db1345c89f6dd87cad049233c090d2501fb72abbcbf6cde10c"
+      },
+      "contentSha256": "562946c551dd37db1345c89f6dd87cad049233c090d2501fb72abbcbf6cde10c",
+      "expectedMatches": 1,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-report-46021ee798b3346a",
+      "path": "docs/sdk/real-model-acceptance-20260921.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "5f1efa441a77fd900baf373500b6ea6ef3ad931e55b486f1f0d3cfec71ab75bf"
+      },
+      "contentSha256": "5f1efa441a77fd900baf373500b6ea6ef3ad931e55b486f1f0d3cfec71ab75bf",
+      "expectedMatches": 1,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-report-9d1e6891ba27880d",
+      "path": "docs/sdk/real-model-acceptance-20260921.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "8c9d5a040850c659cc0d7a956b959817849b02bc6234a00f32d94a8135c16eda"
+      },
+      "contentSha256": "8c9d5a040850c659cc0d7a956b959817849b02bc6234a00f32d94a8135c16eda",
+      "expectedMatches": 1,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-report-6f626807457d18e6",
+      "path": "docs/sdk/real-model-acceptance-20260921.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "a6ea2c0cc258fe0195296e043f09031ce816fac1e4965ba99ad18920e8bdd65b"
+      },
+      "contentSha256": "a6ea2c0cc258fe0195296e043f09031ce816fac1e4965ba99ad18920e8bdd65b",
+      "expectedMatches": 1,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-report-0a61bb87244cff11",
+      "path": "docs/sdk/real-model-acceptance-20260921.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "aac69bfc1311db7526a39f09c2478fe5e6713fda599e4da9193ef4b666a6f3fb"
+      },
+      "contentSha256": "aac69bfc1311db7526a39f09c2478fe5e6713fda599e4da9193ef4b666a6f3fb",
+      "expectedMatches": 1,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-report-7357657d7e971406",
+      "path": "docs/sdk/real-model-acceptance-20260921.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "ab3188a610c987d7c7ebb4a7ac6958c54b1708a8ddb65fd3fb51193ff76a4d35"
+      },
+      "contentSha256": "ab3188a610c987d7c7ebb4a7ac6958c54b1708a8ddb65fd3fb51193ff76a4d35",
+      "expectedMatches": 1,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-report-c8a2633249e2cb0c",
+      "path": "docs/sdk/real-model-acceptance-20260921.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "adbdf2591262e4601749ef7fd13cdfdd961e326898da042c7397317667189b97"
+      },
+      "contentSha256": "adbdf2591262e4601749ef7fd13cdfdd961e326898da042c7397317667189b97",
+      "expectedMatches": 1,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-report-9218b082c88fd621",
+      "path": "docs/sdk/real-model-acceptance-20260921.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "bcf86e2e55148ab5a5c806bf7a5b3f2493c2929596a48b87adfd37785d8c8fab"
+      },
+      "contentSha256": "bcf86e2e55148ab5a5c806bf7a5b3f2493c2929596a48b87adfd37785d8c8fab",
+      "expectedMatches": 1,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-report-3ef342fb8731a50b",
+      "path": "docs/sdk/real-model-acceptance-20260921.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "febfc8c6eaeb41b13c4d875d5255ec50c48ec71603c47b63bbc49cd8da45b664"
+      },
+      "contentSha256": "febfc8c6eaeb41b13c4d875d5255ec50c48ec71603c47b63bbc49cd8da45b664",
+      "expectedMatches": 1,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-result-3e449a1244e49aad",
+      "path": "docs/workflows/history/validation-results-20261014.json",
+      "selector": {
+        "kind": "json-pointer",
+        "pointer": "/validations/0/cliEvent/git/repositoryName"
+      },
+      "contentSha256": "13e0c615b7ed0876f84b5559f7fb8050ec120d3b7bfbf57c436e3da34507146d",
+      "expectedMatches": 1,
+      "category": "historical-result",
+      "reason": "Repository name recorded by the actual 2026-10-14 validation event; renaming it would falsify the historical result."
+    },
+    {
+      "id": "historical-result-33d8fbcd5ba125d6",
+      "path": "docs/workflows/history/validation-results-20261014.json",
+      "selector": {
+        "kind": "json-pointer",
+        "pointer": "/validations/1/cliEvent/git/repositoryName"
+      },
+      "contentSha256": "df23f589993ac2e459f292a547896f3c8bb48a3f137ba55c2f2377754042b521",
+      "expectedMatches": 1,
+      "category": "historical-result",
+      "reason": "Repository name recorded by the actual 2026-10-14 validation event; renaming it would falsify the historical result."
+    },
+    {
+      "id": "historical-result-70505b3f8e90728b",
+      "path": "docs/workflows/history/validation-results-20261014.json",
+      "selector": {
+        "kind": "json-pointer",
+        "pointer": "/validations/2/cliEvent/git/repositoryName"
+      },
+      "contentSha256": "d35325666c828466d82e57f27cf73bc3552e56cd74375a0c07063be19c4ee887",
+      "expectedMatches": 1,
+      "category": "historical-result",
+      "reason": "Repository name recorded by the actual 2026-10-14 validation event; renaming it would falsify the historical result."
+    },
+    {
+      "id": "historical-result-6406aab605d14239",
+      "path": "docs/workflows/history/validation-results-20261014.json",
+      "selector": {
+        "kind": "json-pointer",
+        "pointer": "/validations/3/cliEvent/git/repositoryName"
+      },
+      "contentSha256": "8b6149ad53de86420794c08efed344192ba36a9f7adb5059ad8736768c8c7c13",
+      "expectedMatches": 1,
+      "category": "historical-result",
+      "reason": "Repository name recorded by the actual 2026-10-14 validation event; renaming it would falsify the historical result."
+    },
+    {
+      "id": "historical-result-a4da4d71a9f309f8",
+      "path": "docs/workflows/history/validation-results-20261014.json",
+      "selector": {
+        "kind": "json-pointer",
+        "pointer": "/validations/4/cliEvent/git/repositoryName"
+      },
+      "contentSha256": "f3cc7ac6d1b779f8a2b296a36c6f4154a43b89f2095f27c5163c1de3985e53bf",
+      "expectedMatches": 1,
+      "category": "historical-result",
+      "reason": "Repository name recorded by the actual 2026-10-14 validation event; renaming it would falsify the historical result."
+    },
+    {
+      "id": "historical-result-9fcf9f97dd00643f",
+      "path": "docs/workflows/history/validation-results-20261014.json",
+      "selector": {
+        "kind": "json-pointer",
+        "pointer": "/validations/5/cliEvent/git/repositoryName"
+      },
+      "contentSha256": "0bfa58a30ed900aec9d2775fc61b8c62dc2f996f5ce2360910813ffcfaf2fe0c",
+      "expectedMatches": 1,
+      "category": "historical-result",
+      "reason": "Repository name recorded by the actual 2026-10-14 validation event; renaming it would falsify the historical result."
+    },
+    {
+      "id": "historical-result-e9f68ab0ba1c6bfd",
+      "path": "docs/workflows/history/validation-results-20261014.json",
+      "selector": {
+        "kind": "json-pointer",
+        "pointer": "/validations/6/cliEvent/git/repositoryName"
+      },
+      "contentSha256": "541a5ac4caa81b032b1704d689a34dbd422e9f5a8ed31eaa4762680b6e25f86e",
+      "expectedMatches": 1,
+      "category": "historical-result",
+      "reason": "Repository name recorded by the actual 2026-10-14 validation event; renaming it would falsify the historical result."
+    },
+    {
+      "id": "historical-report-b581dcf79a04249c",
+      "path": "docs/workflows/method-review-20261014.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "40139fb5ebb0c8f7edb7c99d7c40231b25b98accab4c9fd720d7dc4df124fdfe"
+      },
+      "contentSha256": "40139fb5ebb0c8f7edb7c99d7c40231b25b98accab4c9fd720d7dc4df124fdfe",
+      "expectedMatches": 1,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-report-0132ea8d38439bc1",
+      "path": "sdk/docs/config-field-audit.md",
+      "packagePath": "docs/config-field-audit.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "799c8e4c159e7db320d8468574c242695c3d69a021ac1ff7a7b1456192f20109"
+      },
+      "contentSha256": "799c8e4c159e7db320d8468574c242695c3d69a021ac1ff7a7b1456192f20109",
+      "expectedMatches": 1,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-report-30c215e28be8635a",
+      "path": "sdk/docs/config-field-audit.md",
+      "packagePath": "docs/config-field-audit.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "fcde9c6cbe40c37b1890d2081cb8d12b5a8b5309e15f415dd904d324a93f403b"
+      },
+      "contentSha256": "fcde9c6cbe40c37b1890d2081cb8d12b5a8b5309e15f415dd904d324a93f403b",
+      "expectedMatches": 1,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-report-0e1a7fd1e451c61a",
+      "path": "sdk/docs/main-cli-test-report-20261005.md",
+      "packagePath": "docs/main-cli-test-report-20261005.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "6010c2c0c9be4fabd9c5b2b1a2432f0b4d31ed7edf9bf4ab6425d4f6ec070dbd"
+      },
+      "contentSha256": "6010c2c0c9be4fabd9c5b2b1a2432f0b4d31ed7edf9bf4ab6425d4f6ec070dbd",
+      "expectedMatches": 1,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-report-6ca81b2d914f9849",
+      "path": "sdk/docs/main-cli-test-report-20261005.md",
+      "packagePath": "docs/main-cli-test-report-20261005.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "b09fdec671789240274d32b512596b332d798d4d7ee373886f04a6998672cb7a"
+      },
+      "contentSha256": "b09fdec671789240274d32b512596b332d798d4d7ee373886f04a6998672cb7a",
+      "expectedMatches": 1,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-report-0cbae37cb969db6c",
+      "path": "sdk/docs/main-oauth-git-evolver-default-test-report-20261005.md",
+      "packagePath": "docs/main-oauth-git-evolver-default-test-report-20261005.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "2ec68c40c782a4555ca3c661cc13fe040f4ef40a80b011561dd10669f267d3d1"
+      },
+      "contentSha256": "2ec68c40c782a4555ca3c661cc13fe040f4ef40a80b011561dd10669f267d3d1",
+      "expectedMatches": 1,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-report-2fd8fb8a0a2bf71b",
+      "path": "sdk/docs/main-oauth-git-evolver-default-test-report-20261005.md",
+      "packagePath": "docs/main-oauth-git-evolver-default-test-report-20261005.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "30539c80347c7084553f91811dbd44527c9677d6638a167aa19d89a6d038837b"
+      },
+      "contentSha256": "30539c80347c7084553f91811dbd44527c9677d6638a167aa19d89a6d038837b",
+      "expectedMatches": 1,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-report-7dfdf38763be7a7b",
+      "path": "sdk/docs/main-oauth-git-evolver-default-test-report-20261005.md",
+      "packagePath": "docs/main-oauth-git-evolver-default-test-report-20261005.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "7a0d07bca73c1f792fb87b0ee2864c9249441853f80469ad024c2d9060424780"
+      },
+      "contentSha256": "7a0d07bca73c1f792fb87b0ee2864c9249441853f80469ad024c2d9060424780",
+      "expectedMatches": 2,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-report-959ef94eab95de2f",
+      "path": "sdk/docs/main-oauth-git-evolver-default-test-report-20261005.md",
+      "packagePath": "docs/main-oauth-git-evolver-default-test-report-20261005.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "a2b46501faaa724ca3b48d1dc862f536054ec08a64b54b8839beda58c2682855"
+      },
+      "contentSha256": "a2b46501faaa724ca3b48d1dc862f536054ec08a64b54b8839beda58c2682855",
+      "expectedMatches": 2,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-report-faf0a341bd742197",
+      "path": "sdk/docs/main-profile-loop-test-report-20261005.md",
+      "packagePath": "docs/main-profile-loop-test-report-20261005.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "1f1d6e7f032dede4d9186be65adbb69de85299185ed813c1c396378ae72109e1"
+      },
+      "contentSha256": "1f1d6e7f032dede4d9186be65adbb69de85299185ed813c1c396378ae72109e1",
+      "expectedMatches": 1,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-report-cdde3500eef39a78",
+      "path": "sdk/docs/main-sdk-api-test-report-20261005.md",
+      "packagePath": "docs/main-sdk-api-test-report-20261005.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "b9eb29294c71af110044b4f37eb299009f32b27e6c3061cb8fa8714f8074b5ba"
+      },
+      "contentSha256": "b9eb29294c71af110044b4f37eb299009f32b27e6c3061cb8fa8714f8074b5ba",
+      "expectedMatches": 1,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "historical-report-20910af2940efb1b",
+      "path": "sdk/docs/workspace-main-acceptance-20261006-zh.md",
+      "packagePath": "docs/workspace-main-acceptance-20261006-zh.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "ffc81fc0671923c239b06501e34a555627e198032f209726575e8cfc27b3a350"
+      },
+      "contentSha256": "ffc81fc0671923c239b06501e34a555627e198032f209726575e8cfc27b3a350",
+      "expectedMatches": 1,
+      "category": "historical-report",
+      "reason": "Exact dated audit or acceptance evidence retains the package, API, environment, private repository or temporary consumer identifier actually used at that time; the report identifies itself as historical."
+    },
+    {
+      "id": "naming-rule-4c79d0d36e587a88",
+      "path": "sdk/scripts/check-branding.mjs",
+      "selector": {
+        "kind": "line",
+        "sha256": "4c7f0ac54ead8618dbb1833defe088912ba8bf1c7f5c49802fd4751d911b0f5b"
+      },
+      "contentSha256": "4c7f0ac54ead8618dbb1833defe088912ba8bf1c7f5c49802fd4751d911b0f5b",
+      "expectedMatches": 1,
+      "category": "naming-rule",
+      "reason": "Exact retired-name conversion/scanning rule or named regression fixture; preserving the literal proves detection, conversion priority and reversible upstream provenance."
+    },
+    {
+      "id": "naming-rule-171a4cc5954f6a7d",
+      "path": "sdk/scripts/scienceevolve-branding.mjs",
+      "selector": {
+        "kind": "line",
+        "sha256": "11120543c0183b3c76d5c438e9d4bbfbda0f848c57824c720d6344f350aad9fc"
+      },
+      "contentSha256": "11120543c0183b3c76d5c438e9d4bbfbda0f848c57824c720d6344f350aad9fc",
+      "expectedMatches": 13,
+      "category": "naming-rule",
+      "reason": "Exact retired-name conversion/scanning rule or named regression fixture; preserving the literal proves detection, conversion priority and reversible upstream provenance."
+    },
+    {
+      "id": "naming-rule-4705c21db337795b",
+      "path": "sdk/scripts/scienceevolve-branding.mjs",
+      "selector": {
+        "kind": "line",
+        "sha256": "1936c19d1a790df18b0401aba07f4a16fd759c544c6243dcd20f2192318d6fa9"
+      },
+      "contentSha256": "1936c19d1a790df18b0401aba07f4a16fd759c544c6243dcd20f2192318d6fa9",
+      "expectedMatches": 2,
+      "category": "naming-rule",
+      "reason": "Exact retired-name conversion/scanning rule or named regression fixture; preserving the literal proves detection, conversion priority and reversible upstream provenance."
+    },
+    {
+      "id": "naming-rule-49f048a046979e3c",
+      "path": "sdk/scripts/scienceevolve-branding.mjs",
+      "selector": {
+        "kind": "line",
+        "sha256": "3135fef9bb184e03aa571e4ec2fb5d6886583426ba206c0e8ce23f48ba7ac9c1"
+      },
+      "contentSha256": "3135fef9bb184e03aa571e4ec2fb5d6886583426ba206c0e8ce23f48ba7ac9c1",
+      "expectedMatches": 2,
+      "category": "naming-rule",
+      "reason": "Exact retired-name conversion/scanning rule or named regression fixture; preserving the literal proves detection, conversion priority and reversible upstream provenance."
+    },
+    {
+      "id": "naming-rule-fc69d11b93a3d677",
+      "path": "sdk/scripts/scienceevolve-branding.mjs",
+      "selector": {
+        "kind": "line",
+        "sha256": "3167924dabb61cdf719c4165f217d2ef72b10148bcf59b18a8b4c16fa7fbc8e8"
+      },
+      "contentSha256": "3167924dabb61cdf719c4165f217d2ef72b10148bcf59b18a8b4c16fa7fbc8e8",
+      "expectedMatches": 2,
+      "category": "naming-rule",
+      "reason": "Exact retired-name conversion/scanning rule or named regression fixture; preserving the literal proves detection, conversion priority and reversible upstream provenance."
+    },
+    {
+      "id": "naming-rule-44cc7c6711972fb7",
+      "path": "sdk/scripts/scienceevolve-branding.mjs",
+      "selector": {
+        "kind": "line",
+        "sha256": "8d90c3b02d303f849047c4a68ad043b662ad5eebc29adab8d5493489f21d4044"
+      },
+      "contentSha256": "8d90c3b02d303f849047c4a68ad043b662ad5eebc29adab8d5493489f21d4044",
+      "expectedMatches": 2,
+      "category": "naming-rule",
+      "reason": "Exact retired-name conversion/scanning rule or named regression fixture; preserving the literal proves detection, conversion priority and reversible upstream provenance."
+    },
+    {
+      "id": "naming-rule-7691de33c0b5f91e",
+      "path": "sdk/scripts/scienceevolve-branding.mjs",
+      "selector": {
+        "kind": "line",
+        "sha256": "a26ad3673897c4e6a364f190b80865a49d9248552789b972cc0ca66556c78943"
+      },
+      "contentSha256": "a26ad3673897c4e6a364f190b80865a49d9248552789b972cc0ca66556c78943",
+      "expectedMatches": 2,
+      "category": "naming-rule",
+      "reason": "Exact retired-name conversion/scanning rule or named regression fixture; preserving the literal proves detection, conversion priority and reversible upstream provenance."
+    },
+    {
+      "id": "naming-rule-5ab6dda2eb8d1404",
+      "path": "sdk/scripts/scienceevolve-branding.mjs",
+      "selector": {
+        "kind": "line",
+        "sha256": "afdd85a3c38eff5f0dfcb66ae2df5d4c939aa26779169cb59ccac9e2dc2e561c"
+      },
+      "contentSha256": "afdd85a3c38eff5f0dfcb66ae2df5d4c939aa26779169cb59ccac9e2dc2e561c",
+      "expectedMatches": 2,
+      "category": "naming-rule",
+      "reason": "Exact retired-name conversion/scanning rule or named regression fixture; preserving the literal proves detection, conversion priority and reversible upstream provenance."
+    },
+    {
+      "id": "regression-fixture-aa4241b8740d959e",
+      "path": "sdk/tests/branding-gate.test.ts",
+      "selector": {
+        "kind": "line",
+        "sha256": "e63ad30aa7fc1fd545c75a3d1db4f3f422d6ca753560e03905a994899d41eeb6"
+      },
+      "contentSha256": "e63ad30aa7fc1fd545c75a3d1db4f3f422d6ca753560e03905a994899d41eeb6",
+      "expectedMatches": 1,
+      "category": "regression-fixture",
+      "reason": "Exact retired-name conversion/scanning rule or named regression fixture; preserving the literal proves detection, conversion priority and reversible upstream provenance."
+    },
+    {
+      "id": "regression-fixture-0a2a35e6b26e3709",
+      "path": "sdk/tests/scienceevolve-branding.test.ts",
+      "selector": {
+        "kind": "line",
+        "sha256": "1f5de9499687e87d3399bcaac5dbc4f3915a14fa88b2ce54c0cdd80d36d61472"
+      },
+      "contentSha256": "1f5de9499687e87d3399bcaac5dbc4f3915a14fa88b2ce54c0cdd80d36d61472",
+      "expectedMatches": 1,
+      "category": "regression-fixture",
+      "reason": "Exact retired-name conversion/scanning rule or named regression fixture; preserving the literal proves detection, conversion priority and reversible upstream provenance."
+    },
+    {
+      "id": "regression-fixture-e02c8cc729756b43",
+      "path": "sdk/tests/scienceevolve-branding.test.ts",
+      "selector": {
+        "kind": "line",
+        "sha256": "38bb18bac18d220511049257c59cff0805a5fb8bead67eb46e769236133bc940"
+      },
+      "contentSha256": "38bb18bac18d220511049257c59cff0805a5fb8bead67eb46e769236133bc940",
+      "expectedMatches": 3,
+      "category": "regression-fixture",
+      "reason": "Exact retired-name conversion/scanning rule or named regression fixture; preserving the literal proves detection, conversion priority and reversible upstream provenance."
+    },
+    {
+      "id": "regression-fixture-04081c79467c72ab",
+      "path": "sdk/tests/scienceevolve-branding.test.ts",
+      "selector": {
+        "kind": "line",
+        "sha256": "4524fb0f9b525a81656af3cc6e5125d52dd1036299d26a64639a51da0a3371b3"
+      },
+      "contentSha256": "4524fb0f9b525a81656af3cc6e5125d52dd1036299d26a64639a51da0a3371b3",
+      "expectedMatches": 1,
+      "category": "regression-fixture",
+      "reason": "Exact retired-name conversion/scanning rule or named regression fixture; preserving the literal proves detection, conversion priority and reversible upstream provenance."
+    },
+    {
+      "id": "regression-fixture-73c156140b360d1d",
+      "path": "sdk/tests/scienceevolve-branding.test.ts",
+      "selector": {
+        "kind": "line",
+        "sha256": "76da20af85487a7778881180c31e55d9d04a74ad9a811019af64e71b8878a976"
+      },
+      "contentSha256": "76da20af85487a7778881180c31e55d9d04a74ad9a811019af64e71b8878a976",
+      "expectedMatches": 14,
+      "category": "regression-fixture",
+      "reason": "Exact retired-name conversion/scanning rule or named regression fixture; preserving the literal proves detection, conversion priority and reversible upstream provenance."
+    },
+    {
+      "id": "migration-map-7453c79d20be1cd9",
+      "path": "sdk/docs/naming-migration.md",
+      "packagePath": "docs/naming-migration.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "7453c79d20be1cd9abb3f132b8ff3399756f99ba349dacc41c09e37bf8d8058c"
+      },
+      "contentSha256": "7453c79d20be1cd9abb3f132b8ff3399756f99ba349dacc41c09e37bf8d8058c",
+      "expectedMatches": 1,
+      "category": "migration-rule",
+      "reason": "Exact previous-to-current naming table row is required to migrate a separate configuration copy; it documents the retired identifier rather than instructing current use."
+    },
+    {
+      "id": "migration-map-0eb61df47d11af9e",
+      "path": "sdk/docs/naming-migration.md",
+      "packagePath": "docs/naming-migration.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "9b9f3064fc607d1b5e4def49fecc14fbca091ca6c7afa8fdcb5382b18be1b8fc"
+      },
+      "contentSha256": "9b9f3064fc607d1b5e4def49fecc14fbca091ca6c7afa8fdcb5382b18be1b8fc",
+      "expectedMatches": 1,
+      "category": "migration-rule",
+      "reason": "Exact previous-to-current naming table row is required to migrate a separate configuration copy; it documents the retired identifier rather than instructing current use."
+    },
+    {
+      "id": "migration-map-67898c6e53d78ec0",
+      "path": "sdk/docs/naming-migration.md",
+      "packagePath": "docs/naming-migration.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "67898c6e53d78ec014e6a7380a8e4a61bd46fc992f9005dc6b5838e7b42fae9d"
+      },
+      "contentSha256": "67898c6e53d78ec014e6a7380a8e4a61bd46fc992f9005dc6b5838e7b42fae9d",
+      "expectedMatches": 1,
+      "category": "migration-rule",
+      "reason": "Exact previous-to-current naming table row is required to migrate a separate configuration copy; it documents the retired identifier rather than instructing current use."
+    },
+    {
+      "id": "migration-map-cb586c99ae414735",
+      "path": "sdk/docs/naming-migration.md",
+      "packagePath": "docs/naming-migration.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "cb586c99ae414735d7d5aa4cff925a111e11d150767139b7b2e7820542a9869f"
+      },
+      "contentSha256": "cb586c99ae414735d7d5aa4cff925a111e11d150767139b7b2e7820542a9869f",
+      "expectedMatches": 1,
+      "category": "migration-rule",
+      "reason": "Exact previous-to-current naming table row is required to migrate a separate configuration copy; it documents the retired identifier rather than instructing current use."
+    },
+    {
+      "id": "migration-map-d4bf9aaffaab73f3",
+      "path": "sdk/docs/naming-migration.md",
+      "packagePath": "docs/naming-migration.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "d4bf9aaffaab73f31905289029bd80164271ae489ece4925bc539b01f5597162"
+      },
+      "contentSha256": "d4bf9aaffaab73f31905289029bd80164271ae489ece4925bc539b01f5597162",
+      "expectedMatches": 1,
+      "category": "migration-rule",
+      "reason": "Exact previous-to-current naming table row is required to migrate a separate configuration copy; it documents the retired identifier rather than instructing current use."
+    },
+    {
+      "id": "migration-map-fa5ad2e56987b7f1",
+      "path": "sdk/docs/naming-migration.md",
+      "packagePath": "docs/naming-migration.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "fa5ad2e56987b7f1d62c944ce50caa9b574091b6c24c1783a7d22f3c5edbb48c"
+      },
+      "contentSha256": "fa5ad2e56987b7f1d62c944ce50caa9b574091b6c24c1783a7d22f3c5edbb48c",
+      "expectedMatches": 1,
+      "category": "migration-rule",
+      "reason": "Exact previous-to-current naming table row is required to migrate a separate configuration copy; it documents the retired identifier rather than instructing current use."
+    },
+    {
+      "id": "migration-map-40099d99f444ec5b",
+      "path": "sdk/docs/naming-migration.md",
+      "packagePath": "docs/naming-migration.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "40099d99f444ec5b4f8888da15e0259c5b7c863a06f7a2babb68fa5533297d85"
+      },
+      "contentSha256": "40099d99f444ec5b4f8888da15e0259c5b7c863a06f7a2babb68fa5533297d85",
+      "expectedMatches": 1,
+      "category": "migration-rule",
+      "reason": "Exact previous-to-current naming table row is required to migrate a separate configuration copy; it documents the retired identifier rather than instructing current use."
+    },
+    {
+      "id": "verified-source-url-ca5d073eb3e7f4ae",
+      "path": "sdk/docs/sdk-update-guide-20261005-zh.md",
+      "packagePath": "docs/sdk-update-guide-20261005-zh.md",
+      "selector": {
+        "kind": "line",
+        "sha256": "682cc6c41a5a3fec06edf0bce92fd6d4a1908632ef1887fc5219464407cb8970"
+      },
+      "contentSha256": "682cc6c41a5a3fec06edf0bce92fd6d4a1908632ef1887fc5219464407cb8970",
+      "expectedMatches": 1,
+      "category": "verified-source-reference",
+      "reason": "Exact source repository URL retains the real existing repository address; git ls-remote verified the SDK source branch at 4160a2cf0259b2a1ed9dc4eb36bc0484d2527a42. Replacing it with a new unverified repository name would invent a broken navigation target."
+    },
+    {
+      "id": "example-semantic-reversible-naming-proof",
+      "path": "sdk/tests/fixtures/example-migration-branding.json",
+      "selector": {
+        "kind": "json-pointer",
+        "pointer": "/workflows"
+      },
+      "contentSha256": "5f5ae73d7f9814bf26fda929b22f2d9de30d88e64f51884d10d6ee380ce0d6bf",
+      "expectedMatches": 282,
+      "category": "reversible-provenance",
+      "reason": "Exact original naming edits reverse canonical workflow semantics to every immutable pre-migration digest; original semantic hashes and all non-naming prompt/configuration bytes remain protected."
+    }
+  ]
+}

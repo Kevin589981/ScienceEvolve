@@ -1,0 +1,39 @@
+{
+  "git": { "enabled": true, "repositoryName": "scienceevolve-sdk-research", "repositoryVisibility": "private" },
+  "agents": {
+    "main": { "harness": "codex", "model": "replace-with-your-model", "skills": [], "autoSkills": [] },
+    "execution": { "harness": "codex", "model": "replace-with-your-model", "skills": [], "autoSkills": [] },
+    "review": { "harness": "codex", "model": "replace-with-your-model", "skills": [], "autoSkills": [] }
+  },
+  "orchestration": {
+    "schemaVersion": 3,
+    "agents": [
+      { "name": "main", "template": "main" },
+      { "name": "execution", "template": "execution" },
+      { "name": "review", "template": "review" }
+    ],
+    "collaborations": [{ "id": "research", "displayName": "Research", "memberAgentIds": [], "renamePolicy": "editable" }],
+    "scopedWorkflow": {
+      "schemaVersion": 1,
+      "rootAgentIds": ["main"],
+      "groups": [{
+        "id": "research", "leaderAgentId": "main", "allowLeaderReconfiguration": false,
+        "workflow": {
+          "nodes": [
+            { "kind": "agent", "nodeId": "execute", "agentId": "execution" },
+            { "kind": "agent", "nodeId": "audit", "agentId": "review" }
+          ],
+          "input": { "source": "input", "edges": [{ "kind": "parallel", "target": "execute" }] },
+          "routes": { "execute": [{ "kind": "strong", "target": "audit" }], "audit": [{ "kind": "strong", "target": "finish" }] }
+        }
+      }]
+    },
+    "input": { "source": "input", "target": "research" },
+    "routes": { "main": [], "research": [{ "kind": "weak", "target": "finish" }] },
+    "decisionPlans": { "research": "Main must inspect the merged delivery and acceptance evidence before completing the project." },
+    "allowUserIntervention": true,
+    "allowMainReconfiguration": false,
+    "termination": { "agent": "research", "condition": "Implementation and independent review are merged with verifiable acceptance evidence.", "decisionBy": "main", "automatic": false },
+    "resultFormat": { "presets": ["code", "markdown"], "custom": "Include a reproducible verification record." }
+  }
+}

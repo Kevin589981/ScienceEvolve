@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "checkpoint": "05d84e8870f0926157883f7a7b49279e53c623df",
+  "manifestCount": 12,
+  "entryCount": 836,
+  "missingCount": 0,
+  "missing": [],
+  "scope": "Full source-delivery inventory: all 1996 original paths and 78 original executable Git modes, plus all files[].path pins from 11 UPSTREAM.json manifests and one INTEGRITY_UPSTREAM.json manifest (836 pins). Verified in a fresh complete-history Linux clone.",
+  "initialAuditScope": "The initial observation below checked only 11 UPSTREAM.json manifests and their 771 entries. The broader validator adds 65 INTEGRITY_UPSTREAM.json pins.",
+  "verification": {
+    "schemaVersion": 1,
+    "baselineCommit": "ff776f1e82f04fdb51d9cb4d4fa275b965d89703",
+    "mode": "git-delivery",
+    "gitRevision": "05d84e8870f0926157883f7a7b49279e53c623df",
+    "expectedSourceFiles": 1996,
+    "executableFiles": 78,
+    "manifests": 12,
+    "vendorFiles": 836,
+    "missingFiles": [],
+    "untrackedFiles": [],
+    "modeMismatches": [],
+    "invalidPaths": [],
+    "vendorIssues": [],
+    "executableModesChecked": true,
+    "passed": true
+  },
+  "validator": "scripts/validation/check-source-delivery.mjs",
+  "evidence": "D:/openfars/.cache/scienceevolve-refactor/linux-results/sdk-linux-final-source-delivery.json",
+  "history": [
+    {
+      "checkpoint": "d99427d7ad6c6a641a5d24bba12fedd58bb86864",
+      "status": "FAIL",
+      "manifestCount": 11,
+      "entryCount": 771,
+      "missingCount": 2,
+      "missing": [
+        {
+          "manifest": "example/rrsi/skills/scienceevolve-rrsi/UPSTREAM.json",
+          "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/coding/data/tb21_tasks.txt",
+          "exists": true,
+          "tracked": false,
+          "entry": {
+            "path": "upstream/domains/coding/data/tb21_tasks.txt",
+            "sha256": "3778b86071c74c8a342222cfff41089916adb5c7338d1afa69f42c9cae21fe3e"
+          },
+          "actualSha256": "3778b86071c74c8a342222cfff41089916adb5c7338d1afa69f42c9cae21fe3e",
+          "pinnedSha256Matches": true
+        },
+        {
+          "manifest": "example/rrsi/skills/scienceevolve-rrsi/UPSTREAM.json",
+          "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/eng/data/split_engd.json",
+          "exists": true,
+          "tracked": false,
+          "entry": {
+            "path": "upstream/domains/eng/data/split_engd.json",
+            "sha256": "7a4b1513c3a0ef36341da9478badafd32dd2b67fbf36a8b4dcefefeba3845503"
+          },
+          "actualSha256": "7a4b1513c3a0ef36341da9478badafd32dd2b67fbf36a8b4dcefefeba3845503",
+          "pinnedSha256Matches": true
+        }
+      ],
+      "observation": "Both required pinned data files existed in the host checkout but were absent from the Git index and the complete-history Linux clone."
+    },
+    {
+      "checkpoint": "05d84e8870f0926157883f7a7b49279e53c623df",
+      "status": "PASS",
+      "manifestCount": 12,
+      "entryCount": 836,
+      "missingCount": 0,
+      "observation": "Both original pinned data files are now committed and present in the fresh Linux clone; all 836 manifest pins, every original path and original executable mode passed."
+    }
+  ]
+}

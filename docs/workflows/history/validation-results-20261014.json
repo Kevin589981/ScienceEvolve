@@ -1,0 +1,345 @@
+{
+  "generatedAt": "2026-10-14T10:14:33.206Z",
+  "nodeVersion": "v24.20.0",
+  "sdkVersion": "0.1.1",
+  "sdkHead": "ccf066844ac12df84a52df8f136870f159fab539",
+  "sourceCommit": "4ae079fe51faefed850b5b9873979f44b60a7806",
+  "runtimeRevision": "4ae079fe51faefed850b5b9873979f44b60a7806+e36961bb4c134316",
+  "realRunsStarted": 0,
+  "validationOnly": true,
+  "canonicalDraftByteIdentical": true,
+  "preserved": [
+    {
+      "path": "alphaevolve/workflow.json",
+      "sha256": "d9de0844a0ead2168dc8b5ffe166bf56a10c6be41002d403554ef71cd6aa474b",
+      "bytes": 105022,
+      "currentHash": "d9de0844a0ead2168dc8b5ffe166bf56a10c6be41002d403554ef71cd6aa474b",
+      "unchanged": true
+    },
+    {
+      "path": "kosmos/workflow.json",
+      "sha256": "48ef7ce4b5625eb5978476191859431b9c8787dea061513ab38047e3974d17e4",
+      "bytes": 328133,
+      "currentHash": "48ef7ce4b5625eb5978476191859431b9c8787dea061513ab38047e3974d17e4",
+      "unchanged": true
+    },
+    {
+      "path": "ai-scientist-v2/workflow.draft.json",
+      "sha256": "cb22df890a12e60e8c93ad6bfb5184f72615d7949defc5c9cd4ef10cca552718",
+      "bytes": 575907,
+      "currentHash": "cb22df890a12e60e8c93ad6bfb5184f72615d7949defc5c9cd4ef10cca552718",
+      "unchanged": true
+    }
+  ],
+  "validations": [
+    {
+      "method": "ai-scientist-v2",
+      "path": "D:\\openfars\\.worktrees\\sdk-todo-seven-20261013\\research\\todo-seven\\ai-scientist-v2\\workflow.json",
+      "sha256": "cb22df890a12e60e8c93ad6bfb5184f72615d7949defc5c9cd4ef10cca552718",
+      "apiPassed": true,
+      "cliPassed": true,
+      "schemaVersion": 3,
+      "agents": [
+        "main",
+        "idea",
+        "manager",
+        "leader",
+        "worker_a",
+        "worker_b",
+        "writer",
+        "reflector",
+        "reviewer"
+      ],
+      "parallelEntryEdges": 2,
+      "mcpDefinitions": 8,
+      "declaredToolSchemasComplete": true,
+      "cliEvent": {
+        "type": "workflow.valid",
+        "engine": "main",
+        "sourceCommit": "4ae079fe51faefed850b5b9873979f44b60a7806",
+        "runtimeRevision": "4ae079fe51faefed850b5b9873979f44b60a7806+e36961bb4c134316",
+        "file": "D:\\openfars\\.worktrees\\sdk-todo-seven-20261013\\research\\todo-seven\\ai-scientist-v2\\workflow.json",
+        "schemaVersion": 3,
+        "git": {
+          "enabled": true,
+          "repositoryName": "scion-aisci-todo-20261014-r6",
+          "repositoryVisibility": "private"
+        },
+        "agents": [
+          "main",
+          "idea",
+          "manager",
+          "leader",
+          "worker_a",
+          "worker_b",
+          "writer",
+          "reflector",
+          "reviewer"
+        ]
+      }
+    },
+    {
+      "method": "kosmos",
+      "path": "D:\\openfars\\.worktrees\\sdk-todo-seven-20261013\\research\\todo-seven\\kosmos\\workflow.json",
+      "sha256": "48ef7ce4b5625eb5978476191859431b9c8787dea061513ab38047e3974d17e4",
+      "apiPassed": true,
+      "cliPassed": true,
+      "schemaVersion": 3,
+      "agents": [
+        "main",
+        "planner",
+        "manager",
+        "analysis",
+        "literature",
+        "synthesis",
+        "audit"
+      ],
+      "parallelEntryEdges": 2,
+      "mcpDefinitions": 7,
+      "declaredToolSchemasComplete": true,
+      "cliEvent": {
+        "type": "workflow.valid",
+        "engine": "main",
+        "sourceCommit": "4ae079fe51faefed850b5b9873979f44b60a7806",
+        "runtimeRevision": "4ae079fe51faefed850b5b9873979f44b60a7806+e36961bb4c134316",
+        "file": "D:\\openfars\\.worktrees\\sdk-todo-seven-20261013\\research\\todo-seven\\kosmos\\workflow.json",
+        "schemaVersion": 3,
+        "git": {
+          "enabled": true,
+          "repositoryName": "scion-kosmos-todo-20261013-r6",
+          "repositoryVisibility": "private"
+        },
+        "agents": [
+          "main",
+          "planner",
+          "manager",
+          "analysis",
+          "literature",
+          "synthesis",
+          "audit"
+        ]
+      }
+    },
+    {
+      "method": "internagent-1-5",
+      "path": "D:\\openfars\\.worktrees\\sdk-todo-seven-20261013\\research\\todo-seven\\internagent-1-5\\workflow.json",
+      "sha256": "3755549665e0ada3a939f8359888088e0037ceefdb55d1f0c1f5e5e3eb4fa86c",
+      "apiPassed": true,
+      "cliPassed": true,
+      "schemaVersion": 3,
+      "agents": [
+        "main",
+        "preflight",
+        "flow_planner",
+        "research_a",
+        "research_b",
+        "generation",
+        "optimizer_a",
+        "optimizer_b",
+        "verification",
+        "evolution",
+        "audit"
+      ],
+      "parallelEntryEdges": 4,
+      "mcpDefinitions": 11,
+      "declaredToolSchemasComplete": true,
+      "cliEvent": {
+        "type": "workflow.valid",
+        "engine": "main",
+        "sourceCommit": "4ae079fe51faefed850b5b9873979f44b60a7806",
+        "runtimeRevision": "4ae079fe51faefed850b5b9873979f44b60a7806+e36961bb4c134316",
+        "file": "D:\\openfars\\.worktrees\\sdk-todo-seven-20261013\\research\\todo-seven\\internagent-1-5\\workflow.json",
+        "schemaVersion": 3,
+        "git": {
+          "enabled": true,
+          "repositoryName": "scion-internagent-1-5-design-20261014",
+          "repositoryVisibility": "private"
+        },
+        "agents": [
+          "main",
+          "preflight",
+          "flow_planner",
+          "research_a",
+          "research_b",
+          "generation",
+          "optimizer_a",
+          "optimizer_b",
+          "verification",
+          "evolution",
+          "audit"
+        ]
+      }
+    },
+    {
+      "method": "biomni-r0",
+      "path": "D:\\openfars\\.worktrees\\sdk-todo-seven-20261013\\research\\todo-seven\\biomni-r0\\workflow.json",
+      "sha256": "eefb953462cb783ed1e54289b232ce2c3b6bd9153b2c250ba071be32e47d60d6",
+      "apiPassed": true,
+      "cliPassed": true,
+      "schemaVersion": 3,
+      "agents": [
+        "main",
+        "preflight",
+        "curator",
+        "rollout",
+        "reward",
+        "trainer",
+        "deployer",
+        "evaluator",
+        "audit"
+      ],
+      "parallelEntryEdges": 0,
+      "mcpDefinitions": 9,
+      "declaredToolSchemasComplete": true,
+      "cliEvent": {
+        "type": "workflow.valid",
+        "engine": "main",
+        "sourceCommit": "4ae079fe51faefed850b5b9873979f44b60a7806",
+        "runtimeRevision": "4ae079fe51faefed850b5b9873979f44b60a7806+e36961bb4c134316",
+        "file": "D:\\openfars\\.worktrees\\sdk-todo-seven-20261013\\research\\todo-seven\\biomni-r0\\workflow.json",
+        "schemaVersion": 3,
+        "git": {
+          "enabled": true,
+          "repositoryName": "scion-biomni-r0-design-20261014",
+          "repositoryVisibility": "private"
+        },
+        "agents": [
+          "main",
+          "preflight",
+          "curator",
+          "rollout",
+          "reward",
+          "trainer",
+          "deployer",
+          "evaluator",
+          "audit"
+        ]
+      }
+    },
+    {
+      "method": "chemical-coscientist",
+      "path": "D:\\openfars\\.worktrees\\sdk-todo-seven-20261013\\research\\todo-seven\\chemical-coscientist\\workflow.json",
+      "sha256": "0a6f41a77a3843e587f61de6365553a63deaf1095f1e335eafca8da3313d8564",
+      "apiPassed": true,
+      "cliPassed": true,
+      "schemaVersion": 3,
+      "agents": [
+        "main",
+        "preflight",
+        "planner",
+        "web_search",
+        "documentation",
+        "code",
+        "experiment",
+        "optimization",
+        "audit"
+      ],
+      "parallelEntryEdges": 0,
+      "mcpDefinitions": 9,
+      "declaredToolSchemasComplete": true,
+      "cliEvent": {
+        "type": "workflow.valid",
+        "engine": "main",
+        "sourceCommit": "4ae079fe51faefed850b5b9873979f44b60a7806",
+        "runtimeRevision": "4ae079fe51faefed850b5b9873979f44b60a7806+e36961bb4c134316",
+        "file": "D:\\openfars\\.worktrees\\sdk-todo-seven-20261013\\research\\todo-seven\\chemical-coscientist\\workflow.json",
+        "schemaVersion": 3,
+        "git": {
+          "enabled": true,
+          "repositoryName": "scion-chemical-coscientist-design-20261014",
+          "repositoryVisibility": "private"
+        },
+        "agents": [
+          "main",
+          "preflight",
+          "planner",
+          "web_search",
+          "documentation",
+          "code",
+          "experiment",
+          "optimization",
+          "audit"
+        ]
+      }
+    },
+    {
+      "method": "alphaevolve",
+      "path": "D:\\openfars\\.worktrees\\sdk-todo-seven-20261013\\research\\todo-seven\\alphaevolve\\workflow.json",
+      "sha256": "d9de0844a0ead2168dc8b5ffe166bf56a10c6be41002d403554ef71cd6aa474b",
+      "apiPassed": true,
+      "cliPassed": true,
+      "schemaVersion": 3,
+      "agents": [
+        "main",
+        "manager",
+        "worker_a",
+        "worker_b",
+        "audit"
+      ],
+      "parallelEntryEdges": 2,
+      "mcpDefinitions": 5,
+      "declaredToolSchemasComplete": true,
+      "cliEvent": {
+        "type": "workflow.valid",
+        "engine": "main",
+        "sourceCommit": "4ae079fe51faefed850b5b9873979f44b60a7806",
+        "runtimeRevision": "4ae079fe51faefed850b5b9873979f44b60a7806+e36961bb4c134316",
+        "file": "D:\\openfars\\.worktrees\\sdk-todo-seven-20261013\\research\\todo-seven\\alphaevolve\\workflow.json",
+        "schemaVersion": 3,
+        "git": {
+          "enabled": true,
+          "repositoryName": "scion-alphaevolve-todo-20261013-r2",
+          "repositoryVisibility": "private"
+        },
+        "agents": [
+          "main",
+          "manager",
+          "worker_a",
+          "worker_b",
+          "audit"
+        ]
+      }
+    },
+    {
+      "method": "raven",
+      "path": "D:\\openfars\\.worktrees\\sdk-todo-seven-20261013\\research\\todo-seven\\raven\\workflow.json",
+      "sha256": "37ebd879a9b0eb31d14eaca4cd54489854f809ad4c1408d904f840e5fe4b9f57",
+      "apiPassed": true,
+      "cliPassed": true,
+      "schemaVersion": 3,
+      "agents": [
+        "main",
+        "preflight",
+        "specialist_a",
+        "specialist_b",
+        "judge",
+        "audit"
+      ],
+      "parallelEntryEdges": 2,
+      "mcpDefinitions": 6,
+      "declaredToolSchemasComplete": true,
+      "cliEvent": {
+        "type": "workflow.valid",
+        "engine": "main",
+        "sourceCommit": "4ae079fe51faefed850b5b9873979f44b60a7806",
+        "runtimeRevision": "4ae079fe51faefed850b5b9873979f44b60a7806+e36961bb4c134316",
+        "file": "D:\\openfars\\.worktrees\\sdk-todo-seven-20261013\\research\\todo-seven\\raven\\workflow.json",
+        "schemaVersion": 3,
+        "git": {
+          "enabled": true,
+          "repositoryName": "scion-raven-host-design-20261014",
+          "repositoryVisibility": "private"
+        },
+        "agents": [
+          "main",
+          "preflight",
+          "specialist_a",
+          "specialist_b",
+          "judge",
+          "audit"
+        ]
+      }
+    }
+  ],
+  "passed": true
+}

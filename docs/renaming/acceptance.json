@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "status": "implementation-and-package-evidence-frozen",
+  "implementationCommit": "05d84e8870f0926157883f7a7b49279e53c623df",
+  "branch": "refactor/scienceevolve-sdk",
+  "baselineCommit": "4160a2cf0259b2a1ed9dc4eb36bc0484d2527a42",
+  "documentationSnapshotCommit": "ff776f1e82f04fdb51d9cb4d4fa275b965d89703",
+  "finalDeliveryAuthority": {
+    "kind": "detached-receipt",
+    "filename": "release-manifest.json",
+    "deliveryDirectory": "D:/openfars/.cache/scienceevolve-refactor/artifacts",
+    "requiredStatus": "PASS",
+    "archiveCommitAndDigestStoredOutsideArchive": true,
+    "sourceArchiveVerificationRequired": true,
+    "independentPackageVerificationRequired": true
+  },
+  "coverage": {
+    "originalTrackedFiles": 1996,
+    "originalExecutableModes": 78,
+    "candidateFiles": 1277,
+    "candidateContentOccurrences": 3459,
+    "unresolvedCandidates": 0,
+    "environmentSymbols": 90,
+    "environmentReferences": 1678,
+    "environmentCandidateFiles": 110,
+    "directNameCollisions": 0,
+    "vendorManifests": 12,
+    "vendorPins": 836,
+    "originalFilesPreservedExactly": 838,
+    "nonTextOriginalAssets": 93,
+    "authoredImagesVisuallyReviewed": 2,
+    "runtimeFiles": 247,
+    "semanticWorkflows": 18,
+    "reversibleSemanticEdits": 282,
+    "exactBrandingSelectors": 124,
+    "finalSourceAndGeneratedScanAuthority": "release-manifest.json"
+  },
+  "tests": {
+    "linuxSdk": { "files": 114, "passed": 2790, "failed": 0, "optionalNativeSkipped": 10, "immutableCheckpoint": true },
+    "windowsSdk": { "files": 114, "uniqueCases": 2800, "passed": 2468, "skipped": 332, "unresolvedFailures": 0, "completedRunUnion": true, "atomicSingleInvocation": false },
+    "pythonLinux": { "passed": 69, "failed": 0, "errors": 0, "skipped": 0 },
+    "environmentProbes": { "passed": 23, "failed": 0 },
+    "originalResearchNode": { "passed": 11, "failed": 0, "skipped": 0 },
+    "typecheck": "PASS",
+    "build": "PASS",
+    "installedPackageSmoke": "PASS",
+    "originalAssertionsAndTestDeadlinesPreserved": true
+  },
+  "package": {
+    "name": "@scienceevolve/sdk",
+    "version": "0.1.1",
+    "filename": "scienceevolve-sdk-0.1.1.tgz",
+    "bytes": 33245469,
+    "sha256": "bba320502ce3963c43361fcd0bbc945ed5804f6058f42a88d5b1962cb26cdc9d",
+    "files": 1314,
+    "private": true
+  },
+  "criteria": [
+    { "id": 1, "condition": "All delivered source, paths, generated resources, binaries and artifacts have the appropriate inspection", "evidence": ["source-delivery-inventory.json", "binary-inventory.json", "package-audit.json"], "detachedSourceReceiptRequired": true },
+    { "id": 2, "condition": "Every original candidate has an explicit disposition and unexplained residues are zero", "evidence": ["candidate-resolutions.json", "environment-audit.json"], "finalNamingScanRequired": true },
+    { "id": 3, "condition": "Owned public names, entrypoints and newly generated content use the target naming contract", "evidence": ["EXECUTION.md", "linux-sdk-validation.json", "package-audit.json"] },
+    { "id": 4, "condition": "No rename-introduced missing references, resources or stale deliverables remain", "evidence": ["link-audit.json", "vendor-delivery-audit.json", "third-party-preservation.json", "package-audit.json"], "detachedSourceReceiptRequired": true },
+    { "id": 5, "condition": "Runtime synchronization, source identity, exact regeneration and derived hashes verify", "evidence": ["candidate-resolutions.json", "linux-sdk-validation.json"] },
+    { "id": 6, "condition": "Required tests, typecheck, builds, independent installation and package smoke pass", "evidence": ["linux-sdk-validation.json", "windows-sdk-validation.json", "python-linux-validation.json", "environment-audit.json", "package-audit.json"], "detachedSourceReceiptRequired": true },
+    { "id": 7, "condition": "Preserved original evidence is constrained precisely and automated checks reject regression", "evidence": ["../../sdk/resources/branding/exceptions.json", "../../sdk/tests/branding-gate.test.ts", "../../.github/workflows/scienceevolve-ci.yml"] },
+    { "id": 8, "condition": "Reports identify actual tested inputs, snapshots, commands and delivered artifact hashes", "evidence": ["ACCEPTANCE.md", "EXECUTION.md", "source-archive-audit.json", "package-audit.json"], "detachedSourceReceiptRequired": true }
+  ],
+  "scopeLimits": [
+    "Existing optional installed-native acceptance tests were not enabled; every skip is reported separately.",
+    "No paid models, external scientific services, scientific benchmarks or macOS execution were used as acceptance evidence.",
+    "Remote CI has not run; the workflow commands were exercised locally on the recorded platforms."
+  ],
+  "externalReleasePrerequisites": [
+    "Verify registry namespace ownership and publishing-account permissions.",
+    "Confirm remote publication targets and release links.",
+    "Resolve the existing private package flag in an authorized release process."
+  ],
+  "anonymousPublicChecks": {
+    "observedAt": "2026-10-16T00:23:03+08:00",
+    "authenticated": false,
+    "results": [
+      { "uri": "https://registry.npmjs.org/@scienceevolve%2fsdk", "httpStatus": 404 },
+      { "uri": "https://github.com/OpenMOSS/ScienceEvolve", "httpStatus": 404 },
+      { "uri": "https://github.com/OpenMOSS/ScienceEvolve-server", "httpStatus": 404 }
+    ],
+    "interpretation": "Anonymous responses do not establish private existence, namespace ownership or publishing permissions."
+  }
+}

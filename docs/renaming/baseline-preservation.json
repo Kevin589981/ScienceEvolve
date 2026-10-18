@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-16T00:07:50.2556101+08:00",
+  "sourceRoot": "D:\\openfars\\.worktrees\\sdk-todo-publish-20261015",
+  "baselineCommit": "4160a2cf0259b2a1ed9dc4eb36bc0484d2527a42",
+  "documentationSnapshotCommit": "ff776f1e82f04fdb51d9cb4d4fa275b965d89703",
+  "initialSnapshotSha256": "b630667e4ccda57da2f9bc02955489a00b53931896990cdb108c470c4ca257dc",
+  "binaryPatchSha256": "404f4b6d4f5ab69d255fcd5fcb500a60c7f17060a4ea679b7e9918e68e6b7ff4",
+  "method": "Compare original working-file SHA-256 with the initial snapshot; independently compare attribute-cleaned Git blobs with the separate documentation snapshot commit.",
+  "files": [
+    {
+      "path": "README.md",
+      "initialSha256": "bfe8f1a8ae15b2637a720c0fdc5d48c20acf95fce8e4a92a29e79a02bac056fd",
+      "currentOriginalSha256": "bfe8f1a8ae15b2637a720c0fdc5d48c20acf95fce8e4a92a29e79a02bac056fd",
+      "initialBytes": 44752,
+      "currentOriginalBytes": 44752,
+      "snapshotGitBlob": "10e79c15519357ba6c62229a6c050e61f86f500a",
+      "originalCleanedGitBlob": "10e79c15519357ba6c62229a6c050e61f86f500a",
+      "originalUnchanged": true,
+      "snapshotPreservesOriginalGitContent": true
+    },
+    {
+      "path": "README_zh-CN.md",
+      "initialSha256": "bad45121a6445c85ca907f96096598bfba3272b8a77d8d24d56bac4d14cabe3d",
+      "currentOriginalSha256": "bad45121a6445c85ca907f96096598bfba3272b8a77d8d24d56bac4d14cabe3d",
+      "initialBytes": 40197,
+      "currentOriginalBytes": 40197,
+      "snapshotGitBlob": "493ce7557795d6691af3a002e84c090352f8ca70",
+      "originalCleanedGitBlob": "493ce7557795d6691af3a002e84c090352f8ca70",
+      "originalUnchanged": true,
+      "snapshotPreservesOriginalGitContent": true
+    },
+    {
+      "path": "example/README.md",
+      "initialSha256": "ba425f1a4276e88c8a3a38f9379c6584b22af1caec3d6c60ea4b0f06e109ac75",
+      "currentOriginalSha256": "ba425f1a4276e88c8a3a38f9379c6584b22af1caec3d6c60ea4b0f06e109ac75",
+      "initialBytes": 20709,
+      "currentOriginalBytes": 20709,
+      "snapshotGitBlob": "6dea70751dda548cf577200048327f241ef25fcf",
+      "originalCleanedGitBlob": "6dea70751dda548cf577200048327f241ef25fcf",
+      "originalUnchanged": true,
+      "snapshotPreservesOriginalGitContent": true
+    },
+    {
+      "path": "example/aris/README.md",
+      "initialSha256": "22d9170538ac55224fc1e69ea361974533ba62ffe96547972361a7368ed947c2",
+      "currentOriginalSha256": "22d9170538ac55224fc1e69ea361974533ba62ffe96547972361a7368ed947c2",
+      "initialBytes": 5569,
+      "currentOriginalBytes": 5569,
+      "snapshotGitBlob": "5157394d6b8196d4d7b11d339828ab8dded93f4c",
+      "originalCleanedGitBlob": "5157394d6b8196d4d7b11d339828ab8dded93f4c",
+      "originalUnchanged": true,
+      "snapshotPreservesOriginalGitContent": true
+    },
+    {
+      "path": "example/biomni-r0/README.md",
+      "initialSha256": "d659c14ff803277613292fcaceccb539e7e609e5c17de0c7039aa8c7e2c93fa5",
+      "currentOriginalSha256": "d659c14ff803277613292fcaceccb539e7e609e5c17de0c7039aa8c7e2c93fa5",
+      "initialBytes": 1204,
+      "currentOriginalBytes": 1204,
+      "snapshotGitBlob": "a5c4ac16fc91ecd411c30091a5a1142fd6ca541b",
+      "originalCleanedGitBlob": "a5c4ac16fc91ecd411c30091a5a1142fd6ca541b",
+      "originalUnchanged": true,
+      "snapshotPreservesOriginalGitContent": true
+    },
+    {
+      "path": "example/biomni/README.md",
+      "initialSha256": "4b66b2054f56b8b7e36cd0f45ed182272818faa3418c0dea8d9beeb9ae3c1b70",
+      "currentOriginalSha256": "4b66b2054f56b8b7e36cd0f45ed182272818faa3418c0dea8d9beeb9ae3c1b70",
+      "initialBytes": 4258,
+      "currentOriginalBytes": 4258,
+      "snapshotGitBlob": "5641a487de6a2f01091b6c649bb38c25ec5bbad6",
+      "originalCleanedGitBlob": "5641a487de6a2f01091b6c649bb38c25ec5bbad6",
+      "originalUnchanged": true,
+      "snapshotPreservesOriginalGitContent": true
+    },
+    {
+      "path": "example/chemical-coscientist/README.md",
+      "initialSha256": "03358de201cd211d3c0b8f228e3f8b99d1221ddd48768f683494b990750be763",
+      "currentOriginalSha256": "03358de201cd211d3c0b8f228e3f8b99d1221ddd48768f683494b990750be763",
+      "initialBytes": 1245,
+      "currentOriginalBytes": 1245,
+      "snapshotGitBlob": "72832a539519e9903031c27659e1aa55b895a6af",
+      "originalCleanedGitBlob": "72832a539519e9903031c27659e1aa55b895a6af",
+      "originalUnchanged": true,
+      "snapshotPreservesOriginalGitContent": true
+    },
+    {
+      "path": "example/internagent-1-5/README.md",
+      "initialSha256": "174ec8c866235854d92d252607eeaa7e18f0d08956804b770371d4b7c27b57ee",
+      "currentOriginalSha256": "174ec8c866235854d92d252607eeaa7e18f0d08956804b770371d4b7c27b57ee",
+      "initialBytes": 1203,
+      "currentOriginalBytes": 1203,
+      "snapshotGitBlob": "ef69d5af996afe566f9ad96aec2d978436695f03",
+      "originalCleanedGitBlob": "ef69d5af996afe566f9ad96aec2d978436695f03",
+      "originalUnchanged": true,
+      "snapshotPreservesOriginalGitContent": true
+    },
+    {
+      "path": "example/raven/README.md",
+      "initialSha256": "7f78bd0ddd9e60110b87e771f22efa173c87bd27de61bfd17e6c3fe055be7d10",
+      "currentOriginalSha256": "7f78bd0ddd9e60110b87e771f22efa173c87bd27de61bfd17e6c3fe055be7d10",
+      "initialBytes": 1259,
+      "currentOriginalBytes": 1259,
+      "snapshotGitBlob": "e1cb55b47490fd6d90c00aefa6762ec36fa23ffb",
+      "originalCleanedGitBlob": "e1cb55b47490fd6d90c00aefa6762ec36fa23ffb",
+      "originalUnchanged": true,
+      "snapshotPreservesOriginalGitContent": true
+    },
+    {
+      "path": "example/scientist-two/README.md",
+      "initialSha256": "7bea35965b725567b32b0c28037df47f6f9aa3fad5ac5f442144284250f0e517",
+      "currentOriginalSha256": "7bea35965b725567b32b0c28037df47f6f9aa3fad5ac5f442144284250f0e517",
+      "initialBytes": 4974,
+      "currentOriginalBytes": 4974,
+      "snapshotGitBlob": "1297a6b4690687a78f9660f769a6a62dbebfd781",
+      "originalCleanedGitBlob": "1297a6b4690687a78f9660f769a6a62dbebfd781",
+      "originalUnchanged": true,
+      "snapshotPreservesOriginalGitContent": true
+    },
+    {
+      "path": "sdk/README.md",
+      "initialSha256": "203f6186b656d73aafe5befc07b2b0af983800e683cd2a5daae546235063b15e",
+      "currentOriginalSha256": "203f6186b656d73aafe5befc07b2b0af983800e683cd2a5daae546235063b15e",
+      "initialBytes": 15490,
+      "currentOriginalBytes": 15490,
+      "snapshotGitBlob": "eb3f2d0c58142ce178ae25ecc1ab2e0b4b4ac053",
+      "originalCleanedGitBlob": "eb3f2d0c58142ce178ae25ecc1ab2e0b4b4ac053",
+      "originalUnchanged": true,
+      "snapshotPreservesOriginalGitContent": true
+    },
+    {
+      "path": "sdk/README_zh-CN.md",
+      "initialSha256": "6f4d885e3fe11687745b0e8a92205815aa388ba1d7a16928aec622c13ab3e55e",
+      "currentOriginalSha256": "6f4d885e3fe11687745b0e8a92205815aa388ba1d7a16928aec622c13ab3e55e",
+      "initialBytes": 13619,
+      "currentOriginalBytes": 13619,
+      "snapshotGitBlob": "fa025b50aefa6dd4359b0f12d42f94ba423e7beb",
+      "originalCleanedGitBlob": "fa025b50aefa6dd4359b0f12d42f94ba423e7beb",
+      "originalUnchanged": true,
+      "snapshotPreservesOriginalGitContent": true
+    }
+  ],
+  "passed": true
+}

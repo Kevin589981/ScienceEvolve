@@ -1,0 +1,590 @@
+{
+  "schemaVersion": 1,
+  "beforeCommit": "c090c5f037a53fe3962ae614bcbee96c333c0ecd",
+  "moves": [
+    {
+      "from": "research/todo-seven/alphaevolve/workflow.json",
+      "to": "example/alphaevolve/workflow.json",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/alphaevolve/requirement.txt",
+      "to": "example/alphaevolve/requirement.txt",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/kosmos/workflow.json",
+      "to": "example/kosmos/workflow.json",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/kosmos/requirement.txt",
+      "to": "example/kosmos/requirement.txt",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/SOURCES.json",
+      "to": "example/SOURCES.json",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/WORKFLOW-REPRODUCTION-REPORT.md",
+      "to": "docs/workflows/method-review-20261014.md",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/raven/contract-audit.test.mjs",
+      "to": "scripts/example-workflows/raven-contract.test.mjs",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/design-20261014/build-workflows.mjs",
+      "to": "scripts/example-workflows/build-workflows.mjs",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/design-20261014/task-bridge.cjs",
+      "to": "scripts/example-workflows/task-bridge.cjs",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/design-20261014/task-bridge.test.mjs",
+      "to": "scripts/example-workflows/task-bridge.test.mjs",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/design-20261014/BACKEND-CONTRACT.md",
+      "to": "scripts/example-workflows/BACKEND-CONTRACT.md",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/design-20261014/validate-workflows.mjs",
+      "to": "scripts/example-workflows/validate-workflows.mjs",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/design-20261014/preserved-workflows.json",
+      "to": "docs/workflows/history/preserved-workflows-20261014.json",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/design-20261014/validation-results.json",
+      "to": "docs/workflows/history/validation-results-20261014.json",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/design-20261014/cloud-validation-results-20261015.json",
+      "to": "docs/workflows/history/cloud-validation-results-20261015.json",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/ai-scientist-v2/workflow.json",
+      "to": "example/ai-scientist-v2/workflow.json",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/ai-scientist-v2/requirement.txt",
+      "to": "example/ai-scientist-v2/requirement.txt",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/biomni-r0/workflow.json",
+      "to": "example/biomni-r0/workflow.json",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/biomni-r0/requirement.txt",
+      "to": "example/biomni-r0/requirement.txt",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/chemical-coscientist/workflow.json",
+      "to": "example/chemical-coscientist/workflow.json",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/chemical-coscientist/requirement.txt",
+      "to": "example/chemical-coscientist/requirement.txt",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/internagent-1-5/workflow.json",
+      "to": "example/internagent-1-5/workflow.json",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/internagent-1-5/requirement.txt",
+      "to": "example/internagent-1-5/requirement.txt",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/raven/workflow.json",
+      "to": "example/raven/workflow.json",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/raven/requirement.txt",
+      "to": "example/raven/requirement.txt",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    },
+    {
+      "from": "research/todo-seven/ai-scientist-v2/workflow.draft.json",
+      "to": "example/ai-scientist-v2/workflow.json",
+      "reason": "Canonical example location or shared tooling/history relocation"
+    }
+  ],
+  "removals": [
+    {
+      "path": "research/todo-seven/README.md",
+      "reason": "Superseded by the unified example index"
+    },
+    {
+      "path": "example/01-ahe-evolve/README.md",
+      "reason": "Per-example README removed as requested; common usage lives in example/README.md"
+    },
+    {
+      "path": "example/02-software-development/README.md",
+      "reason": "Per-example README removed as requested; common usage lives in example/README.md"
+    },
+    {
+      "path": "example/agent-laboratory/README.md",
+      "reason": "Per-example README removed as requested; common usage lives in example/README.md"
+    },
+    {
+      "path": "example/agent-laboratory/CAPABILITIES.json",
+      "reason": "Duplicate role capability summary; executable protocol remains in the Skill and workflow"
+    },
+    {
+      "path": "example/agentrxiv/README.md",
+      "reason": "Per-example README removed as requested; common usage lives in example/README.md"
+    },
+    {
+      "path": "example/agentrxiv/CAPABILITIES.json",
+      "reason": "Duplicate role capability summary; executable protocol remains in the Skill and workflow"
+    },
+    {
+      "path": "example/ai-scientist-v2/README.md",
+      "reason": "Per-example README removed as requested; common usage lives in example/README.md"
+    },
+    {
+      "path": "example/aris/README.md",
+      "reason": "Per-example README removed as requested; common usage lives in example/README.md"
+    },
+    {
+      "path": "example/aris/CAPABILITIES.json",
+      "reason": "Duplicate role capability summary; executable protocol remains in the Skill and workflow"
+    },
+    {
+      "path": "example/autoresearch/README.md",
+      "reason": "Per-example README removed as requested; common usage lives in example/README.md"
+    },
+    {
+      "path": "example/autoresearch/CAPABILITIES.json",
+      "reason": "Duplicate role capability summary; executable protocol remains in the Skill and workflow"
+    },
+    {
+      "path": "example/biomni/README.md",
+      "reason": "Per-example README removed as requested; common usage lives in example/README.md"
+    },
+    {
+      "path": "example/biomni/CAPABILITIES.json",
+      "reason": "Duplicate role capability summary; executable protocol remains in the Skill and workflow"
+    },
+    {
+      "path": "example/biomni-r0/README.md",
+      "reason": "Per-example README removed as requested; common usage lives in example/README.md"
+    },
+    {
+      "path": "example/chemical-coscientist/README.md",
+      "reason": "Per-example README removed as requested; common usage lives in example/README.md"
+    },
+    {
+      "path": "example/co-scientist/README.md",
+      "reason": "Per-example README removed as requested; common usage lives in example/README.md"
+    },
+    {
+      "path": "example/co-scientist/CAPABILITIES.json",
+      "reason": "Duplicate role capability summary; executable protocol remains in the Skill and workflow"
+    },
+    {
+      "path": "example/drugevolve/README.md",
+      "reason": "Per-example README removed as requested; common usage lives in example/README.md"
+    },
+    {
+      "path": "example/drugevolve/CAPABILITIES.json",
+      "reason": "Duplicate role capability summary; executable protocol remains in the Skill and workflow"
+    },
+    {
+      "path": "example/funsearch/README.md",
+      "reason": "Per-example README removed as requested; common usage lives in example/README.md"
+    },
+    {
+      "path": "example/funsearch/CAPABILITIES.json",
+      "reason": "Duplicate role capability summary; executable protocol remains in the Skill and workflow"
+    },
+    {
+      "path": "example/internagent-1-5/README.md",
+      "reason": "Per-example README removed as requested; common usage lives in example/README.md"
+    },
+    {
+      "path": "example/metaharness/README.md",
+      "reason": "Per-example README removed as requested; common usage lives in example/README.md"
+    },
+    {
+      "path": "example/metaharness/CAPABILITIES.json",
+      "reason": "Duplicate role capability summary; executable protocol remains in the Skill and workflow"
+    },
+    {
+      "path": "example/raven/README.md",
+      "reason": "Per-example README removed as requested; common usage lives in example/README.md"
+    },
+    {
+      "path": "example/robin/README.md",
+      "reason": "Per-example README removed as requested; common usage lives in example/README.md"
+    },
+    {
+      "path": "example/robin/CAPABILITIES.json",
+      "reason": "Duplicate role capability summary; executable protocol remains in the Skill and workflow"
+    },
+    {
+      "path": "example/rrsi/README.md",
+      "reason": "Per-example README removed as requested; common usage lives in example/README.md"
+    },
+    {
+      "path": "example/sciagents/README.md",
+      "reason": "Per-example README removed as requested; common usage lives in example/README.md"
+    },
+    {
+      "path": "example/sciagents/CAPABILITIES.json",
+      "reason": "Duplicate role capability summary; executable protocol remains in the Skill and workflow"
+    },
+    {
+      "path": "example/scientist-two/README.md",
+      "reason": "Per-example README removed as requested; common usage lives in example/README.md"
+    },
+    {
+      "path": "example/scientist-two/CAPABILITIES.json",
+      "reason": "Duplicate role capability summary; executable protocol remains in the Skill and workflow"
+    },
+    {
+      "path": "sdk/scripts/real-acceptance.mjs",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/client.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/config.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/agent-errors.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/agent-orchestration.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/agent-runtime.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/agent-scheduler.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/codex-native-profile.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/codex-provider-config.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/codex-runner.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/configured-mcp.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/context-limit.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/control-mcp.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/event-hub.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/gateway-security.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/gateway-tool-choice.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/harness-gateway.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/harness.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/http-mcp-bridge.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/inspire-compute-usage.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/inspire-workload-registry.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/mcp-directory.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/model-context.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/multi-harness-runner.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/network-proxy.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/orchestration-control-bridge.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/orchestration-control-mcp.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/orchestrator.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/pi-mcp-extension.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/project-files.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/project-mcp-host.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/project-mcp.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/project-skills.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/prompt.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/protocol-router.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/shared/contracts.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/shared/gateway-reasoning.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/shared/invocation-activity.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/shared/invocation-session-policy.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/shared/main-orchestration-policy.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/shared/session-recovery.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/shared/token-usage-ledger.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/skill-catalog.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/skill-staging.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/storage.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/system-controller.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/types.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/utils.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/validation.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/web-mcp.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/internal/workflow-reconfiguration.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/legacy.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/src/runtime.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/activity-deadlines.test.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/config-compatibility.test.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/control-bridge.test.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/data-dir.test.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/fixtures/cli-fetch.mjs",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/fixtures/cli-home.mjs",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/fixtures/codex-process.mjs",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/fixtures/consumer.mjs",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/fixtures/legacy-ahe-workflow.json",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/fixtures/legacy-software-workflow.json",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/gateway-api.test.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/main-orchestration-policy.test.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/network-proxy.test.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/pi-context-budget.test.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/project-mcp.test.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/project-skills.test.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/protocol-router-compatibility.test.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/sdk-crash-recovery.test.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/sdk-multiround.test.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/sdk.test.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/shared-workspace.test.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/storage-atomic-retry.test.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/web-mcp.test.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/workflow-control-mcp.test.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/workflow-loops.test.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/workflow-reconfiguration.test.ts",
+      "reason": "Removed retired SDK legacy engine, its entry points, or its engine-specific tests and acceptance fixtures; the main runtime is the sole supported engine."
+    },
+    {
+      "path": "sdk/tests/fixtures/shared-source-fingerprints.json",
+      "reason": "Retired legacy shared-source hashes; current shared modules are verified against the pinned main-runtime manifest and original upstream snapshot."
+    }
+  ]
+}

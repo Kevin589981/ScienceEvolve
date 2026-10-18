@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 2,
+  "proofArchive": {
+    "path": "D:\\openfars\\.cache\\scienceevolve-refactor\\artifacts\\scienceevolve-sdk-source-5e4e417.tar.gz",
+    "sha256": "907b54b2de88291aaf7c1bca13336679d66c23f7b1d51795a0a6f77556013d1b",
+    "bytes": 39748298,
+    "codeCommit": "5e4e417",
+    "canonical": false,
+    "provesAllOriginalBaselineFiles": false,
+    "knownLaterDeliveryFindings": {
+      "missingOriginalFiles": 2,
+      "files": [
+        "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/coding/data/tb21_tasks.txt",
+        "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/eng/data/split_engd.json"
+      ],
+      "finding": "Both files existed in the earlier host checkout but were omitted from the Git tree and therefore the proof archive. Its recorded install/build/gate success remains a fact about that actual archive set.",
+      "correctedSourceCommit": "05d84e8870f0926157883f7a7b49279e53c623df",
+      "correctedEvidence": "vendor-delivery-audit.json and source-delivery-inventory.json; final archive completeness is checked independently in the detached receipt."
+    }
+  },
+  "canonicalArchive": {
+    "status": "external-receipt-authoritative",
+    "receiptFile": "release-manifest.json",
+    "receiptPath": "D:/openfars/.cache/scienceevolve-refactor/artifacts/release-manifest.json",
+    "location": "Detached companion file in the final artifact directory, outside the Git source archive.",
+    "authority": "The actual source commit, archive identity, hashes and executed checks in that receipt determine canonical source acceptance. This embedded report is frozen before final archive creation and makes no final archive PASS or SHA claim.",
+    "requiredEvidence": [
+      "Final source commit and Git tree",
+      "Actual archive path, bytes and SHA-256",
+      "Every regular tar member compared with its actual Git blob",
+      "Complete archive file list and tar header executable modes",
+      "All 1996 original source paths and 78 original executable modes",
+      "All 12 vendor manifests and 836 original pins",
+      "Fresh extraction without Git metadata",
+      "Actual npm ci and build commands and results",
+      "Explicit source-archive and default source-tree branding gates including generated files",
+      "Independent detached receipt verification"
+    ]
+  },
+  "extractedRoot": "D:\\se-tmp\\source-proof\\ScienceEvolve",
+  "gitMetadataAbsent": true,
+  "build": {
+    "npmCiAndBuildSucceeded": true,
+    "log": "D:/openfars/.cache/scienceevolve-refactor/source-archive-build.log"
+  },
+  "payload": {
+    "archiveFiles": 2016,
+    "bytes": 70895089,
+    "allPostInstallSourceBytesVerified": true,
+    "allBytesUnchanged": false,
+    "postInstallNormalizations": [
+      {
+        "path": "sdk/cli/scienceevolve.mjs",
+        "method": "npm ci bin linking normalized only the CRLF shebang terminator to LF",
+        "archiveSha256": "80da2876c18aad4e7f46c095a95e1d1a57b4230bcddf67d412b44ffa693a3d4f",
+        "installedSourceSha256": "ebed1b4efeb43a842926d8e9a889798607d6f12bb154bb566f5a19c68403e73c",
+        "archiveBytes": 18441,
+        "installedSourceBytes": 18440,
+        "remainingBytesIdentical": true
+      }
+    ],
+    "unexplainedContentMismatches": []
+  },
+  "tarExecutableModes": {
+    "baselineCommit": "ff776f1e82f04fdb51d9cb4d4fa275b965d89703",
+    "baselineFiles": 78,
+    "archiveFiles": 78,
+    "missing": [],
+    "added": [],
+    "method": "Read executable bits directly from tar member headers; compared against exact original Git tree modes after declared path moves, without using Windows filesystem mode attributes."
+  },
+  "sourceTreeFallback": {
+    "gitExecutableUnavailable": true,
+    "method": "Cleared PATH and invoked Node by absolute path in the built extraction, without GIT_DIR/GIT_WORK_TREE/GIT_COMMON_DIR overrides.",
+    "mode": "source-tree",
+    "allArchiveAndGeneratedFilesIncluded": true,
+    "unexplainedScopeDifferences": [],
+    "generatedFileCounts": {
+      "sdk/dist": 757,
+      "sdk/assets": 512,
+      "sdk/schemas": 2
+    },
+    "excludedCaches": [
+      "node_modules"
+    ],
+    "installedDependenciesExcluded": true,
+    "coverage": {
+      "discoveredFiles": 3287,
+      "inspectedFiles": 3287,
+      "textFiles": 3137,
+      "nonTextFiles": 150,
+      "symlinks": 0,
+      "missingTrackedFiles": 0,
+      "generatedFiles": 1271,
+      "pathHitUnits": 0,
+      "contentHitUnits": 5853,
+      "totalMatches": 5925,
+      "retainedMatches": 5925,
+      "unexplainedMatches": 0,
+      "staleExceptions": 0,
+      "inspectedBytes": 122324144
+    },
+    "staticStrings": {
+      "status": "executed",
+      "parser": "typescript",
+      "parserVersion": "5.9.3",
+      "pinnedVersion": "5.9.3",
+      "eligibleFiles": 908,
+      "inspectedFiles": 908,
+      "evaluatedExpressions": 1349,
+      "computedHitUnits": 0,
+      "skippedFiles": []
+    }
+  },
+  "paidModelCalls": 0,
+  "passed": true,
+  "auditedSnapshot": {
+    "status": "verified",
+    "sourceCommit": "5e4e417",
+    "factsFrozenAtAudit": true,
+    "subsequentChange": "Resident adapter regression fixture and its exact provenance edit offsets were updated after this build proof."
+  },
+  "passedScope": "The passed field and the original build/payload/fallback observations refer only to the recorded proofArchive and its actual file set. They do not assert completeness of the original 1996-file baseline or final canonical source acceptance."
+}

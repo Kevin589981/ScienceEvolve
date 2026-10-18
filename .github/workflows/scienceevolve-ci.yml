@@ -1,0 +1,54 @@
+name: ScienceEvolve SDK
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  sdk:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    # The complete single-worker Git integration suite exceeds one hour locally.
+    # This is the job budget; individual test deadlines remain unchanged.
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm run check:source-delivery
+      - run: npm run check:main-runtime
+      - run: node sdk/scripts/sync-main-runtime.mjs --verify-generation
+      - run: node sdk/scripts/check-example-semantics.mjs
+      - run: node scripts/validation/audit-environment.mjs
+      - run: npm run check:branding
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+      - run: node scripts/validation/probe-environment.mjs --temp-root "${{ runner.temp }}/scienceevolve-env" --report "${{ runner.temp }}/environment-probes.json"
+      - run: node scripts/validation/run-research-node-tests.mjs --temp-root "${{ runner.temp }}/scienceevolve-research" --report "${{ runner.temp }}/research-node-tests.json"
+      - run: npm run smoke:package
+
+  example-protocols:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build isolated offline test environment
+        run: docker build -t scienceevolve-validation -f scripts/validation/Dockerfile scripts/validation
+      - name: Verify example protocols with original pinned sources
+        run: >-
+          docker run --init --rm --network none --read-only
+          --tmpfs /tmp:exec,mode=1777
+          -v "${{ github.workspace }}:/work:ro"
+          -w /work -e PYTHONDONTWRITEBYTECODE=1
+          scienceevolve-validation
+          python -B /opt/validation/run-python-tests.py --root /work

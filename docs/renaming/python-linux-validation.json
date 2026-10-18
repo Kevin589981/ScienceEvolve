@@ -1,0 +1,2114 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-10-15T15:56:12.545962+00:00",
+  "finishedAt": "2026-10-15T15:56:23.985657+00:00",
+  "elapsedSeconds": 11.066278283000003,
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+  "python": "3.12.15 (main, Oct  6 2026, 02:02:31) [GCC 12.2.0]",
+  "git": "git version 2.39.5",
+  "node": "v24.22.0",
+  "npm": "11.19.1",
+  "sourceRoot": "/workspace",
+  "sourceSnapshotSha256": "dbe8f4ca751cb256252d97a77ac65762ec42918ca0c4c148d45d1dc998d9d6c1",
+  "sourceSnapshotFileCount": 474,
+  "sourceSnapshot": [
+    {
+      "path": "example/01-ahe-evolve/workflow.json",
+      "sha256": "7177f848d021d80244199da45140e340574c005eaa6a30ed9ddba9bfd9b10389"
+    },
+    {
+      "path": "example/02-software-development/workflow.json",
+      "sha256": "def6a577ac1c4babf41f2864432a757678ed2dcfca5caf8a6774219ad4ceed42"
+    },
+    {
+      "path": "example/agent-laboratory/CAPABILITIES.json",
+      "sha256": "67a5c0d0abc6375daf7658a6269b6b89d1a78c1469c34d5d4995697a70ec2a32"
+    },
+    {
+      "path": "example/agent-laboratory/SOURCES.json",
+      "sha256": "8410035192d9de08103e6714273a1ec29a8fceb2a2f578813b01379c165ded45"
+    },
+    {
+      "path": "example/agent-laboratory/skills/scienceevolve-agent-laboratory/LICENSE",
+      "sha256": "bf38a159d01e82d58f986c2d6dd06e03ba0b9cd59a6d286dd94109aac358e583"
+    },
+    {
+      "path": "example/agent-laboratory/skills/scienceevolve-agent-laboratory/UPSTREAM.json",
+      "sha256": "6386402244d259d55e9900fcc4d9def8abd12a9b43cf3df19f4d67c8aa7765b9"
+    },
+    {
+      "path": "example/agent-laboratory/skills/scienceevolve-agent-laboratory/scripts/paper_score.py",
+      "sha256": "1cb09bb5bbb22e5f69d28220b20f2e5dd305ae315eb89068be823f374fe6044e"
+    },
+    {
+      "path": "example/agent-laboratory/skills/scienceevolve-agent-laboratory/upstream/agents.py",
+      "sha256": "d8d1eda040eb1fa897d84596a1b36f277e83da75433c1a9ac2d9efe5be5c749a"
+    },
+    {
+      "path": "example/agent-laboratory/skills/scienceevolve-agent-laboratory/upstream/ai_lab_repo.py",
+      "sha256": "799a3c078d835cd632487f52ed5b8e9f155bb9514ca104a30442ecfbcb7765ff"
+    },
+    {
+      "path": "example/agent-laboratory/skills/scienceevolve-agent-laboratory/upstream/common_imports.py",
+      "sha256": "620cdb11f91540f87dee2d61a413c5271ebc428485703b838441ef3f6f4c3e42"
+    },
+    {
+      "path": "example/agent-laboratory/skills/scienceevolve-agent-laboratory/upstream/inference.py",
+      "sha256": "9f34099f0f1e7e548c7798887d9b33da6cfeef552d16e720fce343db423a5b2e"
+    },
+    {
+      "path": "example/agent-laboratory/skills/scienceevolve-agent-laboratory/upstream/mlesolver.py",
+      "sha256": "cc110f2b07642532cca11bd8cbf74becfc41016c7f876c16f6d40379ec59882c"
+    },
+    {
+      "path": "example/agent-laboratory/skills/scienceevolve-agent-laboratory/upstream/papersolver.py",
+      "sha256": "8c16d68577570fbf6332d3f070e5aec975ed3fd3e1440918940f16eb8911366c"
+    },
+    {
+      "path": "example/agent-laboratory/skills/scienceevolve-agent-laboratory/upstream/tools.py",
+      "sha256": "171b36dd2507add4acb3c4608d2acc5f9d9cd7bc4631264d23efd40c3c816d23"
+    },
+    {
+      "path": "example/agent-laboratory/skills/scienceevolve-agent-laboratory/upstream/utils.py",
+      "sha256": "ea23c00695613ab346ac6646f69dbf2b0972efda7c1cafeccd5ffdb4f5f439c8"
+    },
+    {
+      "path": "example/agent-laboratory/workflow.json",
+      "sha256": "b1458e74feb40ad13b0fda10051781ad9b75875d0ca401f3d801aab8e2bc1efe"
+    },
+    {
+      "path": "example/agentrxiv/CAPABILITIES.json",
+      "sha256": "7c8eeaa98a38b014320230636a56b6c9ee674418d2c63347281c9b1727bfd837"
+    },
+    {
+      "path": "example/agentrxiv/SOURCES.json",
+      "sha256": "85e37cb978fcceffe86285be08d197a046e00f1e8a3da02979388a0e9b325fb2"
+    },
+    {
+      "path": "example/agentrxiv/skills/scienceevolve-agentrxiv/LICENSE",
+      "sha256": "bf38a159d01e82d58f986c2d6dd06e03ba0b9cd59a6d286dd94109aac358e583"
+    },
+    {
+      "path": "example/agentrxiv/skills/scienceevolve-agentrxiv/UPSTREAM.json",
+      "sha256": "823863d1bf7273333bcb692bb7341178e2b66ee0096f9c275227fa97d03df83a"
+    },
+    {
+      "path": "example/agentrxiv/skills/scienceevolve-agentrxiv/scripts/archive.py",
+      "sha256": "4d8facf4552d03a8e1147051286fb44528d7423512b0982b221895bf29d26955"
+    },
+    {
+      "path": "example/agentrxiv/skills/scienceevolve-agentrxiv/scripts/paper_score.py",
+      "sha256": "1cb09bb5bbb22e5f69d28220b20f2e5dd305ae315eb89068be823f374fe6044e"
+    },
+    {
+      "path": "example/agentrxiv/skills/scienceevolve-agentrxiv/upstream/agents.py",
+      "sha256": "d8d1eda040eb1fa897d84596a1b36f277e83da75433c1a9ac2d9efe5be5c749a"
+    },
+    {
+      "path": "example/agentrxiv/skills/scienceevolve-agentrxiv/upstream/ai_lab_repo.py",
+      "sha256": "799a3c078d835cd632487f52ed5b8e9f155bb9514ca104a30442ecfbcb7765ff"
+    },
+    {
+      "path": "example/agentrxiv/skills/scienceevolve-agentrxiv/upstream/app.py",
+      "sha256": "3015bcf64679caa122eac01ba9afff1ab7736fe83385518017ec95f68b5b65ff"
+    },
+    {
+      "path": "example/agentrxiv/skills/scienceevolve-agentrxiv/upstream/common_imports.py",
+      "sha256": "620cdb11f91540f87dee2d61a413c5271ebc428485703b838441ef3f6f4c3e42"
+    },
+    {
+      "path": "example/agentrxiv/skills/scienceevolve-agentrxiv/upstream/inference.py",
+      "sha256": "9f34099f0f1e7e548c7798887d9b33da6cfeef552d16e720fce343db423a5b2e"
+    },
+    {
+      "path": "example/agentrxiv/skills/scienceevolve-agentrxiv/upstream/mlesolver.py",
+      "sha256": "cc110f2b07642532cca11bd8cbf74becfc41016c7f876c16f6d40379ec59882c"
+    },
+    {
+      "path": "example/agentrxiv/skills/scienceevolve-agentrxiv/upstream/papersolver.py",
+      "sha256": "8c16d68577570fbf6332d3f070e5aec975ed3fd3e1440918940f16eb8911366c"
+    },
+    {
+      "path": "example/agentrxiv/skills/scienceevolve-agentrxiv/upstream/tools.py",
+      "sha256": "171b36dd2507add4acb3c4608d2acc5f9d9cd7bc4631264d23efd40c3c816d23"
+    },
+    {
+      "path": "example/agentrxiv/skills/scienceevolve-agentrxiv/upstream/utils.py",
+      "sha256": "ea23c00695613ab346ac6646f69dbf2b0972efda7c1cafeccd5ffdb4f5f439c8"
+    },
+    {
+      "path": "example/agentrxiv/workflow.json",
+      "sha256": "bb670fb64795bff390ef641a5513900a0c74a139c76fe8a3867b656b50852c25"
+    },
+    {
+      "path": "example/ai-scientist-v2/workflow.json",
+      "sha256": "5ac8bba046da57266a4ae6fd7db45e135040ff032477434b7afbeb3008a81cb6"
+    },
+    {
+      "path": "example/aris/CAPABILITIES.json",
+      "sha256": "3c59d05173fa9845faf6e9185250c5618f463498145b0ad399f84be252743fed"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/INTEGRITY_UPSTREAM.json",
+      "sha256": "4b119733e321ccab35f258152a729342667e0e118b67b4eadaad0968033ddac4"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/LICENSE",
+      "sha256": "e30cf5dd5f49b4f9b656590e23d782b4756c924a9f0ff0162b3e7b5d87006bf5"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/UPSTREAM.json",
+      "sha256": "8f64ef1febf9578065b35ec8d547be6f341eb18da7b81a3802ba39eb21372d1a"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/LICENSE",
+      "sha256": "d7696d9a04b101369904390c57f6d48f2729b7f0da8e4e6397bb3ccf73f50011"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/eval/corrupt.py",
+      "sha256": "987234b2e0cf8514885723b17d3f83657efa5a8481191c6dfa19263ee06be282"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/eval/expected_findings/clean.json",
+      "sha256": "c13e457a4ff8ce6b01384492f0c4be8943cf3b16a30f3cd8ea8ec5190f769ceb"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/eval/expected_findings/defensive_hedge.json",
+      "sha256": "2c5614f86a1f4c327d8c2675c64a6338720b5dc9bfaa321e31a9e22764cd177a"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/eval/expected_findings/delta_inflate.json",
+      "sha256": "dac54c16ab36213f966e2444987df596ef958c8395bb59bd5f939f45e254b023"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/eval/expected_findings/dup_table.json",
+      "sha256": "acbac75fc9ae92524b7e55ab554d0002dba50b8c3adee005af253dd73ee8c903"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/eval/expected_findings/grim_impossible.json",
+      "sha256": "5d70ce4ca2c0f4bf459f0c392018f053a8f3d8018ab4491d485ff24c78ae8f65"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/eval/expected_findings/headline_inflate.json",
+      "sha256": "56d8c00f76b2fcbf7cf86db51e0102ef94ba136daf66658cd75637fa1779a7f9"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/eval/expected_findings/pipeline_artifact.json",
+      "sha256": "ed39c177d7ad167ec7bd8900288a654e9a7eb1f83c5352b52059b910ce05f315"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/eval/expected_findings/stat_inconsistency.json",
+      "sha256": "18519f4a84ec1210f55a790cabe67c391d1a9b5ddc25097701561654d386342c"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/eval/expected_findings/variance_impossible.json",
+      "sha256": "e2bed7ba154c1f201dd89a7c733bd31ea5e771e1d85ed75131964552d7301763"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/eval/run_eval.py",
+      "sha256": "f43971cb2c849868af3bb0f0e505391fba4732f62a7abedbf13619388562ecda"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/schemas/artifact_manifest.schema.json",
+      "sha256": "ffaf5c30615d038a429f3b5e05a3cf144d73d301918dc922ce067ca51b9e74f9"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/schemas/claims.schema.json",
+      "sha256": "e7068b14e2d7cd84be462459f05f79b2e530eb2cbd0840a983efaed147e1c09f"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/schemas/finding.schema.json",
+      "sha256": "fccf064154d895314ed224af52b7c575beaba57aa17aa19b519bfe24898373f2"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/schemas/report.schema.json",
+      "sha256": "09e5acb2897958a3befe314d7c6a1d4c2658c782548e47e297d8cfa672d65dfd"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/tests/test_adjudicator.py",
+      "sha256": "36452691f10e36da9404a80efc3ab74e5ab9f58cab4ead313711cea41eee8e39"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/tests/test_ai_style.py",
+      "sha256": "6ef2d05008f170b996745daa04cacb0a3480c02fd0b9e8d8be1da740814fba30"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/tests/test_countercheck.py",
+      "sha256": "763d7ee919a9fef933813889c1588cf9feb167dae038fb5ec0ec1a92db1589d1"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/tests/test_embedded_python.py",
+      "sha256": "ffeeec65f203a623156c2189da7909ca07d0bdec2f2d821f972051cbf299d685"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/tests/test_select_primary_pdf.py",
+      "sha256": "f1550f7b8c7075d0f0df9265c30fd02cdb010537aeec4cf6ea73d2b2f72475c6"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/tools/adjudicate_findings.py",
+      "sha256": "1b4efd009b7bd099e01324518dbb7c17d060fbad451e4d222068ab75977f6461"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/tools/attach_refutation.py",
+      "sha256": "2ee9da9fe3693ef63b48006ae1856902826a748d79f620d34cbc712ac2d38061"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/tools/build_claim_ledger.py",
+      "sha256": "425efafcc9fc6179d4c796c40325710513db3fdbe428aa008e00e4358e013f25"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/tools/build_manifest.py",
+      "sha256": "e3b8484ff9cdf9564ddd8d8a7f49b771f2fcd12a6e8e0bd9c2df188db7c9248e"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/tools/check_ai_style.py",
+      "sha256": "bfe8065230ef81c216c068df53f18eef1d4bab7f71d0840360652ccf462fa7c1"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/tools/check_numeric_consistency.py",
+      "sha256": "b8da29e691360b1ba1670962c9a6aebef0230b2f197e29c419c5ee954efc18a4"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/tools/check_presentation.py",
+      "sha256": "6ec269f72e90944d6547e4eae26b6a7b7e645d0287b238407734143fb9a90e01"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/tools/check_stat_consistency.py",
+      "sha256": "b387f9723648f9193d3534697b4e7a2d05b7e7f1980d64806e7c8348bab63e06"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/tools/countercheck.py",
+      "sha256": "dfb1112d9f1a59bc347fc6a75ccba48e6d0bc8ffe8023667cbb4d0d37cac1d6d"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/integrity-upstream/tools/select_primary_pdf.py",
+      "sha256": "664229e7744c047f53aa0f69c2c6519959c000812ba57cb0cadb2e89f74837ea"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/scripts/readonly_review.py",
+      "sha256": "d3c761d2ab77ff15bc251cb83d45bd8e50345ffd2b14855db77a9333e093a37a"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/scripts/review_bridge.py",
+      "sha256": "5cbcb5f50553437369bacae1b87d1d3d844ac0b5d7a6715344f3686a5669c567"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/LICENSE",
+      "sha256": "e30cf5dd5f49b4f9b656590e23d782b4756c924a9f0ff0162b3e7b5d87006bf5"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/experiment-queue/scripts/build_manifest.py",
+      "sha256": "2fe0d13d2bba863e9bbde65f8a746f1c0f46b7e2c08e16107786fad6980a5820"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/experiment-queue/scripts/queue_manager.py",
+      "sha256": "9b53e554bda3fec88d9d293e323e26f531d8c074b7544a8ca7b4c3b529ab0129"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/figure-spec/scripts/figure_renderer.py",
+      "sha256": "02b4e01e46b51aeca12722ddd7b21bb7da3c3b175bba5d129c45d671fb07a0bc"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-illustration-image2/scripts/paper_illustration_image2.py",
+      "sha256": "bc97f5b1ae14ffaff10c24240b6e93f3c1282ffd340d4756ea80477649f32890"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-poster-html/scripts/_posterly/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-poster-html/scripts/_posterly/canvas.py",
+      "sha256": "11503d98ebc2b817c34d3d05e85c169c8b9ccee55cc0d19ff4c6d488f39c36ec"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-poster-html/scripts/_posterly/measure.py",
+      "sha256": "ffaab446329621f5621fa29fd7e0cabb38a5be1a31e92be6acd36b818de416e3"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-poster-html/scripts/_posterly/polish.py",
+      "sha256": "d401dbf27ee198a35b4d4a83aaf1df2c23e148f353557b66599f88155f9df96b"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-poster-html/scripts/_posterly/preflight.py",
+      "sha256": "ca81022db3d92b9b3f3414128378df55bc2aba6560681d4d930e1e3426e31d32"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-poster-html/scripts/_posterly/render.py",
+      "sha256": "0ba4bcb874e0648b9058a1ae0b0168dc16f4c8ee382f005f69326d45acf9034b"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-poster-html/scripts/_posterly/textutil.py",
+      "sha256": "a2b32524cf004810d46bb442b6f418ff7445b3aff4d7995a8bf6b7784de36c3e"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-poster-html/scripts/_posterly/verify_final.py",
+      "sha256": "bb2c737496d49d5028e7c8798f2aa39837c0f72677fa6b444c5710dac6e3d283"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-poster-html/scripts/asset_check.py",
+      "sha256": "84f6b34560c903ddf8d6748ad70858ec00734f03a590d5705914c6ce53c6e37c"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-poster-html/scripts/extract_pdf_figures.py",
+      "sha256": "5f2f48392c69a50d7e894ad5ac2462e4e6971e266a8ab9f760f786e00c222910"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-poster-html/scripts/poster_check.py",
+      "sha256": "a048eeba87444be279b8b0fb3796079419546315ed10b460778bc82c752e4db6"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-poster-html/scripts/preprocess_figures.py",
+      "sha256": "74d18140aab1ba5e10d0f26fb21c99cc2b7293fb4f2ab6a9d891d91d4328ad47"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-poster-html/scripts/render_preview.py",
+      "sha256": "5114c27fb2fc0703c2a3c749f2b84cfd6d6cc29051b44572e99db87b7ca8ea52"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-poster-html/scripts/run_gates.py",
+      "sha256": "807d59964259e1eff1a6bd13af2f34b3c1d1404316d1a3a32558b420308fb7e3"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-poster-html/scripts/style_check.py",
+      "sha256": "029eff049907ea1a8ca4ee65ca8d10fe26d09591d6d96684fc6cb14e90879530"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-poster-html/templates/tokens/acl.json",
+      "sha256": "e9c2bcef6c7433f9ca79437bae729b513f59ff61b8b843c575a205be52f2e4e8"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-poster-html/templates/tokens/cvpr.json",
+      "sha256": "921e1c08dabf2f10531c87a4a10bd9228642afc2e089ed3d3a9fcef3ea24288c"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-poster-html/templates/tokens/generic.json",
+      "sha256": "229084d6c166d589b3c3ec2cf024c4e6341c91eea45b07fb84bd7be8c1e6bf82"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-poster-html/templates/tokens/iclr.json",
+      "sha256": "b176829c14d8fbaa7b0eb49873ce7b9cb3150aad13990b4eecaa2c825582a65b"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-poster-html/templates/tokens/icml.json",
+      "sha256": "078dbb6101e8579559ba24a41582af0b3b8dbc3f487a8fb9676ca5ba41b5e345"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/paper-poster-html/templates/tokens/neurips.json",
+      "sha256": "f59567e68fa011eae86ec58d85abe564d6acce5174896a755e7588e3da33954c"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/skills/render-html/scripts/render_html.py",
+      "sha256": "f563872737d1fafbc38ea6a6de85451063daa196b219e163dcb32c3abeb6d58f"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/templates/claude-hooks/corpus_write_guard.json",
+      "sha256": "b32a2d9200be0d70a55ea3d14e199db04a42b0cc5aab243afeee354329ccc363"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/templates/claude-hooks/corpus_write_guard.py",
+      "sha256": "9005bc1bc94378952237439096d9c2c05f1ff6243456878da5c9fc94efdd5893"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/templates/claude-hooks/meta_logging.json",
+      "sha256": "4162f4d902e6ba6740a377b0a7d01d85f15f7a36bda2645b6181bb51636aa303"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/arxiv_fetch.py",
+      "sha256": "588be920e4620d8c20db93b1bec4951182034a67e46d9b0e04431ee476bd1425"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/capture_filter.py",
+      "sha256": "04cf93f079612fa1454e424101cef3069bb29c79dad11488e659b40bb1c118d0"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/check_skills_inventory.py",
+      "sha256": "fe50c1eb2fd10c1d61cc484183b6b047caeb65a70577f0685a46ca5248b2cb1b"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/convert_skills_to_llm_chat.py",
+      "sha256": "66ce3650c23915a978deb6c9388d2ddd77be7dfd1862f73464cd481fb5810004"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/copilot_native_evidence.py",
+      "sha256": "f8137fccba9874b7d04e0ddbbee5755d2d036509415680da760910959d7aff02"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/deepxiv_fetch.py",
+      "sha256": "764ef7a4bb87a25df1e92c6fc51060d4b92615df7f1306df71faf0fb6020630f"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/evidence_check.py",
+      "sha256": "2edbd901d760d22e7e43a14e8e88ab0e089303f489055cd9b5e9d1f4dce50382"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/exa_search.py",
+      "sha256": "f29f9950d476fdf66b1f7bf8ccdcd7a827ae069060c5980d86b3b6f580b437b1"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/experiment_queue/build_manifest.py",
+      "sha256": "e1daa4116e24a36f970e5fddf6d1493e6a7396933c4e21468c85593ca35d4a25"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/experiment_queue/queue_manager.py",
+      "sha256": "eac75a1285c81eb1683906cc979486f14bbba612c7cf434c753dfacec1f79dda"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/extract_paper_style.py",
+      "sha256": "020baeed072f7ab8ac0f4bc0b341609b2498f82121b6dd6d4e3961f0669eb1f2"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/figure_renderer.py",
+      "sha256": "88f667eb398d491fc49f5f4d24c6ee06de27862d1e9187c2a23f8ff3079b165c"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/forensics_gate.py",
+      "sha256": "6b702cffb656aada0290b7d06f218a96c2cc47d2cef924838b4b53f79233f80b"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/generate_codex_claude_review_overrides.py",
+      "sha256": "c32a65ec2d9cc06031493718869b47f2326b27564c39d5a6cadde984e996c349"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/idea_discovery_gate.py",
+      "sha256": "129662358d7d38bdc9cb3d20d0bb9d7e2e8bf75aad45d0228766e9637475133e"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/iteration_log.py",
+      "sha256": "819c22ba20bb270e0a514edb2626e7e3a1c4bade36f809e3ee9571cc076f7cb0"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/meta_opt/trigger_eval.py",
+      "sha256": "ec0dfb8b08de96c97b751968dd9b8e08bf323828cbf727e757a8bf2fc2d6ed76"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/meta_opt/trigger_evals.sample.json",
+      "sha256": "20db057ba06ac3c7d1cd89e1297b80449c38462c1bf010531e053f368139f7f7"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/openalex_fetch.py",
+      "sha256": "83a097cc925c321d6dbf74e72bd5c6e1fdcdb82840323d3cf246bb25c005d530"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/paper_illustration_image2.py",
+      "sha256": "f7c6221f70d00b113646f1c3d481a37a1b04a5bcef2f0e055b3d9b22d8b9c01f"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/provenance.py",
+      "sha256": "355bcd4ef02903d4686460fa6142badc57bb34ea62b369e5239f673a4f615a1e"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/research_wiki.py",
+      "sha256": "455bfe5f0a5d53d5a06bd729350dc44e81257100a681ff3405c7277bd6001c0b"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/review_gate.py",
+      "sha256": "fc0830dee82349ee92e4ab1ae7b13ed8dd584456e6e521b179ebc2cdb5390a45"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/run_state.py",
+      "sha256": "5fc466462e2d4c26c6de078dcb04100bafa3a9c56df9a0dc4e38f316a33df5b5"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/semantic_scholar_fetch.py",
+      "sha256": "2b8b2f5164b886eb0f9d73ea5495e43991e9b52fc84631de87e941bc3e3ccb7c"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/skill_picker.py",
+      "sha256": "3d08bbf141abfc65e5b348735f10c9fe56fa92afc33bdd6ae7edae85a17cac14"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/threat_scan.py",
+      "sha256": "fe0f6d4ec38baa09b58a9dbdb4bde3039b9863a3e52dc79ada33d79f3c84e268"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/verify_papers.py",
+      "sha256": "28e6a3b1276d08fff971b71b03360a00a279d5f3c2ccacfd14b78a76d7fef76e"
+    },
+    {
+      "path": "example/aris/skills/scienceevolve-aris/upstream/tools/watchdog.py",
+      "sha256": "f03e40799e855d1201fdb4428c4625311691d204e719ca9e32acc33e0d0377ae"
+    },
+    {
+      "path": "example/aris/workflow.json",
+      "sha256": "f730dde2dd7d2379ce82698056b1146bd532ebf2ea7263740e814b51ef058e64"
+    },
+    {
+      "path": "example/autoresearch/CAPABILITIES.json",
+      "sha256": "e5e85dbfd06e0d41369f32633d0ed1827a9aafe2cccbd6bb9d72905aa514379f"
+    },
+    {
+      "path": "example/autoresearch/SOURCES.json",
+      "sha256": "3d8b7d2c639e720793994b2a6a5881e412470b59c26a3bed0523b52c8cd03b92"
+    },
+    {
+      "path": "example/autoresearch/skills/scienceevolve-autoresearch/scripts/finish_trial.py",
+      "sha256": "7b838325580d7e309fbf7282b7e30765249f7f6d4255bdf351d046f5bfa01dc6"
+    },
+    {
+      "path": "example/autoresearch/workflow.json",
+      "sha256": "8fabadffe37a216f6d2cad1eb5cd183d643507f491c3e2a9b522ccd397bfdbb2"
+    },
+    {
+      "path": "example/biomni/CAPABILITIES.json",
+      "sha256": "efe6c53b06a9055500ed0b99b24a6f82e2aa1066117965a82a9a58322f5d1ef7"
+    },
+    {
+      "path": "example/biomni/SOURCES.json",
+      "sha256": "1587c04e5d7d1c8e93a6419799028232314681ce5b875356798753c1805e1f39"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/UPSTREAM.json",
+      "sha256": "9d00ae63b99da0062ea5bfb038773d259e7103d9d02be0b84f6ba7c1abba66af"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/scripts/bridge.py",
+      "sha256": "199fcf2745b2ec55a183b273c5d48d44c5e1a023b42ac2119b42a4cfcdc9ef2b"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/__init__.py",
+      "sha256": "bf7c79a01931c0a24464bbfad90a9298fde2a8d28bb5982b5997c7f1e1739508"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/agent/__init__.py",
+      "sha256": "68858e830e5b46b3cd33d35461659490da5b584c9743df955d51f01bdf248139"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/agent/a1.py",
+      "sha256": "ffb67055ebc0ec645128026d797a29223232567c1d75f87f75947bf720da92bf"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/agent/env_collection.py",
+      "sha256": "2c02fca7b8c0f18f752aebab547e5138877792aa96a67b2f6355f089156f7d73"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/agent/function_generator.py",
+      "sha256": "0968026f58848d2510ceb587c0f1522612eaed927f22c689570bfff37779c5d9"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/agent/qa_llm.py",
+      "sha256": "d127ffc4ce5e013df31d165aa2a3a22549bca5fec0179a39077854594a1accfd"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/agent/react.py",
+      "sha256": "bc6f1202e9c65419642d71093bffd7362a976c3b5ceddba770568ba8f0029ae5"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/biorxiv_scripts/extract_biorxiv_tasks.py",
+      "sha256": "7223defdc0d5a2a1afb001f665b118606597f62abdd2932b99972baee2df2e24"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/biorxiv_scripts/generate_function.py",
+      "sha256": "f2a12a5587894f2a02466ab24542c49dd6705e900058d9e0ee18b5caa1e1c000"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/biorxiv_scripts/process_all_subjects.py",
+      "sha256": "b1e492987107738b6a89b180c7ec340df319954846737e7755fce6c6aea69163"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/config.py",
+      "sha256": "cca67e90a8167ab4bfc3307f8b08a50da11e1a87b5d2c5ae6597f740cc4dac39"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/env_desc.py",
+      "sha256": "5e1ff01780eaa936088d4c149fa9eba4df5206aec9183f8c974127c0cbefa6b2"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/env_desc_cm.py",
+      "sha256": "3d64e48e5c164ff1c634d3255018993f570fc92c62928233d87edc5cc3333f71"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/eval/__init__.py",
+      "sha256": "c331df4462fc4bda6174cf068ae510000e8c3b1c74b92246da093bc0b25d049b"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/eval/biomni_eval1.py",
+      "sha256": "440dae783ed875fe9d39aa1d9a35ac041929af9f387b760229309f47477869f8"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/know_how/__init__.py",
+      "sha256": "894e37f78b0d6bf2ca0c24b2b70c8828dc744656e8d157c2e4a66270963429fc"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/know_how/loader.py",
+      "sha256": "32a224d2756af41370a56516e40a574047a5e2c3e4a2deb8d9e2a41262bebc0c"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/llm.py",
+      "sha256": "f4405c78e8a138cb41460a161026439b4be8d78a12e2d34db20db9555f67c875"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/model/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/model/retriever.py",
+      "sha256": "bcec2ed858530f25360840f007c858e4515ae129c260c40d4cbcc70344c754ec"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/task/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/task/base_task.py",
+      "sha256": "8d1b07694d5bb4deb9b81877beecc35e4e3a7394156322c2b180f107c7a2dc6c"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/task/hle.py",
+      "sha256": "0bf3ff834c438276719dbebf08a02a90554618bc8f16e2135e544cf0d1dd164c"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/task/lab_bench.py",
+      "sha256": "bab41cecce76e3edd418da037deceb36570308f7ac0b8108e531c8c4c6ca2d2c"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/__init__.py",
+      "sha256": "b7d836eeabb0e4259ff2823f89751fd778ecf3ea2e70d9e0ba2b7dce1013814d"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/biochemistry.py",
+      "sha256": "9b8ea7ea1f712553025bdaf16f981d8bec62df6004efd0954ed90f33a394e018"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/bioengineering.py",
+      "sha256": "809899ddf7ac1d2b9c7ac1df2955d93818f64ea9609609e78376992234d9d65f"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/bioimaging.py",
+      "sha256": "371cd2ce9297b22de1465e7b80105ea90fc4b1b227dd53bf61e9ac0f99086a4c"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/biophysics.py",
+      "sha256": "7eb57d570d516ab22c089f0ff22141d3bb4f0fa73875208f32bcf375a0cb4127"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/cancer_biology.py",
+      "sha256": "f0b7551bf8dccbe0310558a960c724c0ffaf39ea54785664089a7d3b43d69a36"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/cell_biology.py",
+      "sha256": "45f8edb43c079cab4727211ae6cecbf603577b4d886cd05295fabdd561a763af"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/database.py",
+      "sha256": "7c0f8f000176e0d6f8b9ec956b01f8e8012a6079077e793eff6543106517f8e8"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/example_mcp_tools/pubmed_mcp.py",
+      "sha256": "8468f76c812da89f793758732f3e5182ca00b74740a4b99f5485659677bdf5f7"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/genetics.py",
+      "sha256": "e8afb4cd575c54b6277cc5a704fc060e9cdf8d0e6a6d72ea9c28d15267ec1e44"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/genomics.py",
+      "sha256": "74714f05594d4655e946107628114339452cab8eecbb4005feccea49be2906c5"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/glycoengineering.py",
+      "sha256": "ed3726d318f239e98183a359f18bcd341f4159ef2e400322c6141f77dcd2aff2"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/immunology.py",
+      "sha256": "ef97b6bfdd52a935078e0ea4cdd8641edb2d4c1ff7f77f206b551a293fb6bdb4"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/lab_automation.py",
+      "sha256": "cd93f22b8227d22438109a522881a7b0ae3d7fe14844819afecfb4fc8a4ecc7c"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/literature.py",
+      "sha256": "c1371a87943f64d4b74d7ba02b51d06cdc370509fda8d06584af7f10c84b0e12"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/microbiology.py",
+      "sha256": "97ee7972ad15a54aa5f5960797069bfb698e4127269bf091c513ce0cc8a814c3"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/molecular_biology.py",
+      "sha256": "de47e1dc0013cd6e8d2941d8945835d585f938e486a69bb2ba3333403a3efba4"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/pathology.py",
+      "sha256": "311595e67205a2f7d6e9a5b49c3eca7c33f028c5d6205b91170d3c0e5b2131c8"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/pharmacology.py",
+      "sha256": "2fcbb502dbcb62f03fb0e70877836abe48645c8439cf89af7131b6c684fe6993"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/physiology.py",
+      "sha256": "18a864d4b3c68e3290b105ac686cf2536d890c5d122779926c62dcce1ff30d55"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/protocols.py",
+      "sha256": "8c00f1e538262a26e474aad2fbbb92766bbd81b34c693075708ccd8404fe01a0"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/support_tools.py",
+      "sha256": "4410194c730283431280ed1db05d662358f869e5ac02ed287c65597ad2d39618"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/synthetic_biology.py",
+      "sha256": "f21d456a16a0c4c69e1158ad06f5516f4ab990035e91b7eedd0aa38ed5ff5782"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/systems_biology.py",
+      "sha256": "9ac7daa2c5257347e041a1c68eb59dbc98a77eac62402b8f67e7ee3d288b0c40"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/biochemistry.py",
+      "sha256": "5271e41b31dc7082b110a895ff2b5d3ecfabf12e1dcb543a9d72e9c462af55ac"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/bioengineering.py",
+      "sha256": "cec0897cbd7fd600f8e244c248558306ee44173750a97f5a4baf3edfc3b8fa4e"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/bioimaging.py",
+      "sha256": "c1537b55e719f7f67814fb164a235cc3be13273ec9c9569fe969aac2e64be884"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/biophysics.py",
+      "sha256": "ef84502c6c50aa89d073a8995faa96647e17dd28a359b55ebad1fd981342977b"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/cancer_biology.py",
+      "sha256": "77346ff5c19b6257c20b01c35c2e5c0d431f26779e9a0d800d68a74bbf6de08a"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/cell_biology.py",
+      "sha256": "3936a386890f821f9627072c3854311eaefd07143463fb6c53e02d3b328ec38b"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/database.py",
+      "sha256": "875473dc5473cf4f7615c2b4fd886f543ca8a295f7c58eca00fdceb22d2883b6"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/genetics.py",
+      "sha256": "b865016784981732dae8540d23f541ac2de78192bdd739a94a2b2117bb143a42"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/genomics.py",
+      "sha256": "f8c615b4dc338a0bd16abf80cbd0bed55e566d33aa26c1b48e55bf3fbed230a6"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/glycoengineering.py",
+      "sha256": "3ef917e046a233a63204f40fb437d276a24c92fb1160f558d980e0eae533761d"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/immunology.py",
+      "sha256": "a69580b2aac1585e8efede1ddd51639007cb84bca38ba141edc10f5198b157b4"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/lab_automation.py",
+      "sha256": "68877e35d4dbf18fb61e0251efdcf9460690e756fb4aa8a961cc38fad6541537"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/literature.py",
+      "sha256": "6cbd22da18b1e7ff71083c3125da9ecaed63607d4023d7b36844eb1065c90962"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/microbiology.py",
+      "sha256": "3cb3d8705a4fee0140173af21d1824e3479920aba523e09f8e7dad77b3a4bbaf"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/molecular_biology.py",
+      "sha256": "ded767b440df8efa8777e824f74263c072a921835bf1023c147b21211ea0ddc4"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/pathology.py",
+      "sha256": "f3ada0bb1688071ff5cb1710cc298ff5f64e0259ea6876d0a4af887853472809"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/pharmacology.py",
+      "sha256": "9beb6b7e6abfb776dadf6311759850bfb3bf6fb8c760aebde64d12bd2f44fec1"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/physiology.py",
+      "sha256": "ed80ea06a6bd79dba4f1e912b46c865d2d35b4d329cdb8ac8b376ed326da02c2"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/protocols.py",
+      "sha256": "8eaa6544c61abb11d3ab9e2bedc24b9373265ebc2e2ee20080b2f5c4bf56d598"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/support_tools.py",
+      "sha256": "341ed96c03eca300deabf50f3be65ba3687195ff53a97cf9a10aaaee65dd9903"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/synthetic_biology.py",
+      "sha256": "28c2b8a265692bd141986293e1c74024449d8552a32ad8a945dd3a5c07c0d67f"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_description/systems_biology.py",
+      "sha256": "a8e2c0e651a078fcfae18a4938400a80efca7db5096102731ec5f9eae6d668b9"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/tool/tool_registry.py",
+      "sha256": "b112264b172b9f526a12fda649a6e09cbcdb40b8b0fd7385a8116a418a893d9b"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/utils.py",
+      "sha256": "62a69f8168a30030b3e78a2556e748b7b5f24ac09e6dcde1139ff9d701dcd22c"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni/version.py",
+      "sha256": "9a1ad7d5c8238ccf0aedd2cd34862eded4b700109d2b9f582e01f9cef93aec12"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/biomni_env/cli_tools_config.json",
+      "sha256": "a9194aacdb4b824ca7d32e7a06a02f48262259ebde57cd0da8cbf6ffbeccb880"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/docs/generate_api_docs.py",
+      "sha256": "1215869396db9ae82dd8a2515d769b4081cd9661a402112f0dc59e27cbdc869b"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/docs/source/conf.py",
+      "sha256": "8e29317e0c83bb00badb7bee740c6a0acf643ed7eaeff88041d0643df7558320"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/tutorials/examples/expose_biomni_server/run_mcp_server.py",
+      "sha256": "6219f30217ffa4f26d432b4aa8b649a4f11be795fd118d6d428f95b7bf90896b"
+    },
+    {
+      "path": "example/biomni/skills/scienceevolve-biomni/upstream/tutorials/examples/expose_biomni_server/test_mcp_server.py",
+      "sha256": "0a8a133a0892d918c5ff957d94fc9166263052d2bcf9b1cf22683df4fa6919a6"
+    },
+    {
+      "path": "example/biomni/workflow.json",
+      "sha256": "38683f23c64b0126623de6c11528c614fe371c718af50fecc408a4d7f6365a1a"
+    },
+    {
+      "path": "example/biomni-r0/workflow.json",
+      "sha256": "26d57d528373e60402fc8b77d2fef67dbc69f74e4706a951ba8bf51dea49b524"
+    },
+    {
+      "path": "example/chemical-coscientist/workflow.json",
+      "sha256": "c779dd39a3ddaa3b5616529918b9ffbae2ce824e8a60a066f0ee66eccd4e7d7e"
+    },
+    {
+      "path": "example/co-scientist/CAPABILITIES.json",
+      "sha256": "8f156ea0173aa0c5bc9f5293e17e47c9d74091d6773f51db7fd01176507d136e"
+    },
+    {
+      "path": "example/co-scientist/SOURCES.json",
+      "sha256": "5c2f9871351e9566c35c0736986a7bb7431ff8cf17274f695cbecea5e0fd2cdf"
+    },
+    {
+      "path": "example/co-scientist/skills/scienceevolve-co-scientist/scripts/pool.py",
+      "sha256": "653a6757cef89fc6ca3bba04771ccd8ca38744049f6917480e149723baacef74"
+    },
+    {
+      "path": "example/co-scientist/workflow.json",
+      "sha256": "b3512010dabc8605d8d6312f22406839f1abbb6fca19f76724b7742db5225b9c"
+    },
+    {
+      "path": "example/drugevolve/CAPABILITIES.json",
+      "sha256": "f9149013aee89eb1dfe277fc4fc8ba87ddf9b66cd9089e2904689c64eb4f858c"
+    },
+    {
+      "path": "example/drugevolve/SOURCES.json",
+      "sha256": "9e8c739c11ef969ac27ec84c7a30f9adfb0aeda425008363cbccaf06756f4721"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/UPSTREAM.json",
+      "sha256": "340ad4a1771da761a16474a0413b40ede5bc3320b657522c0f115f719ac41af3"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/scripts/steps.py",
+      "sha256": "0febd6d7838909227902233f51ffffe839e0dfaf3c09b3239cd6eccb0fecb802"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/NOTICE",
+      "sha256": "6b5f38071f53decb249938eabb001a8460d6da716376de7d93beacd788ebceb1"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/drugevolve/__init__.py",
+      "sha256": "402d1d701508012787be6f2b7afe2d131e4b9233f26f996f9a7c42be1898730b"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/drugevolve/__main__.py",
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/drugevolve/cli.py",
+      "sha256": "53b837e88f31c91d034f19eae5fb6c9a980b236871495e586bebe48c0c7e7ae7"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/drugevolve/cognition.py",
+      "sha256": "7fee2f3a5fbade096ca944d25330ace4ad3c7175833a4c167a92ffedf4ced4fb"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/drugevolve/config.py",
+      "sha256": "9bbde7e9d6aeb57eed3838d3bf0206cb280c6d644187c41d0ff9c26b3ad0b09f"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/drugevolve/evaluators/__init__.py",
+      "sha256": "0d5180d657f291a201f54d24f99a62e68b983334a0bd84a3ca6f24c1c048c26a"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/drugevolve/evaluators/base.py",
+      "sha256": "f2853005afe15e0bee3484661eb5f089f6a3263a44f00c1eb7dbc03422e2d36e"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/drugevolve/evaluators/subprocess.py",
+      "sha256": "f55bcbc8e1c7e55dad017b163fd90999cf22737bc86dffce6fd44d3eee3b2804"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/drugevolve/models.py",
+      "sha256": "80a9068f24e43074185663bc270254c99542d914e638458602d78f6f9132184f"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/drugevolve/samplers/__init__.py",
+      "sha256": "4e206048ce257727334997b14f6b9911b2e524930b4a96b514cdd08423d85118"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/drugevolve/samplers/base.py",
+      "sha256": "28ff3db0a31a2159827e2ead3f42d4c485da697bee27541293ed6e9bd548cadf"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/drugevolve/samplers/builtin.py",
+      "sha256": "25bb3de78b9545fd8c2bf93e6cd45c8edd401c29a1e6a4aa6902a6911c7c2d10"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/drugevolve/state.py",
+      "sha256": "af02a41095a17d07b107bd04265685f592e7aca8e666fb384472fae704bb55fd"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/drugevolve/storage/__init__.py",
+      "sha256": "cc3eaf4694d1dd35f47daf978322fec6d4ed3e0e22f99dca80d0c5e54e900fb5"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/drugevolve/storage/base.py",
+      "sha256": "c3d56e0ae825fbd068033a4f7959d79e39a5329b7b772e389e4ac01f15b0715c"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/drugevolve/storage/local.py",
+      "sha256": "0e20dd71f838579fc359bbd82321fc058358355b1c91d35184e1ed2fd33a4873"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/drugevolve/text.py",
+      "sha256": "67566084dbb06057ace7c45d068ff0b1774ba56631629c8168394ea83de56859"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Analyst/__init__.py",
+      "sha256": "4ef57c6c8caa376b7a42a8f20e5a055144611e16cbd07d45e48e82351ec57122"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Analyst/analyzer/infer.py",
+      "sha256": "78d06f986df22aeffb1f5673ea0c3ee694b57934497861b1fca11ed3baca8939"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Analyst/analyzer/model.py",
+      "sha256": "4a1289af78b0c5d9cd39b15b67ceff69160ff058b86d6dc8ddcdc1e4f53670e1"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Analyst/analyzer/prompt.py",
+      "sha256": "937ac415c8b2afda6af891a6659666cb22cce87884f60c6c5d6aa973c7fdd3a9"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Analyst/main.py",
+      "sha256": "96c2d175c0f975be833c4ea5aa24f22e58dc5197abc44cb3589d6d927b10c74c"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Analyst/summarizer_evolve/infer.py",
+      "sha256": "0d07a3c7f48592e0e5b9168bb842f0e3dd8798a774c2a82f1b834c7933208580"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Analyst/summarizer_evolve/model.py",
+      "sha256": "f358659d4089a49184e0fe6576c3b5ec5cd7ae6237d2a73983a45eadcda1d81b"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Analyst/summarizer_evolve/prompt.py",
+      "sha256": "f5969196eeac12e2a7c4491881162ae6e676ff3778ec3c63c1f273d995b3f257"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Engineer/__init__.py",
+      "sha256": "7ce0e9399d78c6d200950fec1be743dc68772c04a1b994f49f799f28905083ae"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Engineer/debugger/infer.py",
+      "sha256": "93951f88431cac06a17231e318d693c018c32abc50c46951e7d1480ec3f586fa"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Engineer/debugger/model.py",
+      "sha256": "820eb83e864cdb1b86779650350a4ad0dd3fc9b54eaa2867fd0b855f59590a44"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Engineer/debugger/prompt.py",
+      "sha256": "5611482534ab8894bb30aeee6fc59226392803ee2f571e333f2824f50fb3c199"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Engineer/judger/infer.py",
+      "sha256": "f2995fe6b1084d0f9db0426d29a42a492dc8aa9ca496cce3bc6aa0a4d2170802"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Engineer/judger/model.py",
+      "sha256": "d8899c30d6437c302f865fa7776e03d077ca7585e8ac2e000491e220d8e6bfa5"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Engineer/judger/prompt.py",
+      "sha256": "bd784541de747733a846dbb26b6cc663cb91113025bc774fc1719c2c985b8648"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Engineer/main.py",
+      "sha256": "6d1f198908bcbfbfd1de2153942f9c7772025b8a9a3a013948630cf4f8fcae95"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Engineer/trainer/__init__.py",
+      "sha256": "38baacfd259d808a4829dda0ab649238aea7dcd29b010d8761b067a5b721a482"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Engineer/trainer/infer.py",
+      "sha256": "53c66a2a6644a4e8ba0e4ebf1c0b7ff06ceba97e8abc031be160b4a232efa62f"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Researcher/__init__.py",
+      "sha256": "e9b6cc81e5cf70e255eabdc987276d08210e7e4e608e7b6f5e8c214dc9d6f1f4"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Researcher/creator/generator/__init__.py",
+      "sha256": "149b2092fe6f8b32ab0a54b98de51cf9a3a59465ec149fd9adef90eb8f1bbdc5"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Researcher/creator/generator/model.py",
+      "sha256": "ed654fd6a2b79dad27f332d6e05bc8fb731d3ca2261f165456fcc5a7261a346f"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Researcher/creator/generator/prompt.py",
+      "sha256": "0661880c645a9a5e87522876f3695211a8ea5dd6cdb3deeaaf1d0a02d5a1f323"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Researcher/creator/infer.py",
+      "sha256": "6dbd445b88679c57ad84e83da56568b0325c25519aa9e50d1850a1a4cd38c277"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Researcher/implementer/infer.py",
+      "sha256": "0acf598ac0398cf782e5e1a68e25fca7c8be352e1501594976185bdb6fe2a95b"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Researcher/implementer/model.py",
+      "sha256": "6c9cc534abac04910a1216c32874cd4934b2c1979836e6c4507a171e2912b37b"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Researcher/implementer/prompt.py",
+      "sha256": "bd84c338c8f8296ab97f097f08a1d2a114307055098c48e7b72aa07b810f29a3"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Researcher/inspector/infer.py",
+      "sha256": "f0bd9f5ec3265f6370f238797179f868ac03a11f177f6cd5eb173b1e1cddbbdd"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Researcher/inspector/model.py",
+      "sha256": "842818b02cf46c8aaa55d5b3c54ded64341f976e81cf97c30379502b11594865"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Researcher/inspector/prompt.py",
+      "sha256": "adbf0ff82284aeeb7eebc95a84b485cc85b17e9eecec80164591a8a1a199b419"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/Researcher/main.py",
+      "sha256": "644c4479d3ddc06a51a22eed6e185563accfc9fe1ea54b54b375aeb6ada7d0a2"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/agent_models.py",
+      "sha256": "93a297caeb8cc9f8b95c10a48967e00d201be40ec109bc1f6be50e096c285686"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/infer.py",
+      "sha256": "4cd8af57ddca71dcbd2667d44c6e840098317a08d6504917c3305b954def6c0f"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Creation/main.py",
+      "sha256": "12d5327bb3332bc9e3e74fe17cb2d840a84f1836d8f98cc008f42393148f3f7b"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Database/__init__.py",
+      "sha256": "e901fa22f45d29092e05f64304773bcf0a5c96d51ab751b991aea39089682a96"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Database/element.py",
+      "sha256": "265bc0cea8f0cbba48aacb1ae54a32871a97015c02fd882bc5df3981e9502d79"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/Database/local_database.py",
+      "sha256": "4cfbea58d32183d14eb9986cfe2c38573242372efb0b0d3c8b38768cf514530e"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/config.py",
+      "sha256": "b2aadfebe591da378231dd3b37916cfa2b891c0895a06fb18dbf327decd86b7a"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/pipeline.py",
+      "sha256": "baa634c7c575110b496cec0ff7cd0770772efd828da7fc0164d59ddb61bda647"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/utils/__init__.py",
+      "sha256": "e9e30eb5512c979e4adfed6ac1f8ee6f069f17668835999e4b0e2d5570ac33b1"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/utils/agent.py",
+      "sha256": "b4554607ab4bb4c42b42020cb86c83e58d68a2ba5860c54c018abf56ecb195d1"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/utils/algorithm.py",
+      "sha256": "14ace83438e05a7c293462c6f5d253d735b0c7f11fec37fdbf126d8d0166444f"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/utils/copy_launch_script.py",
+      "sha256": "171172360034fc9e330c91a79abdf5cde141cfe7818788784b81504d97082094"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/utils/experiment.py",
+      "sha256": "491ccb15edbff8acd4eec0c03231b0bb8390ea74874af2626662a35dd7a22848"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/utils/log.py",
+      "sha256": "23fe843cdd873af00794dc28aef89ce18bddc614d17b4a9101294fed50761ec4"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/utils/output_parser.py",
+      "sha256": "203dd42ac7933258858be725c87e1455da5721197ff7387b67cea03d1d8359b6"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/utils/prompt_loader.py",
+      "sha256": "b759097c73b4f788562b1163a125d1b3d835205ef8d7ec9338420a205f8cee3a"
+    },
+    {
+      "path": "example/drugevolve/skills/scienceevolve-drugevolve/upstream/pipeline/utils/tools.py",
+      "sha256": "2c7ebc8930b37b1967ced8905c06362fcd3a2521f6530fd6bd58c9299402b248"
+    },
+    {
+      "path": "example/drugevolve/tests/test_steps.py",
+      "sha256": "a7b4a0a08b603c392d4e8dbe995eaa2aa1c0553b4564adf0c159c28190b4f4ce"
+    },
+    {
+      "path": "example/drugevolve/workflow.json",
+      "sha256": "4ab31994ac99f0b8d645c75f6af37f6be4cccf871bf12da3f8fd67308bf992f8"
+    },
+    {
+      "path": "example/dynamic-research-workflow/workflow.json",
+      "sha256": "a94bc9125c002523cf237475b261c8997a276c2409c1cbbc164282b4a61ce4ce"
+    },
+    {
+      "path": "example/funsearch/CAPABILITIES.json",
+      "sha256": "6047a913d70d619385ce67db10c6e2b7fb52e38d4e857b590c46bcf0b28567bc"
+    },
+    {
+      "path": "example/funsearch/SOURCES.json",
+      "sha256": "7e0bb195143179496498252a565a6accd98ed8f9efda4c9722929df3b9d2a19e"
+    },
+    {
+      "path": "example/funsearch/skills/scienceevolve-funsearch/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "example/funsearch/skills/scienceevolve-funsearch/UPSTREAM.json",
+      "sha256": "4cc9e4e8d08e634b1552906f405176d36ede255824a43cb8961c16f8f87b6050"
+    },
+    {
+      "path": "example/funsearch/skills/scienceevolve-funsearch/scripts/runtime.py",
+      "sha256": "90359c44c4c1b51c3decf7896712d257401cd72c60257e67e8e653920e929b6e"
+    },
+    {
+      "path": "example/funsearch/skills/scienceevolve-funsearch/upstream/funsearch/implementation/code_manipulation.py",
+      "sha256": "8538521e64b0f92a95ee88d0617dd499129a1de19d9502aacba3f109b77f7b3b"
+    },
+    {
+      "path": "example/funsearch/skills/scienceevolve-funsearch/upstream/funsearch/implementation/config.py",
+      "sha256": "bd118e9579e7230d8b1c969a0fc4e10fadcbfa116993c7aadfb988ac4fb500a6"
+    },
+    {
+      "path": "example/funsearch/skills/scienceevolve-funsearch/upstream/funsearch/implementation/evaluator.py",
+      "sha256": "81647818f5f12d9af535959d9042c62ffcb687385ac7d5b2ffbf01a6401542c1"
+    },
+    {
+      "path": "example/funsearch/skills/scienceevolve-funsearch/upstream/funsearch/implementation/funsearch.py",
+      "sha256": "a5b9aa2e562e98d1843dd51de28758df3b51432e3244aadf99686db995d4c922"
+    },
+    {
+      "path": "example/funsearch/skills/scienceevolve-funsearch/upstream/funsearch/implementation/programs_database.py",
+      "sha256": "b2bef312d04861f467f304f65788efe959f0493818976b052c46b4703151affc"
+    },
+    {
+      "path": "example/funsearch/skills/scienceevolve-funsearch/upstream/funsearch/implementation/sampler.py",
+      "sha256": "7139b27a312065d53e7f17e5feada17b98107fdb39d71b0b47acd42f9f8a38ac"
+    },
+    {
+      "path": "example/funsearch/workflow.json",
+      "sha256": "50e875ec98a30abc2d8e2755f900cf1ce6a808213277e3c5b3c4ca248ae0ca2d"
+    },
+    {
+      "path": "example/internagent-1-5/workflow.json",
+      "sha256": "64cf3fd3179c8fb4c0530b45b5737c3f45f79d5abe5a130754355bf2e1fb5988"
+    },
+    {
+      "path": "example/metaharness/CAPABILITIES.json",
+      "sha256": "cf6c6c7260b4cbd3b483cf8df163e9fd2f6121e595c7b1b68b69f58efd08751b"
+    },
+    {
+      "path": "example/metaharness/SOURCES.json",
+      "sha256": "05881a831b5d6946aa760d3396cf65ecc69545dafb6d23a428fd78ffc649cda7"
+    },
+    {
+      "path": "example/metaharness/skills/scienceevolve-metaharness/LICENSE",
+      "sha256": "6fda8a33f4381e19a48a6a597ff8353cc9fbe97eccc1377a5fb6dd6f9ed49f76"
+    },
+    {
+      "path": "example/metaharness/skills/scienceevolve-metaharness/UPSTREAM.json",
+      "sha256": "c1ea9211b5404402ef2eec703e348eb4ec873ffec24f7dc9aac708c7aa4ade1d"
+    },
+    {
+      "path": "example/metaharness/skills/scienceevolve-metaharness/upstream/benchmark.py",
+      "sha256": "9f1f924c331f7aeee7f8a7d99b8e38b1773b4cf99e497a80b2c7ccd3e3cdbdb6"
+    },
+    {
+      "path": "example/metaharness/skills/scienceevolve-metaharness/upstream/meta_harness.py",
+      "sha256": "47d89e7fc48499a2d574491bcc84e35342a6c07ff29f7a25cc13dbd0a6ed853c"
+    },
+    {
+      "path": "example/metaharness/workflow.json",
+      "sha256": "693861f97e6088ac029a9d132b18e1e50ed6cdb6df8b39093eddce939e8105b6"
+    },
+    {
+      "path": "example/raven/workflow.json",
+      "sha256": "1a15024ec7a1336ce984e23d33511d473a05c650ab8d491f1d787fda06a30d1b"
+    },
+    {
+      "path": "example/robin/CAPABILITIES.json",
+      "sha256": "60d5a86a1249d67405d19307a79860131ec76203835a9957a52b31caef28629b"
+    },
+    {
+      "path": "example/robin/SOURCES.json",
+      "sha256": "7682b5538470438ffdb3bf3531edf9eefaefd6e38c9b9b06053027dea40c7e98"
+    },
+    {
+      "path": "example/robin/skills/scienceevolve-robin/UPSTREAM.json",
+      "sha256": "b68499e0cd1d46e504871c8ec6b67fc1c93c6e913e1b081053fff88599258cdf"
+    },
+    {
+      "path": "example/robin/skills/scienceevolve-robin/scripts/analysis_step.py",
+      "sha256": "98d5c3fc4203a324fc79ffd9eb3f30c1e1e0b418f71772a5b8c9b60663c94fe2"
+    },
+    {
+      "path": "example/robin/skills/scienceevolve-robin/upstream/LICENSE",
+      "sha256": "a3cc48830cac658c9aa07edfcb5c3c027e1ed9cd6aed2fe54c94744060e80baf"
+    },
+    {
+      "path": "example/robin/skills/scienceevolve-robin/upstream/robin/__init__.py",
+      "sha256": "9ddb3cbcac9bc76a145d075f75c6cd64a4d0d0d3c881d3ea9d65b91d6b308e5c"
+    },
+    {
+      "path": "example/robin/skills/scienceevolve-robin/upstream/robin/analyses.py",
+      "sha256": "065c5fe2df9856a750316714af053f3f2687cee566c4413db863819fa19f2eec"
+    },
+    {
+      "path": "example/robin/skills/scienceevolve-robin/upstream/robin/assays.py",
+      "sha256": "b60fc99180db27d85cb6df082fcf433388ea380f5c8a2efcddb948db896b82c5"
+    },
+    {
+      "path": "example/robin/skills/scienceevolve-robin/upstream/robin/candidates.py",
+      "sha256": "837f57ab170247822cbf84c30dae91a3c1f28985a24962d9ac24c22792d28623"
+    },
+    {
+      "path": "example/robin/skills/scienceevolve-robin/upstream/robin/configuration.py",
+      "sha256": "53824ec6f7b19fe450f9b9c3596c7d1ed4c079da12f8148850ae80f1dc7b88a8"
+    },
+    {
+      "path": "example/robin/skills/scienceevolve-robin/upstream/robin/multitrajectory_runner.py",
+      "sha256": "93f87ded57bd05cca552feaadb15347d9e00f89260b1568c32b4554fc834ae41"
+    },
+    {
+      "path": "example/robin/skills/scienceevolve-robin/upstream/robin/prompts.py",
+      "sha256": "279c1930c9c5c645825347959d62c2b2aa6a2c8307704122dfb0c1e5e2b8e864"
+    },
+    {
+      "path": "example/robin/skills/scienceevolve-robin/upstream/robin/utils.py",
+      "sha256": "e86ca84d923a212f9d06206c4365723804b8f657ac875706dd978e4d5209446e"
+    },
+    {
+      "path": "example/robin/workflow.json",
+      "sha256": "06bb293a413b62a10a7a46703f6a0f7f2968e61c0b91e45e0680f35d7b217346"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/UPSTREAM.json",
+      "sha256": "17fa0bcd2d6f88e91a8a22de08cfa5faa2d4fd5a116ef535bf694da5bfd3311f"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/scripts/heldout.py",
+      "sha256": "37bbaabcae2d38a1751f131253c501ecf0308aa66c9acbca53314e096c8218be"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/scripts/protocol.py",
+      "sha256": "4924d5d9d8bcb38c127c796e05d529e82331ace459fc608812f05a4c5208f2de"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/scripts/roles.py",
+      "sha256": "c25cf16a4cc1d8d705c7971ae1db1f914686bc8c4f780bb5b75e57eb2b045324"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/scripts/task_domain.py",
+      "sha256": "fb7a2839ac0e1f023f27595f3de80492fe5142fdac36c14acbd1f7dbfcefe4a3"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/coding/adapter.py",
+      "sha256": "d2a1a2f4ff842b8f759f11cb7ac4103f7908e1aa852aaf8a755baa301c100dda"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/coding/briefs.py",
+      "sha256": "5900d9a4fca6a642150310903e7ef90a5f0b5b2b71288006fc6c4b22c3bd9663"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/coding/render.py",
+      "sha256": "01d25bf6c4d5057b5430f1394e96b63fbdd41adc63b3d1c7d6934e480bb88352"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/coding/rrsi.json",
+      "sha256": "d31dcef7564557c89b8bb271120c05f40e7026717f067d20c97fd3f7867aa1c6"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/coding/scripts/swe_summary.py",
+      "sha256": "afc18bc3141a69e74c29bfc49badb59cde1491c1dc5f9010618763e39aadef55"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/eng/adapter.py",
+      "sha256": "4a6dd81cb1713f9a6daf64464dda6a06fabdb19d58f9973c82c4b47ce4854817"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/eng/bench/calibrate.py",
+      "sha256": "ff9603738a539da963cd4a1e2e0d4908679765646fa0fab9f280264bfc406ea9"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/eng/bench/diagnostics.py",
+      "sha256": "2e35b4e712917e02f65829870e21d87366d91f3e17a51298a09c7a9e7488b087"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/eng/bench/run_tasks.py",
+      "sha256": "c1418d297bf0b131834fa01a304102e9c0455ea135accbcc3eea9f79ee01d510"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/eng/bench/run_tasks_frontier.py",
+      "sha256": "b003106c282e16c1d0054b5144833bcebc53f689f298de7ef2e72551e85d4c35"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/eng/bench/score.py",
+      "sha256": "f56d34ce6767340bfca5f9ad0ae6313e292bd0b4fa3a8682675870b66a1659a0"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/eng/bench/verify.py",
+      "sha256": "5b5d5f98da793178b203cdebcc9b65330ceb4a05ba41149d8e09c5bff808e72a"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/eng/bench/verify_frontier.py",
+      "sha256": "8c44b0f097528c28188b782711d7369ae3359a5bcc12df65c60ab5afa4db7301"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/eng/briefs.py",
+      "sha256": "9489a1b55edfa4120c5adf22ec64f801df15d2852663ff6eb2569d5db6be0efd"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/eng/config.py",
+      "sha256": "da77e53b01fe271405adbf8430b6e618dbb989101a2f1941f108cf3795888242"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/eng/data/split_engd.json",
+      "sha256": "7a4b1513c3a0ef36341da9478badafd32dd2b67fbf36a8b4dcefefeba3845503"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/eng/mcp_gateway/gateway.py",
+      "sha256": "6a688fae5115ee30b112f92c6d268a8c0efedf245eb19a2f0d5a2ee6698ca5f4"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/eng/render.py",
+      "sha256": "c7276816ad4e6a7e487b8e8d2bebe85500be976ed0ee31fbdf899a3932035ce1"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/eng/rrsi.json",
+      "sha256": "a2c27e51f7331265b7e7eb609ac2be4345f96ab72027aafe8e3312cd18b46da5"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/eng/scripts/build_frontier_manifest.py",
+      "sha256": "18c82c9a4b0e2c01d4363c1cf2a3958d46a97338e79d988a45cc2ef3e6ea7800"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/eng/scripts/engdesign/build_engdesign_bench.py",
+      "sha256": "c2fcb053b334a83ef47a3559b2e7d71171efd1fc8a90faa3fff84acff1d601d4"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/eng/scripts/engdesign/evaluate_submission.py",
+      "sha256": "d083621814c3efe0f599d14d35a547b975eb3b88ccbf7a7042ee8ea90db10de5"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/workspace/adapter.py",
+      "sha256": "c275245fc4cfa4fd8382bdc63e0da66222a7ad7283fe4b26593f2eab8bb766d3"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/workspace/briefs.py",
+      "sha256": "8d3c17bd7d06a115de86af628d95540636e7bffba9ebc34c4ac95ef6b31d3ca2"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/workspace/mcp_gateway/gateway.py",
+      "sha256": "e6ebdb3328f453df1e71ad2ffbda9cc68c12c9b7c51bc245a45fee60ff928f0c"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/workspace/render.py",
+      "sha256": "9bcc9fef2b0e7de1cabb5bdcc0267191fa23fdda087fef279bd36431fafc9cbb"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/workspace/rrsi.json",
+      "sha256": "4b1aa5dc875508729f7d4ed7cad3b530ebbc6641cf04ffc8a838b74a460cc5f4"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/workspace/split_workspace.py",
+      "sha256": "47172b16dc51be00569a82109123ddfc6885d60b352c107fa920d28c028772a8"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/workspace/workspace_driver.py",
+      "sha256": "5525fc618acf03c3379bd62ff3eea707415e7a336186708d20bf30f2d0761d42"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/domains/workspace/workspace_judge.py",
+      "sha256": "7134af20a8b42a3e014ddcfbc3458fdf46f54cd62595c400f10a478b3434e6c7"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/rrsi/__init__.py",
+      "sha256": "3912d6ead36a09582fab35a1adce600e44a7be12caac2389f666338a688017d9"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/rrsi/analyst.py",
+      "sha256": "2178f77361ab6e33be6ea9b594828ff99cb9642cf94638f9329b39a77dbaedb5"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/rrsi/calibrate.py",
+      "sha256": "1fc5b633f61237bdfaacff1853c8661b951c09914cea2bfa53fa735036d9edec"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/rrsi/components.py",
+      "sha256": "4b76dcfadb8bbf50e4244c25cb9354c6891db2a2e08ae782f1ef63babb7e066a"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/rrsi/config.py",
+      "sha256": "4bc30a3a2e6ed42a9e2efea2d7746ce2890119c76ff8fbbd4bb64cfd2f82bd8c"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/rrsi/critic.py",
+      "sha256": "96524e4d4af1723f479b3a5ca699a685612cf9bb95e7cbd4291d17c952488afe"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/rrsi/digester.py",
+      "sha256": "8d9e892dece29f21b57cc2a17632a79e8412c4e3067ed4330745c027e4898685"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/rrsi/domain.py",
+      "sha256": "92748d41fc46f01724a49f8698fb8b49fa129a7b0b39fe29e600322f10c4f1fb"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/rrsi/driver.py",
+      "sha256": "05c651ba1454f08fae073f97d4f143d15304d3ac24b79de8b41b8933e909de78"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/rrsi/evaluate.py",
+      "sha256": "e361eb0de5c56a70493757bf1036290b230ab7cacfe88f3ac86b5a36cbfead2f"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/rrsi/gitops.py",
+      "sha256": "38193c374a5fddff5c41184c200b2ee227fa1c75abdd8f5f1057f76bc38ed520"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/rrsi/history.py",
+      "sha256": "afa808909ff873fc3e07e4d8239da57fd0bddd4be7014b8e0c63c35f04246b11"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/rrsi/llm.py",
+      "sha256": "44099451d4fc21c123f2d0b89604d4948ff8d2a12f72b8509c7da23779eae910"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/rrsi/loop.py",
+      "sha256": "6062392571acb42391f9246ff64e9aea20772b243567317a011b91ea7c9e8071"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/rrsi/propose.py",
+      "sha256": "f90aab99ef698121001477461b4d8f8fee17b5104fcbc33b0e6ec137468a7946"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/rrsi/schedule.py",
+      "sha256": "fc2b5e5367b34a776c5088ed822ffcfd80f20bfe08e4864d027bea1599a4762f"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/rrsi/selection.py",
+      "sha256": "5142043947117e3a28167fdbdddf824293e7a79bdb5f7e90a4ebc908bed7d663"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/rrsi.py",
+      "sha256": "c7a7c53801686ca16e4b12df873c52753cd58f3683b155424dc99b9e13e48f5f"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/tests/test_core.py",
+      "sha256": "a5b207113576194d6283197469527edcc8a8f96b6bb28eac90b51c4bc34c6950"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/harness_eng/main.py",
+      "sha256": "5fac3a80316b55c2f894429c7801b0e195e3678b47ffb8cea654f4a87b584bf9"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/harness_eng/mechanisms.py",
+      "sha256": "6e717bdc11f261484529ce5f4cfa3c026a906339541b7a2d0e4b111aff0acf1d"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/harness_eng/prompts.py",
+      "sha256": "30e2482f884105b9762136b762d228affff961b357e21804b399f1b011f90d26"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/harness_eng/resum.py",
+      "sha256": "d2c3036f3fb4a6f7a2f7a369c55cdeda58090c0675ef0a480c133dbe47a1d4b8"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/harness_eng/tool_result.py",
+      "sha256": "a196846d8517f2ef31d3c1ad707ecb569475f44a9d84fce6ad9bb988b9985c3f"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/harness_eng/tools.py",
+      "sha256": "631164e2297f938b0dfae8d0d99291bd9efd183be3ec05dfe9db50c918b21507"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/harness_workspace/main.py",
+      "sha256": "5fac3a80316b55c2f894429c7801b0e195e3678b47ffb8cea654f4a87b584bf9"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/harness_workspace/mechanisms.py",
+      "sha256": "d9426f8845f1a4fa6a6f5ee2a18f0493542d974fb3dfc84d2c8ecbadec2916c0"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/harness_workspace/resum.py",
+      "sha256": "d2c3036f3fb4a6f7a2f7a369c55cdeda58090c0675ef0a480c133dbe47a1d4b8"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/harness_workspace/tool_result.py",
+      "sha256": "a196846d8517f2ef31d3c1ad707ecb569475f44a9d84fce6ad9bb988b9985c3f"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/harness_workspace/tools.py",
+      "sha256": "631164e2297f938b0dfae8d0d99291bd9efd183be3ec05dfe9db50c918b21507"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/runner/agents/models.py",
+      "sha256": "e2b9850fadb8c9956917142ab1858dde4f414581186f04b7e09e433a4f7161b3"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/runner/agents/registry.py",
+      "sha256": "f2947a6b09815ee763166f2ce55d4d1c54d06f2f3ff1bf61d1ee0ac1188f9f2b"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/runner/models.py",
+      "sha256": "ed456b08d8e1e342c9b9243ceed4cdd4c2dd707f82c3985b9c0177451913d64d"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/runner/save/_normalize.py",
+      "sha256": "56a31fd879b8050599b9dd5981e65922dc572dc81dac41bd185392f0ff3ad7f7"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/runner/utils/decorators.py",
+      "sha256": "7f92d1fe3b1156f744a2f22d50ca4a73e863dc4a52580b8f701384b1df2f852c"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/runner/utils/error.py",
+      "sha256": "66beb246579a3f1193be03ee92e382533686b637d90b4efdb7815113aa35c1ea"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/runner/utils/image_fetch.py",
+      "sha256": "e181e847461b7c54d6bb3e4c4d1d3a6bac0f3af549a68c0d5c02d6a3079dc0c8"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/runner/utils/litellm_patches.py",
+      "sha256": "a876060a28fe1b5c4c122da79e6812cc26c1d9a76c6d4f2bb86a677a0a6001c5"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/runner/utils/llm.py",
+      "sha256": "8c8d42f4ba541647f62beb7ab797841f1a8356bc8cc90d5dc0c8b81b3b2f58e8"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/runner/utils/logging/datadog_logger.py",
+      "sha256": "eb5abe644ce897090fc82c3cda1ba57516f562cdde18fff24fee59252c1c45e8"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/runner/utils/logging/file_logger.py",
+      "sha256": "b65bdb042b53665fd8d14d6e1832c7727fb6368bc4a3e23a8700f0e372a9baca"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/runner/utils/logging/main.py",
+      "sha256": "6517f61faf95bcd478994cbf13a495a80b80e748559ebcc3375f9b5bc7e684cc"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/runner/utils/logging/postgres_logger.py",
+      "sha256": "ac0205ae43020ed59a463e204ec2d6ffd5c43e1d4c6b52d2cb7685984d4c47c1"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/runner/utils/logging/redis_logger.py",
+      "sha256": "35e70d51449c9504f156f4dd6b63139276b9ba9683201995087e5668086d505d"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/runner/utils/mcp.py",
+      "sha256": "3b63158f18985498430a8381d3e874dbf0577380dc078ce84d91f1e5e9d5b67f"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/runner/utils/metrics.py",
+      "sha256": "c332a854ba6748afc66a4c2b8d260159e72099a718ebed005b3f3a35b32e8607"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/runner/utils/redis.py",
+      "sha256": "7e5b9223cef0794234c99a47b426d58da2f5ab8343da3e80d12c592e075b0892"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/runner/utils/settings.py",
+      "sha256": "c434d18469fe221ec96e6d66c22a3e9ab406af2dfb84561166eb55aa2106ef4a"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/runner/utils/subagent.py",
+      "sha256": "edd541e137d53a7a66cf30af83b27ccd0a968347a09f834b6fe9a217605b6ecd"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/runner/utils/truncation.py",
+      "sha256": "1afb9cd0b2eaf300c3f0605e425c2e3d302379ee3111a329c050d688053741e4"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/archipelago/runner/utils/usage.py",
+      "sha256": "d4c8ce628392570df6fd6e35940b3bbee4feff6c667ff28668a725827a20fa58"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/harbor_terminus2/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/harbor_terminus2/__init__.py",
+      "sha256": "ec50a8cabfaa5ef721d9a26596ef65a483caf86fd3ade8235aab66bd186c35ce"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/harbor_terminus2/asciinema_handler.py",
+      "sha256": "eb59ed7a598a856a745e497c739974a60be749f4d737ece870100d7907a705ac"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/harbor_terminus2/mechanisms.py",
+      "sha256": "f8a82d85b2985466dae0b0369dbd1b28236db9b484759a53dcee1db70f5c30ed"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/harbor_terminus2/terminus_2.py",
+      "sha256": "249e658fa32d5dd460c7f6c3d453e685ec5fe2d8545212a95d408a518db720c5"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/harbor_terminus2/terminus_json_plain_parser.py",
+      "sha256": "e7dfd63d7677829ae5fa648fc0aa9579cb5042500f05b27a83878540a1687a46"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/harbor_terminus2/terminus_xml_plain_parser.py",
+      "sha256": "d3d2b9f9382b0cfd2ac5d1d1e9885f5f91139ef7e416e09f8ab2092f3d130b79"
+    },
+    {
+      "path": "example/rrsi/skills/scienceevolve-rrsi/upstream/third_party/harbor_terminus2/tmux_session.py",
+      "sha256": "455b997c671d11b943bf516777e0307d663d19d8cc2b77a0a8546b19196f5350"
+    },
+    {
+      "path": "example/rrsi/workflow.json",
+      "sha256": "8e056cb5049e75ef249bb6d30f57baca0e806ed29af2262529130a9b517cd7cf"
+    },
+    {
+      "path": "example/sciagents/CAPABILITIES.json",
+      "sha256": "d5a20f7094188feb4a7b8a055b2d439e8665babb8de34c96a8e4ebc86efea7ca"
+    },
+    {
+      "path": "example/sciagents/SOURCES.json",
+      "sha256": "ff7e545cb671e49ccce8d93e563e7e18f4f837ccca03728faa8d863a28623d2a"
+    },
+    {
+      "path": "example/sciagents/skills/scienceevolve-sciagents/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "example/sciagents/skills/scienceevolve-sciagents/UPSTREAM.json",
+      "sha256": "d80823cab13e3864e814dbf55184855b8754de4363b51484a93965607891d15f"
+    },
+    {
+      "path": "example/sciagents/skills/scienceevolve-sciagents/role-prompts.json",
+      "sha256": "214f2380da6f1bae54689bee7aacc29e7184024a8afc42f0363e4df901060b22"
+    },
+    {
+      "path": "example/sciagents/skills/scienceevolve-sciagents/upstream/ScienceDiscovery/__init__.py",
+      "sha256": "72d56a19ef45b57155ce4c6197bd51936845e7cec17572f290c0d0cd3339ef23"
+    },
+    {
+      "path": "example/sciagents/skills/scienceevolve-sciagents/upstream/ScienceDiscovery/agents.py",
+      "sha256": "08a90d583f4320a3cfc4570ee28c5b43f3dcf466855119bc59a354037b5b4e21"
+    },
+    {
+      "path": "example/sciagents/skills/scienceevolve-sciagents/upstream/ScienceDiscovery/graph.py",
+      "sha256": "10424e3ce87a1270417221fe4b5b7d2f57e3c9b12fb3f62de775eb516536d3f4"
+    },
+    {
+      "path": "example/sciagents/skills/scienceevolve-sciagents/upstream/ScienceDiscovery/llm_config.py",
+      "sha256": "db2010f9fd2775e74b5f4782c3fca4ae005f145155a19814136b41bda2b012f2"
+    },
+    {
+      "path": "example/sciagents/skills/scienceevolve-sciagents/upstream/ScienceDiscovery/utils.py",
+      "sha256": "6c43aff8cac09512011f0ac93273bed6cd8aecfaa91fa33349916b460b5cf961"
+    },
+    {
+      "path": "example/sciagents/workflow.json",
+      "sha256": "bada3038a51b8b270f342f74d781b4cea9f6f125e66641b9e22b8db9f41c4a71"
+    },
+    {
+      "path": "example/scientist-two/CAPABILITIES.json",
+      "sha256": "6d6e15fbbc63d62d4dd81e021055c0218873cf85e6f549fab2c359971e8dba25"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/UPSTREAM.json",
+      "sha256": "f1b32752576d2e225fb109eed7856ba08e55c0f9086d61625a7a621318d051d0"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/config.json",
+      "sha256": "126868719c3b716a50b34214239c66dfa2ca6a1b848487111e39c702a963a286"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/references/contracts.json",
+      "sha256": "b823abe918ed92a1a3b3e920588c9cdb8f48e3279024916af63ead46d87e9811"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/scripts/protocol.py",
+      "sha256": "17a042dafe8c3b44918a8ecab014aee60d00434de10c242a102e403a00860ec8"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/LICENSE",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/autoraters/agent_review.py",
+      "sha256": "7d1cf9326d68a5fe5a2744d1c284f3333e9781db99600ed3606cf01c7e00062b"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/methods/agents/content_refinement_agent.py",
+      "sha256": "c6dc3e5d36d85adaae931b8036327756c630cccb8f1dddc9d9282d1eb4c1a038"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/methods/agents/literature_review_agent.py",
+      "sha256": "b0eac8f21c6a3a93af07e32aa36eedff4e9ad31a228ea8fc2fd23884cc232128"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/methods/agents/outline_agent.py",
+      "sha256": "bc1724362938e5ed2ff96f509c0d0a6169c55461b0ab860bb9cd52a4a0d7e169"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/methods/agents/plotting_agent.py",
+      "sha256": "5119de3077212f227aafde0659a87e582decfa950c0cf8e62da0238f87d310b0"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/methods/agents/section_writing_agent.py",
+      "sha256": "747e150ee450a7ad6a9d50b6f4a31e20e643609d619e1183de7d28e83a6f015e"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/methods/paper_writer.py",
+      "sha256": "c9f7ef5a1d5f0f5befb72662912fc2e66127628bc320594984e6bc5a22ccf8a6"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/methods/paper_writer_with_plotting.py",
+      "sha256": "f2bf293617ec1f6f2b8a60e1d40f109f61f902d7d61226e123da10105d01f1f6"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/methods/prompts/content_refinement_agent.py",
+      "sha256": "539c0584d8e85505a17495f9a646c1551201e5a1c95264464516b1fcc5ff6a59"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/methods/prompts/format_agent.py",
+      "sha256": "bac340a9721f03dc53325317256bcf11c39b9168f22be49af8616a7f2de9d04b"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/methods/prompts/literature_review_agent.py",
+      "sha256": "f77594cbf49bc2115acb8cf6b3ff53c3c143e01043a12a34d34ac7861eeda8c4"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/methods/prompts/outline_agent.py",
+      "sha256": "fb9d318dc432208cff41ee1fc340b920ca392e9db4da5dbc1d78a7493ebb2c5b"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/methods/prompts/section_writing_agent.py",
+      "sha256": "e222611a6f57708fe8a1b8fbee73ddcc5318eac774cd46f03478118345d3a383"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/utils/common_utils.py",
+      "sha256": "ff356e2aa117b4aa7abbf3994a40ed6aa55982fc68990daf936c7f702a7ade23"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/utils/content_parsing_utils.py",
+      "sha256": "a0ea73c1d1ec35179271badee185e97b75c6ba1870e7a57ea604e241d35cd37a"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/utils/gemini_utils.py",
+      "sha256": "024fc69a59bda7522f04262a7c21cc918733033c71ccf5a9edd7c3c3ee8ddbe3"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/utils/llm_backend_utils.py",
+      "sha256": "c7c44033a10e2f0271c1d13d24344b3b344361fe3ae34e660445b387ad25a0fd"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/utils/openai_utils.py",
+      "sha256": "aec08b2c46adb96650007f6db62e4d448b3e1ccbfa6467bacae4587361872052"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/utils/paper_banana_utils.py",
+      "sha256": "b89caca598c5710b04819a5c86ffc158cec8ec31acf8a153cbdd87df3b4f0c58"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/utils/pdf_utils.py",
+      "sha256": "30d4a6947ef249b39f357e941467271a85767b4e0a716df27e91451e803aa0e7"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/utils/prompt_utils.py",
+      "sha256": "72b19f8adda3b870bc797c30e1260331ce5e429c346e39b05a0ad932b858df9e"
+    },
+    {
+      "path": "example/scientist-two/skills/scienceevolve-scientist-two/upstream/paper-orchestra/utils/scholar_utils.py",
+      "sha256": "a3bcaecf8289b050f764fe166e79197dbe24aed9828d63ca27256f3faa6d6742"
+    },
+    {
+      "path": "example/scientist-two/workflow.json",
+      "sha256": "9d9bb7b7b9423781c15487df39907c4298e5bec37176b0d8eefb376288568896"
+    },
+    {
+      "path": "example/tests/test_method_protocols.py",
+      "sha256": "99fe28e01d8ea2deba0a45ea2114f2b34e116e57dd9b2edfd4813f6d82d4c925"
+    },
+    {
+      "path": "example/tests/test_rrsi.py",
+      "sha256": "9265f6db21683fcfc3c301830255c146d556a417d18cf879a03f637d222f4543"
+    },
+    {
+      "path": "example/tests/test_science_extensions.py",
+      "sha256": "0ad386a03550c711a061cc8852319c1e1947cf046451ad6173ccf78ece31684b"
+    },
+    {
+      "path": "example/tests/test_scientist_two.py",
+      "sha256": "562098a524376bf4b1121526b878ef7b768a9f4ca38e7c2a75cc2289247456e3"
+    }
+  ],
+  "testsRun": 69,
+  "successful": [
+    "test_method_protocols.FunSearch.test_four_samples_then_advance_and_idempotent_retry",
+    "test_method_protocols.FunSearch.test_frozen_backend_cannot_change",
+    "test_method_protocols.FunSearch.test_original_defaults_and_duplicate_input_execution",
+    "test_method_protocols.FunSearch.test_original_rejects_ancestor_calls",
+    "test_method_protocols.FunSearch.test_original_weak_half_reset",
+    "test_method_protocols.FunSearch.test_prompt_is_exact_upstream_algorithm_with_saved_rng",
+    "test_method_protocols.GitTrials.test_committed_evaluator_change_prevents_acceptance",
+    "test_method_protocols.GitTrials.test_crash_zero_sentinel_and_git_restore",
+    "test_method_protocols.GitTrials.test_discard_restores_head_and_train_but_keeps_records",
+    "test_method_protocols.GitTrials.test_keep_and_crash_log_semantics",
+    "test_method_protocols.GitTrials.test_uncommitted_user_change_prevents_rollback",
+    "test_method_protocols.LabScore.test_actual_upstream_formula",
+    "test_method_protocols.MetaFinalize.test_original_union_and_incomplete_test_cannot_finalize",
+    "test_method_protocols.ReadonlyAudit.test_integrity_pin_and_readonly_cannot_be_downgraded",
+    "test_method_protocols.ReadonlyAudit.test_proof_preserves_effort_and_continuation",
+    "test_method_protocols.ReviewBridge.test_cross_family_required",
+    "test_method_protocols.ReviewBridge.test_high_score_not_ready_cannot_stop_and_preserves_raw",
+    "test_method_protocols.ReviewBridge.test_real_gate_positive_threshold",
+    "test_method_protocols.ReviewBridge.test_stale_material_cannot_be_consumed",
+    "test_method_protocols.ReviewBridge.test_wrong_reviewer_and_invalid_id_rejected",
+    "test_method_protocols.RobinAnalysis.test_five_trajectories_and_consensus_barrier",
+    "test_method_protocols.SourceIntegrity.test_all_vendored_sources_match_pins",
+    "test_rrsi.RRSITests.test_complete_run_and_resume_do_not_repeat_measurements",
+    "test_rrsi.RRSITests.test_critic_deterministic_leak_reject_never_calls_model",
+    "test_rrsi.RRSITests.test_frozen_evaluator_and_split_are_enforced",
+    "test_rrsi.RRSITests.test_independent_digester_scopes_and_batch_barrier",
+    "test_rrsi.RRSITests.test_invalid_candidate_retries_exactly_once_and_is_not_selected",
+    "test_rrsi.RRSITests.test_missing_trials_preserve_weighted_denominator",
+    "test_rrsi.RRSITests.test_proposal_replay_restores_attempt_start",
+    "test_rrsi.RRSITests.test_raw_response_is_immutable_and_context_checked",
+    "test_rrsi.RRSITests.test_repair_bound_is_five",
+    "test_rrsi.RRSITests.test_selection_strict_boundaries_and_historical_floor",
+    "test_rrsi.RRSITests.test_selection_transaction_recovers_after_git_and_history_write",
+    "test_rrsi.RRSITests.test_source_integrity",
+    "test_rrsi.RRSITests.test_task_configuration_cannot_change_after_baseline_freeze",
+    "test_science_extensions.ArchiveIO.test_real_http_publish_verify_search_fulltext_and_retry",
+    "test_science_extensions.BiomniAtomicSteps.test_production_rejects_missing_data",
+    "test_science_extensions.BiomniAtomicSteps.test_real_persistent_execution_retries_critic_and_export",
+    "test_science_extensions.BiomniAtomicSteps.test_stale_prompt_does_not_advance_and_dead_interpreter_not_replayed",
+    "test_science_extensions.HypothesisPool.test_elo_and_idempotent_match",
+    "test_science_extensions.HypothesisPool.test_feedback_persists_and_new_epoch_does_not_reuse_it",
+    "test_science_extensions.HypothesisPool.test_goal_change_invalidates_reviews_matches_graph_and_elo",
+    "test_science_extensions.HypothesisPool.test_immutable_child_new_rating_and_parent_provenance",
+    "test_science_extensions.HypothesisPool.test_review_and_proximity_gates",
+    "test_science_extensions.HypothesisPool.test_top_pair_requires_actual_multiturn_record",
+    "test_scientist_two.ScientistTwoProtocol.test_ablation_better_replans_all_but_not_more_refinements",
+    "test_scientist_two.ScientistTwoProtocol.test_ablation_not_better_keeps_old_best",
+    "test_scientist_two.ScientistTwoProtocol.test_artifact_integrity_duplicate_commit_and_atomic_cli_resume",
+    "test_scientist_two.ScientistTwoProtocol.test_blocked_does_not_consume_budget",
+    "test_scientist_two.ScientistTwoProtocol.test_contract_rejects_skips_bad_scores_stale_tickets",
+    "test_scientist_two.ScientistTwoProtocol.test_default_complete_accept_all_nested_roles",
+    "test_scientist_two.ScientistTwoProtocol.test_directory_hash_detects_additions_and_escapes",
+    "test_scientist_two.ScientistTwoProtocol.test_draft_compile_failures_consume_reflections_and_keep_paper",
+    "test_scientist_two.ScientistTwoProtocol.test_draft_scoring_rejects_degradation_preserves_baseline",
+    "test_scientist_two.ScientistTwoProtocol.test_engineering_exactly_two_per_stage_then_prune",
+    "test_scientist_two.ScientistTwoProtocol.test_failed_meta_execution_retains_previous_pair",
+    "test_scientist_two.ScientistTwoProtocol.test_failed_required_batch_item_not_skipped",
+    "test_scientist_two.ScientistTwoProtocol.test_format_failed_retains_old_and_only_one_repair",
+    "test_scientist_two.ScientistTwoProtocol.test_inner_ensemble_is_independent_aggregated_and_falls_back",
+    "test_scientist_two.ScientistTwoProtocol.test_integrity_corrections_reverify_and_reproduction_failure_blocks",
+    "test_scientist_two.ScientistTwoProtocol.test_limitations_expand_sixteen_times_keep_accumulation",
+    "test_scientist_two.ScientistTwoProtocol.test_low_peer_score_runs_all_supplementary_experiments_twice",
+    "test_scientist_two.ScientistTwoProtocol.test_meta_better_redoes_downstream_global_budget_not_reset",
+    "test_scientist_two.ScientistTwoProtocol.test_meta_not_better_preserves_paper_and_code_pair",
+    "test_scientist_two.ScientistTwoProtocol.test_missing_tex_stops_content_loop_and_outer_technical_retries_are_bounded",
+    "test_scientist_two.ScientistTwoProtocol.test_novelty_input_excludes_submission_and_other_answers",
+    "test_scientist_two.ScientistTwoProtocol.test_roles_sources_hashes_and_complete_route_coverage",
+    "test_scientist_two.ScientistTwoProtocol.test_spec_reject_prunes_candidate_before_critic",
+    "test_scientist_two.ScientistTwoProtocol.test_zero_good_runs_four_total_rounds_nine_distinct_candidates"
+  ],
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "unexpectedSuccesses": [],
+  "wasSuccessful": true,
+  "dependencyVersions": {
+    "PyPDF2": "3.0.1",
+    "PyYAML": "6.0.3",
+    "absl-py": "2.3.1",
+    "annotated-types": "0.8.0",
+    "anyio": "4.15.1",
+    "certifi": "2026.7.22",
+    "charset-normalizer": "3.5.2",
+    "contourpy": "1.4.0",
+    "cycler": "0.12.1",
+    "distro": "1.9.0",
+    "fonttools": "4.66.1",
+    "h11": "0.16.0",
+    "httpcore": "1.0.9",
+    "httpcore2": "2.13.1",
+    "httpx": "0.28.1",
+    "httpx2": "2.13.1",
+    "idna": "3.20",
+    "jiter": "0.17.0",
+    "jsonpatch": "1.35",
+    "jsonpointer": "3.2.1",
+    "kiwisolver": "1.5.1",
+    "langchain-core": "0.3.72",
+    "langchain-openai": "0.3.28",
+    "langgraph": "0.5.4",
+    "langgraph-checkpoint": "2.1.2",
+    "langgraph-prebuilt": "0.5.2",
+    "langgraph-sdk": "0.1.74",
+    "langsmith": "0.14.8",
+    "matplotlib": "3.10.3",
+    "numpy": "2.2.6",
+    "openai": "1.109.1",
+    "orjson": "3.13.0",
+    "ormsgpack": "1.12.2",
+    "packaging": "26.3",
+    "pandas": "2.2.3",
+    "pillow": "12.3.0",
+    "pip": "25.0.1",
+    "pydantic": "2.14.1",
+    "pydantic_core": "2.50.1",
+    "pyparsing": "3.3.3",
+    "python-dateutil": "2.9.0.post0",
+    "python-dotenv": "1.1.1",
+    "pytz": "2026.5",
+    "regex": "2026.9.29",
+    "requests": "2.34.2",
+    "requests-toolbelt": "1.0.0",
+    "scipy": "1.15.3",
+    "six": "1.17.0",
+    "sniffio": "1.3.1",
+    "tenacity": "9.2.1",
+    "tiktoken": "0.14.0",
+    "tqdm": "4.70.1",
+    "truststore": "0.10.5",
+    "typing-inspection": "0.4.4",
+    "typing_extensions": "4.16.0",
+    "tzdata": "2026.5",
+    "urllib3": "2.8.0",
+    "uuid_utils": "0.17.1",
+    "websockets": "17.2",
+    "xxhash": "4.0.1",
+    "zstandard": "0.25.0"
+  },
+  "validationImage": "sha256:9d7320de2bb373ce097ea5bc3c2b095ef05412fb95979c00d88e20dcd35aca7e",
+  "invocation": {
+    "Network": "none",
+    "Init": true,
+    "SourceMount": "readonly fresh complete-history Git clone",
+    "RootFilesystem": "readonly",
+    "TemporaryFilesystem": "/tmp:exec,mode=1777",
+    "ReportArgument": "/results/python-linux-canonical.json",
+    "Log": "D:/openfars/.cache/scienceevolve-refactor/linux-results/python-linux-canonical.log",
+    "ExitCode": 0
+  },
+  "standaloneReproduction": {
+    "Status": "passed",
+    "Dockerfile": "scripts/validation/Dockerfile",
+    "Requirements": "scripts/validation/python-requirements.lock.txt",
+    "DockerfileSha256": "cbdcb74b8f466902bed7d26f0420960a9d0474af43830c3602a627c2a0be5616",
+    "RequirementsSha256": "88605aebfe19e8d9af036723aaea4e0dd910961dd336c22a018fc0cda3ab62a9",
+    "RunnerSha256": "9340d7abb7b48eae0bdce9b61d43e6f68d6741547486a0677dfa3eb284019e86",
+    "BuildLog": "D:/openfars/.cache/scienceevolve-refactor/linux-standalone-sdk-environment-build.log",
+    "BuildExitCode": 0,
+    "ExecutionExitCode": 0,
+    "PythonSystemPath": "/usr/bin/python3 -> /usr/local/bin/python3"
+  },
+  "earlierEnvironmentEvidence": [
+    {
+      "Evidence": "D:/openfars/.cache/scienceevolve-refactor/linux-results/python-linux-validation-noexec.log",
+      "Finding": "Initial executable-step failure caused by noexec temporary filesystem; fixed by exec tmpfs."
+    },
+    {
+      "Evidence": "D:/openfars/.cache/scienceevolve-refactor/linux-standalone-environment-build.log",
+      "Finding": "First image export failed after host C drive exhaustion; source dependencies installed and pip check passed."
+    },
+    {
+      "Evidence": "D:/openfars/.cache/scienceevolve-refactor/linux-results/docker-final-start-attempt.json",
+      "Finding": "CLI start reported a missing launcher. Later direct filesystem, version and uninstall-registry checks proved the launcher exists at that same path; the CLI error alone did not establish program absence. API subsequently recovered and the standalone suite passed."
+    }
+  ],
+  "sdkLinuxValidation": {
+    "Checkpoint": "05d84e8870f0926157883f7a7b49279e53c623df",
+    "Status": "passed",
+    "FullHistory": true,
+    "FreshClone": true,
+    "Report": "linux-sdk-validation.json",
+    "Markdown": "linux-sdk-validation.md",
+    "UnitTestsPassed": 2790,
+    "UnitTestsFailed": 0,
+    "ExistingOptInNativeSkips": 10,
+    "EnvironmentProbesPassed": 23,
+    "ResearchNodeTestsPassed": 11,
+    "PackageSmokeExitCode": 0
+  },
+  "checkpoint": "05d84e8870f0926157883f7a7b49279e53c623df",
+  "previousPythonEvidence": {
+    "tests": 69,
+    "passed": 69,
+    "skipped": 0,
+    "elapsedSeconds": 65.00091231400006,
+    "inputSnapshotSha256": "8450943cb131c054402d47d04766515ec98d95c9b3256d4235020968c46ae099",
+    "report": "D:/openfars/.cache/scienceevolve-refactor/linux-results/python-linux-validation-final.json",
+    "log": "D:/openfars/.cache/scienceevolve-refactor/linux-results/python-linux-validation-final.log",
+    "scope": "Prior host-checkout execution; retained as history, superseded by the canonical fresh-clone execution above."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "scienceevolve-sdk-workspace",
+  "version": "0.1.1",
+  "private": true,
+  "description": "Standalone ScienceEvolve SDK and CLI source workspace.",
+  "workspaces": [
+    "sdk"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w sdk",
+    "build": "npm run build -w sdk",
+    "install:cli": "npm run build && npm link --workspace sdk",
+    "start": "node sdk/cli/scienceevolve.mjs",
+    "test": "npm run test -w sdk",
+    "typecheck": "npm run typecheck -w sdk",
+    "check:main-runtime": "npm run check:main-runtime -w sdk",
+    "check:branding": "node sdk/scripts/check-branding.mjs",
+    "check:source-delivery": "node scripts/validation/check-source-delivery.mjs",
+    "smoke:package": "npm run smoke:package -w sdk",
+    "pack:sdk": "npm pack -w sdk --pack-destination sdk",
+    "build:sdk": "npm run build -w sdk",
+    "test:sdk": "npm run test -w sdk",
+    "typecheck:sdk": "npm run typecheck -w sdk",
+    "smoke:sdk": "npm run smoke:package -w sdk"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}

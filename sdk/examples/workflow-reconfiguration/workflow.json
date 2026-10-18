@@ -1,0 +1,15 @@
+{
+  "git": { "enabled": false },
+  "agents": {
+    "main": { "harness": "codex", "model": "replace-with-your-model", "proxy": { "mode": "inherit" }, "skills": [], "autoSkills": [], "instructions": "Inspect the task and evidence, then adapt the worker instructions only if the change is justified. Use the workflow proposal path provided in the Inbox/control context, never the user's root workflow.json. Apply the proposal using the official apply_workflow control with logical path workflow.json. Delegate the bounded task and inspect actual artifacts before complete_project. Do not alter gateways, Git policy or permissions through an unauthorized proposal." },
+    "execution": { "harness": "codex", "model": "replace-with-your-model", "permission": "yolo", "proxy": { "mode": "inherit" }, "skills": [], "autoSkills": [], "instructions": "Execute the explicit assignment in the supplied existing workspace. Preserve original configuration files and unrelated user changes. Write result.md with verifiable evidence and report any limitation; do not fabricate executions." }
+  },
+  "orchestration": {
+    "schemaVersion": 2, "collaborations": [],
+    "agents": [{ "name": "main", "template": "main" }, { "name": "execution", "template": "execution" }],
+    "input": { "source": "input", "target": "main" },
+    "routes": { "main": [{ "kind": "weak", "target": "execution" }], "execution": [{ "kind": "strong", "target": "main" }] },
+    "decisionPlans": {}, "allowMainReconfiguration": true, "allowUserIntervention": true,
+    "termination": { "agent": "main", "condition": "The bounded task is complete with verifiable artifacts; original workflow.json was not replaced.", "decisionBy": "main", "automatic": false }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "generatedAt": "2026-10-14T16:31:05.352Z",
+  "targetBranch": "feat/sdk-only-v0.1.1",
+  "remoteBase": "aff389f357793e1d147b5cfcae0156f799780dc0",
+  "sourceCommit": "48e82cedd993d67f2379c36fade8973db63c74e8",
+  "runtimeRevision": "48e82cedd993d67f2379c36fade8973db63c74e8+f3c0775e4f8b06de",
+  "nodeVersion": "v24.20.0",
+  "validationOnly": true,
+  "realRunsStarted": 0,
+  "buildPassed": true,
+  "contractTests": {
+    "passed": 11,
+    "failed": 0
+  },
+  "validations": [
+    {
+      "file": "research/todo-seven/ai-scientist-v2/workflow.json",
+      "sha256": "cb22df890a12e60e8c93ad6bfb5184f72615d7949defc5c9cd4ef10cca552718",
+      "apiPassed": true,
+      "cliPassed": true,
+      "schemaVersion": 3,
+      "runtimeRevision": "48e82cedd993d67f2379c36fade8973db63c74e8+f3c0775e4f8b06de"
+    },
+    {
+      "file": "research/todo-seven/kosmos/workflow.json",
+      "sha256": "48ef7ce4b5625eb5978476191859431b9c8787dea061513ab38047e3974d17e4",
+      "apiPassed": true,
+      "cliPassed": true,
+      "schemaVersion": 3,
+      "runtimeRevision": "48e82cedd993d67f2379c36fade8973db63c74e8+f3c0775e4f8b06de"
+    },
+    {
+      "file": "research/todo-seven/internagent-1-5/workflow.json",
+      "sha256": "3755549665e0ada3a939f8359888088e0037ceefdb55d1f0c1f5e5e3eb4fa86c",
+      "apiPassed": true,
+      "cliPassed": true,
+      "schemaVersion": 3,
+      "runtimeRevision": "48e82cedd993d67f2379c36fade8973db63c74e8+f3c0775e4f8b06de"
+    },
+    {
+      "file": "research/todo-seven/biomni-r0/workflow.json",
+      "sha256": "eefb953462cb783ed1e54289b232ce2c3b6bd9153b2c250ba071be32e47d60d6",
+      "apiPassed": true,
+      "cliPassed": true,
+      "schemaVersion": 3,
+      "runtimeRevision": "48e82cedd993d67f2379c36fade8973db63c74e8+f3c0775e4f8b06de"
+    },
+    {
+      "file": "research/todo-seven/chemical-coscientist/workflow.json",
+      "sha256": "0a6f41a77a3843e587f61de6365553a63deaf1095f1e335eafca8da3313d8564",
+      "apiPassed": true,
+      "cliPassed": true,
+      "schemaVersion": 3,
+      "runtimeRevision": "48e82cedd993d67f2379c36fade8973db63c74e8+f3c0775e4f8b06de"
+    },
+    {
+      "file": "research/todo-seven/alphaevolve/workflow.json",
+      "sha256": "d9de0844a0ead2168dc8b5ffe166bf56a10c6be41002d403554ef71cd6aa474b",
+      "apiPassed": true,
+      "cliPassed": true,
+      "schemaVersion": 3,
+      "runtimeRevision": "48e82cedd993d67f2379c36fade8973db63c74e8+f3c0775e4f8b06de"
+    },
+    {
+      "file": "research/todo-seven/raven/workflow.json",
+      "sha256": "37ebd879a9b0eb31d14eaca4cd54489854f809ad4c1408d904f840e5fe4b9f57",
+      "apiPassed": true,
+      "cliPassed": true,
+      "schemaVersion": 3,
+      "runtimeRevision": "48e82cedd993d67f2379c36fade8973db63c74e8+f3c0775e4f8b06de"
+    },
+    {
+      "file": "example/ai-scientist-v2/workflow.json",
+      "sha256": "cb22df890a12e60e8c93ad6bfb5184f72615d7949defc5c9cd4ef10cca552718",
+      "apiPassed": true,
+      "cliPassed": true,
+      "schemaVersion": 3,
+      "runtimeRevision": "48e82cedd993d67f2379c36fade8973db63c74e8+f3c0775e4f8b06de"
+    },
+    {
+      "file": "example/internagent-1-5/workflow.json",
+      "sha256": "3755549665e0ada3a939f8359888088e0037ceefdb55d1f0c1f5e5e3eb4fa86c",
+      "apiPassed": true,
+      "cliPassed": true,
+      "schemaVersion": 3,
+      "runtimeRevision": "48e82cedd993d67f2379c36fade8973db63c74e8+f3c0775e4f8b06de"
+    },
+    {
+      "file": "example/biomni-r0/workflow.json",
+      "sha256": "eefb953462cb783ed1e54289b232ce2c3b6bd9153b2c250ba071be32e47d60d6",
+      "apiPassed": true,
+      "cliPassed": true,
+      "schemaVersion": 3,
+      "runtimeRevision": "48e82cedd993d67f2379c36fade8973db63c74e8+f3c0775e4f8b06de"
+    },
+    {
+      "file": "example/chemical-coscientist/workflow.json",
+      "sha256": "0a6f41a77a3843e587f61de6365553a63deaf1095f1e335eafca8da3313d8564",
+      "apiPassed": true,
+      "cliPassed": true,
+      "schemaVersion": 3,
+      "runtimeRevision": "48e82cedd993d67f2379c36fade8973db63c74e8+f3c0775e4f8b06de"
+    },
+    {
+      "file": "example/raven/workflow.json",
+      "sha256": "37ebd879a9b0eb31d14eaca4cd54489854f809ad4c1408d904f840e5fe4b9f57",
+      "apiPassed": true,
+      "cliPassed": true,
+      "schemaVersion": 3,
+      "runtimeRevision": "48e82cedd993d67f2379c36fade8973db63c74e8+f3c0775e4f8b06de"
+    }
+  ],
+  "preserved": [
+    {
+      "path": "alphaevolve/workflow.json",
+      "unchanged": true
+    },
+    {
+      "path": "kosmos/workflow.json",
+      "unchanged": true
+    },
+    {
+      "path": "ai-scientist-v2/workflow.draft.json",
+      "unchanged": true
+    }
+  ],
+  "copyChecks": [
+    {
+      "file": "example/ai-scientist-v2/workflow.json",
+      "identical": true
+    },
+    {
+      "file": "example/ai-scientist-v2/requirement.txt",
+      "identical": true
+    },
+    {
+      "file": "example/internagent-1-5/workflow.json",
+      "identical": true
+    },
+    {
+      "file": "example/internagent-1-5/requirement.txt",
+      "identical": true
+    },
+    {
+      "file": "example/biomni-r0/workflow.json",
+      "identical": true
+    },
+    {
+      "file": "example/biomni-r0/requirement.txt",
+      "identical": true
+    },
+    {
+      "file": "example/chemical-coscientist/workflow.json",
+      "identical": true
+    },
+    {
+      "file": "example/chemical-coscientist/requirement.txt",
+      "identical": true
+    },
+    {
+      "file": "example/raven/workflow.json",
+      "identical": true
+    },
+    {
+      "file": "example/raven/requirement.txt",
+      "identical": true
+    }
+  ],
+  "localLinksChecked": 189,
+  "missingLinks": [],
+  "passed": true
+}

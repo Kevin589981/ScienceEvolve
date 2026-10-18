@@ -1,0 +1,13 @@
+{
+  "sdkCommit": "ccf0668",
+  "kernelCommit": "4ae079fe51faefed850b5b9873979f44b60a7806",
+  "sources": [
+    {"method":"AI Scientist v2","paper":"https://arxiv.org/abs/2504.08066","repository":"SakanaAI/AI-Scientist-v2","commit":"96bd51617cfdbb494a9fc283af00fe090edfae48","auditFiles":["bfts_config.yaml","ai_scientist/treesearch/agent_manager.py","ai_scientist/treesearch/parallel_agent.py"]},
+    {"method":"Kosmos","paper":"https://arxiv.org/abs/2511.02824","repository":"EdisonScientific/kosmos-figures","commit":"819447258cb53782fb3b7ddd63be8d65acf8f078","auditFiles":["README.md","Figure_4_neural_network/r1_scalings/notebook.ipynb"],"boundary":"Figures and analysis artifacts, not original autonomous engine"},
+    {"method":"InternAgent 1.5","paper":"https://arxiv.org/abs/2602.08990","repository":"InternScience/InternAgent","commit":"fa8c3eedfa9751d3752ea6eb49220b303ac2397d","auditFiles":["internagent/stage.py","docs/deep_research.md","docs/memory_module.md"]},
+    {"method":"Biomni-R0","repository":"snap-stanford/Biomni","commit":"400c1f366b96a35ca253e13c9b06c5076af41d65","auditFiles":["README.md"],"boundary":"Inference and pretrained model advertised; full training/reward protocol must be located before declaring implementation"},
+    {"method":"Chemical Coscientist","paper":"https://doi.org/10.1038/s41586-023-06792-0","repository":"gomesgroup/coscientist","commit":"417e82b85743f88719ba7cf8838220fcb872e2ae","boundary":"Public simple implementation is not all paper tools"},
+    {"method":"AlphaEvolve","paper":"https://arxiv.org/abs/2506.13131","repository":"google-deepmind/alphaevolve_repository_of_problems","commit":"8f447457957deac61e28bf1676746f0753b3b2f8","boundary":"Task/verifier sources only, engine not public"},
+    {"method":"Raven Host","repository":"EverMind-AI/Raven","commit":"25c576859a70e356befd02af646f5293fb14233b","auditFiles":["raven/agent/subagent/dag_graph.py","raven/agent/subagent/dag_runner.py","raven/agent/subagent/dag_control_tools.py","raven/memory_engine/skills/subagent-dag-orchestration/SKILL.md"]}
+  ]
+}
