@@ -4,7 +4,7 @@
 
 | 项目 | 编排 | 配置 | 需求 |
 | --- | --- | --- | --- |
-| AHE 循环优化 | Git-off v2 | [workflow](01-ahe-evolve/workflow.json) | [requirement](01-ahe-evolve/requirement.txt) |
+| AHE 循环优化 · [论文](https://arxiv.org/abs/2604.25850) · [官方代码](https://github.com/china-qijizhifeng/agentic-harness-engineering) | Git-off v2 | [workflow](01-ahe-evolve/workflow.json) | [requirement](01-ahe-evolve/requirement.txt) |
 | 软件开发 | Git-off v2 | [workflow](02-software-development/workflow.json) | [requirement](02-software-development/requirement.txt) |
 | Agent Laboratory | Git-off v2 | [workflow](agent-laboratory/workflow.json) | [requirement](agent-laboratory/requirement.txt) |
 | AgentRxiv | Git-off v2 | [workflow](agentrxiv/workflow.json) | [requirement](agentrxiv/requirement.txt) |

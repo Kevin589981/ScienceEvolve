@@ -232,7 +232,7 @@ try {
 
 We implement or adapt workflow structures from published papers and open-source projects as ScienceEvolve configurations, including Agent roles, routing, and feedback loops. Credit belongs to the original authors; the table links the **original work, official project, and our implementation**.
 
-Choose from **23 workflows: three starters and 20 workflows from papers or open-source projects**. Select a configuration and requirement from [example/](example/README.md), prepare its data, tools, and budget, and start it through the CLI or Node API.
+Choose from **23 workflows, including three introductory workflows**. Select a configuration and requirement from [example/](example/README.md), prepare its data, tools, and budget, and start it through the CLI or Node API.
 
 ### Start with three introductory workflows
 
@@ -244,7 +244,8 @@ Choose from **23 workflows: three starters and 20 workflows from papers or open-
 <thead>
 <tr><th align="left">Method</th><th align="left">Original paper</th><th align="left">Official code / project</th><th align="left">Our workflow</th></tr>
 </thead>
-<tbody><tr><td align="left"><a href="example/aris/workflow.json">ARIS</a></td><td align="left"><a href="https://arxiv.org/abs/2605.03042" title="ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration">arXiv:2605.03042</a></td><td align="left"><a href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep" title="wanshuiyin/Auto-claude-code-research-in-sleep">ARIS</a></td><td align="left"><a href="example/aris/workflow.json">JSON</a> · <a href="example/aris/requirement.txt">Task</a></td></tr>
+<tbody><tr><td align="left"><a href="example/01-ahe-evolve/workflow.json">AHE code evolution</a></td><td align="left"><a href="https://arxiv.org/abs/2604.25850" title="Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses">arXiv:2604.25850</a></td><td align="left"><a href="https://github.com/china-qijizhifeng/agentic-harness-engineering">agentic-harness-engineering</a></td><td align="left"><a href="example/01-ahe-evolve/workflow.json">JSON</a> · <a href="example/01-ahe-evolve/requirement.txt">Task</a></td></tr>
+<tr><td align="left"><a href="example/aris/workflow.json">ARIS</a></td><td align="left"><a href="https://arxiv.org/abs/2605.03042" title="ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration">arXiv:2605.03042</a></td><td align="left"><a href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep" title="wanshuiyin/Auto-claude-code-research-in-sleep">ARIS</a></td><td align="left"><a href="example/aris/workflow.json">JSON</a> · <a href="example/aris/requirement.txt">Task</a></td></tr>
 <tr><td align="left"><a href="example/metaharness/workflow.json">Meta-Harness</a></td><td align="left"><a href="https://arxiv.org/abs/2603.28052" title="Meta-Harness: End-to-End Optimization of Model Harnesses">arXiv:2603.28052</a></td><td align="left"><a href="https://github.com/stanford-iris-lab/meta-harness">meta-harness</a></td><td align="left"><a href="example/metaharness/workflow.json">JSON</a> · <a href="example/metaharness/requirement.txt">Task</a></td></tr>
 <tr><td align="left"><a href="example/autoresearch/workflow.json">autoresearch</a></td><td align="left">— (project source)</td><td align="left"><a href="https://github.com/karpathy/autoresearch">autoresearch</a></td><td align="left"><a href="example/autoresearch/workflow.json">JSON</a> · <a href="example/autoresearch/requirement.txt">Task</a></td></tr>
 <tr><td align="left"><a href="example/funsearch/workflow.json">FunSearch</a></td><td align="left"><a href="https://www.nature.com/articles/s41586-023-06924-6" title="Mathematical discoveries from program search with large language models">Nature 2023</a></td><td align="left"><a href="https://github.com/google-deepmind/funsearch">funsearch</a></td><td align="left"><a href="example/funsearch/workflow.json">JSON</a> · <a href="example/funsearch/requirement.txt">Task</a></td></tr>
@@ -322,12 +323,6 @@ Detailed guides below are in Chinese unless indicated otherwise.
 <tr><td align="left">Develop the SDK, run tests, or upgrade a deployment</td><td align="left"><a href="docs/sdk/README.md#开发与测试">Development and tests</a> · <a href="sdk/docs/naming-migration.md">Naming migration</a> · <a href="sdk/docs/main-runtime-migration-zh.md">Runtime migration</a> · <a href="sdk/docs/main-sync-20261016-zh.md">Runtime updates</a></td></tr>
 </tbody>
 </table>
-
-<a id="references"></a>
-
-## References
-
-- [Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses](https://arxiv.org/abs/2604.25850). arXiv:2604.25850, 2026.
 
 <a id="resources"></a>
 

@@ -232,7 +232,7 @@ try {
 
 我们参考公开论文与开源项目，将其中的 Agent 分工、任务路径与反馈循环编排为 ScienceEvolve Workflow。感谢原作者开放方法和代码；下面的表格同时提供**原始来源、官方项目与我们的实现**。
 
-本页提供 **23 个工作流：3 个入门流程、20 个论文或开源项目工作流**。从 [example/](example/README.md) 选择配置与需求，按项目需要准备数据、工具和预算，即可通过 CLI 或 Node API 启动。
+本页提供 **23 个工作流，其中 3 个适合入门**。从 [example/](example/README.md) 选择配置与需求，按项目需要准备数据、工具和预算，即可通过 CLI 或 Node API 启动。
 
 ### 先从三个入门流程开始
 
@@ -244,7 +244,8 @@ try {
 <thead>
 <tr><th align="left">方法</th><th align="left">原始论文</th><th align="left">官方代码 / 项目</th><th align="left">本项目 Workflow</th></tr>
 </thead>
-<tbody><tr><td align="left"><a href="example/aris/workflow.json">ARIS</a></td><td align="left"><a href="https://arxiv.org/abs/2605.03042" title="ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration">arXiv:2605.03042</a></td><td align="left"><a href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep" title="wanshuiyin/Auto-claude-code-research-in-sleep">ARIS</a></td><td align="left"><a href="example/aris/workflow.json">JSON</a> · <a href="example/aris/requirement.txt">需求</a></td></tr>
+<tbody><tr><td align="left"><a href="example/01-ahe-evolve/workflow.json">AHE · 代码自进化</a></td><td align="left"><a href="https://arxiv.org/abs/2604.25850" title="Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses">arXiv:2604.25850</a></td><td align="left"><a href="https://github.com/china-qijizhifeng/agentic-harness-engineering">agentic-harness-engineering</a></td><td align="left"><a href="example/01-ahe-evolve/workflow.json">JSON</a> · <a href="example/01-ahe-evolve/requirement.txt">需求</a></td></tr>
+<tr><td align="left"><a href="example/aris/workflow.json">ARIS</a></td><td align="left"><a href="https://arxiv.org/abs/2605.03042" title="ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration">arXiv:2605.03042</a></td><td align="left"><a href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep" title="wanshuiyin/Auto-claude-code-research-in-sleep">ARIS</a></td><td align="left"><a href="example/aris/workflow.json">JSON</a> · <a href="example/aris/requirement.txt">需求</a></td></tr>
 <tr><td align="left"><a href="example/metaharness/workflow.json">Meta-Harness</a></td><td align="left"><a href="https://arxiv.org/abs/2603.28052" title="Meta-Harness: End-to-End Optimization of Model Harnesses">arXiv:2603.28052</a></td><td align="left"><a href="https://github.com/stanford-iris-lab/meta-harness">meta-harness</a></td><td align="left"><a href="example/metaharness/workflow.json">JSON</a> · <a href="example/metaharness/requirement.txt">需求</a></td></tr>
 <tr><td align="left"><a href="example/autoresearch/workflow.json">autoresearch</a></td><td align="left">—（以项目为来源）</td><td align="left"><a href="https://github.com/karpathy/autoresearch">autoresearch</a></td><td align="left"><a href="example/autoresearch/workflow.json">JSON</a> · <a href="example/autoresearch/requirement.txt">需求</a></td></tr>
 <tr><td align="left"><a href="example/funsearch/workflow.json">FunSearch</a></td><td align="left"><a href="https://www.nature.com/articles/s41586-023-06924-6" title="Mathematical discoveries from program search with large language models">Nature 2023</a></td><td align="left"><a href="https://github.com/google-deepmind/funsearch">funsearch</a></td><td align="left"><a href="example/funsearch/workflow.json">JSON</a> · <a href="example/funsearch/requirement.txt">需求</a></td></tr>
@@ -320,12 +321,6 @@ CCFA 与 Nature 的内置副本未记录导入时的提交版本；上游仓库�
 <tr><td align="left">开发 SDK、运行测试、升级现有部署</td><td align="left"><a href="docs/sdk/README.md#开发与测试">开发与测试</a> · <a href="sdk/docs/naming-migration.md">命名迁移</a> · <a href="sdk/docs/main-runtime-migration-zh.md">运行时迁移</a> · <a href="sdk/docs/main-sync-20261016-zh.md">内核同步</a></td></tr>
 </tbody>
 </table>
-
-<a id="references"></a>
-
-## 参考文献
-
-- [Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses](https://arxiv.org/abs/2604.25850). arXiv:2604.25850, 2026.
 
 <a id="resources"></a>
 
