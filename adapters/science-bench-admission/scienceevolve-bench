@@ -1,5 +1,3 @@
 #!/bin/sh
 script_dir=$(CDPATH='' cd -- "$(dirname -- "$0")" && pwd)
-PATH="$script_dir/runtime:$PATH"
-export PATH
-exec "$script_dir/runtime/node" --require "$script_dir/ipc.cjs" "$script_dir/main.mjs" "$@"
+exec python3 "$script_dir/bootstrap.py" "$@"

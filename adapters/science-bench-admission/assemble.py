@@ -3,6 +3,8 @@ import argparse
 import json
 from pathlib import Path
 import shutil
+import tarfile
+import tempfile
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--sdk-root', type=Path, required=True, help='Built ScienceEvolve repository')
@@ -18,21 +20,28 @@ for required in [repo/'sdk/dist/index.js', repo/'node_modules/@earendil-works/pi
         parser.error('Missing build dependency: '+str(required))
 destination.mkdir(parents=True)
 source = Path(__file__).resolve().parent
-for name in ['harness.json', 'README.md', 'scienceevolve-bench', 'main.mjs', 'ipc.cjs', 'transport-test.mjs']:
+for name in ['harness.json', 'README.md', 'scienceevolve-bench', 'bootstrap.py']:
     shutil.copyfile(source/name, destination/name)
 (destination/'scienceevolve-bench').chmod(0o755)
-shutil.copyfile(repo/'example/02-software-development/workflow.json', destination/'workflow.json')
-(destination/'runtime').mkdir()
-shutil.copyfile(args.node, destination/'runtime/node')
-(destination/'runtime/node').chmod(0o755)
-for name in ['dist', 'assets', 'resources']:
-    shutil.copytree(repo/'sdk'/name, destination/'vendor/sdk'/name, symlinks=False)
-shutil.copyfile(repo/'sdk/package.json', destination/'vendor/sdk/package.json')
-shutil.copytree(repo/'node_modules', destination/'vendor/node_modules', symlinks=False,
-                ignore=lambda directory, names: [name for name in names if name in {'.bin', '@scienceevolve'}])
-for file in destination.rglob('*'):
-    if file.is_symlink():
-        raise ValueError('Submission contains a symlink: '+str(file))
-    if file.is_file():
-        file.chmod(0o755 if file.stat().st_mode & 0o111 else 0o644)
+with tempfile.TemporaryDirectory(prefix='scienceevolve-package-') as temporary:
+    payload = Path(temporary)
+    for name in ['main.mjs', 'ipc.cjs', 'transport-test.mjs']:
+        shutil.copyfile(source/name, payload/name)
+    shutil.copyfile(repo/'example/02-software-development/workflow.json', payload/'workflow.json')
+    (payload/'runtime').mkdir()
+    shutil.copyfile(args.node, payload/'runtime/node')
+    (payload/'runtime/node').chmod(0o755)
+    for name in ['dist', 'assets', 'resources']:
+        shutil.copytree(repo/'sdk'/name, payload/'vendor/sdk'/name, symlinks=False)
+    shutil.copyfile(repo/'sdk/package.json', payload/'vendor/sdk/package.json')
+    shutil.copytree(repo/'node_modules', payload/'vendor/node_modules', symlinks=False,
+                    ignore=lambda directory, names: [name for name in names if name in {'.bin', '@scienceevolve'}])
+    for file in payload.rglob('*'):
+        if file.is_symlink():
+            raise ValueError('Payload contains a symlink: '+str(file))
+        if file.is_file():
+            file.chmod(0o755 if file.stat().st_mode & 0o111 else 0o644)
+    with tarfile.open(destination/'runtime-payload.tar.gz', 'w:gz', compresslevel=3, dereference=True) as archive:
+        for file in sorted(payload.iterdir()):
+            archive.add(file, arcname=file.name)
 print(json.dumps({'submission': str(destination), 'files': sum(p.is_file() for p in destination.rglob('*'))}))

@@ -8,10 +8,15 @@ const { values } = parseArgs({ options: {
   prompt: { type: 'string', short: 'p' }, 'prompt-file': { type: 'string' },
   model: { type: 'string', default: 'DeepSeek-V4.1-Flash-1017' },
   'context-window': { type: 'string', default: '131072' },
+  'transport-test': { type: 'boolean' },
   help: { type: 'boolean', short: 'h' }
 } });
 if (values.help) {
   console.log('scienceevolve-bench [-p PROMPT | --prompt-file FILE] [--model ID] [--context-window N]');
+  process.exit(0);
+}
+if (values['transport-test']) {
+  await import('./transport-test.mjs');
   process.exit(0);
 }
 if (values.prompt !== undefined && values['prompt-file'] !== undefined) throw new Error('Choose prompt text or a prompt file');

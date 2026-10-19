@@ -11,9 +11,13 @@ Only model/harness bindings and generic Science Bench workspace instructions cha
 131072. Required parameters are declared in `harness.json`; there is no local
 registration dependency and no provider credential in the submission.
 
-The assembled submission includes a Linux x86_64 Node 24 runtime, the compiled
-SDK and production npm dependencies as ordinary files. It runs offline without
-installation. `ipc.cjs` maps the virtual provider origin `https://10.255.255.1`
+The assembled submission carries a Linux x86_64 Node 24 runtime, the compiled
+SDK and production npm dependencies in `runtime-payload.tar.gz`. The ordinary
+submission files are small in number; bootstrap.py expands the payload into
+this trial's `/tmp` and starts Node there. This avoids copying tens of thousands
+of npm files through shared storage for every concurrent task. Expansion is
+offline, occurs inside the existing sandbox and counts toward harness wall time.
+No package manager or installation step runs. `ipc.cjs` maps the virtual provider origin `https://10.255.255.1`
 exclusively to the framework's `/run/model.sock`. That address is only an
 in-process alias; no IP connection to it is attempted. The SDK's local HTTP/MCP
 services run inside the existing isolated network namespace. The official
@@ -33,7 +37,7 @@ python3 adapters/science-bench-admission/assemble.py --sdk-root "$PWD" \
   --node /path/to/node-v24-linux-x64/bin/node --output /path/to/handoff/20260002/harness
 ```
 
-The normal build happens before dependency pruning. `assemble.py` copies the
+The normal build happens before dependency pruning. `assemble.py` bundles the
 exact workflow from this repository and preserves required executable modes.
 Symlinks from npm are resolved into ordinary files; npm command shims and the
 workspace self-link are excluded because runtime imports use explicit SDK paths.
