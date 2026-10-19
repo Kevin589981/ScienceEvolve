@@ -533,7 +533,7 @@ export class GatewayStore {
   ) {
     this.fetchImpl = options.fetch ?? globalThis.fetch.bind(globalThis);
     this.resolveHostname = options.resolveHostname;
-    this.timeoutMs = Math.max(500, Math.min(options.testTimeoutMs ?? 60_000, 60_000));
+    this.timeoutMs = Math.max(500, Math.min(options.testTimeoutMs ?? 60_000, 2_147_483_647));
     this.adapterSmokeProbe = options.adapterSmokeProbe;
   }
 

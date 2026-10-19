@@ -112,7 +112,7 @@ export async function createMainResearchSdk(options: MainResearchSdkOptions): Pr
     const resolver = options.git?.credentialResolver ?? gitCredentialHelperResolver();
     const { gatewayProbeTimeoutMs, ...runnerTimeouts } = options.timeouts ?? {};
     const runtime = await createMainApplicationRuntime({ dataDir: options.dataDir,
-      ...(gatewayProbeTimeoutMs === undefined ? {} : { gatewayOptions: { timeoutMs: gatewayProbeTimeoutMs } }),
+      ...(gatewayProbeTimeoutMs === undefined ? {} : { gatewayOptions: { testTimeoutMs: gatewayProbeTimeoutMs } }),
       nativeCodexProfiles: options.nativeCodexProfiles,
       sii: options.sii,
       skillRoots: [fileURLToPath(new URL("../assets/skills/", import.meta.url)), ...(options.skillRoots ?? [])],

@@ -1,4 +1,4 @@
-import { afterEach, describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import { promises as fs } from "node:fs";
 import os from "node:os";
 import path from "node:path";
@@ -58,6 +58,38 @@ function probeResponse(body: { stream?: boolean; tool_choice?: unknown }): Respo
 }
 
 describe("gateway matrix probe", () => {
+  it("honors an explicitly configured probe timeout beyond sixty seconds", async () => {
+    const root = await fs.mkdtemp(path.join(os.tmpdir(), "scienceevolve-probe-timeout-"));
+    roots.push(root);
+    let firstStarted: (() => void) | undefined;
+    const started = new Promise<void>(resolve => { firstStarted = resolve; });
+    let requests = 0;
+    const registry = new GatewayStore(root, {
+      testTimeoutMs: 120_000,
+      resolveHostname: async () => ["8.8.8.8"],
+      fetch: async (_url, init) => {
+        const body = JSON.parse(String(init?.body)) as { stream?: boolean; tool_choice?: unknown };
+        if (++requests !== 1) return probeResponse(body);
+        return new Promise<Response>((resolve, reject) => {
+          const timer = setTimeout(() => resolve(probeResponse(body)), 61_000);
+          init?.signal?.addEventListener("abort", () => {
+            clearTimeout(timer);
+            reject(new DOMException("Probe aborted", "AbortError"));
+          }, { once: true });
+          firstStarted?.();
+        });
+      }
+    });
+    const gateway = await registry.create(gatewayInput);
+    vi.useFakeTimers();
+    try {
+      const pending = registry.test(gateway.id, "responses", "model-a");
+      await started;
+      await vi.advanceTimersByTimeAsync(61_000);
+      expect((await pending).status).toBe("passed");
+      expect(requests).toBe(4);
+    } finally { vi.useRealTimers(); }
+  });
   it("starts all four Harness rows before waiting for a row to finish", async () => {
     let requests = 0;
     const registry = await store(async (_url, init) => {

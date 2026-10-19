@@ -989,6 +989,17 @@
           "after": "      const gitDirectory = path.normalize((await this.command(worktree, [\"rev-parse\", \"--absolute-git-dir\"], signal)).stdout.trim());"
         }
       ]
+    },
+    {
+      "id": "sdk-host-configurable-gateway-probe-deadline",
+      "source": "server/src/agent-runtime.ts",
+      "hostOnly": true,
+      "replacements": [
+        {
+          "before": "    this.timeoutMs = Math.max(500, Math.min(options.testTimeoutMs ?? 60_000, 60_000));",
+          "after": "    this.timeoutMs = Math.max(500, Math.min(options.testTimeoutMs ?? 60_000, 2_147_483_647));"
+        }
+      ]
     }
   ]
 }

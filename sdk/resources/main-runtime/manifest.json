@@ -21,7 +21,7 @@
     "harness-runtime/adapters/pi-mcp-extension.ts",
     "sleep-mcp.ts"
   ],
-  "sharedFixesSha256": "88fd6040ab108871f0cb8f7063bd36d8bbe76d738b5677687b7c72f5041fd5e8",
+  "sharedFixesSha256": "abf620cbd2b816fb1b033b31b58b5c4950eca420df813fe0a969c8b10fa5a0da",
   "brandingVersion": "scienceevolve-v1",
   "brandingSha256": "a8a98aff64705d1bec8f0071fc38608c0692f9e8a4d2230c9832fb530a038725",
   "runtimePins": {
@@ -105,7 +105,7 @@
       "configSha256": "ff4bd6f94e96b4da543ea245f3ae3d9db4545a43976619d497afb93a128281b8"
     }
   },
-  "runtimeRevision": "6bf6a7bb5b200e92511aa4010b7d5fc3711ed79b+a5562794b8de03db",
+  "runtimeRevision": "6bf6a7bb5b200e92511aa4010b7d5fc3711ed79b+6369c515b303d6ac",
   "files": [
     {
       "source": "server/src/acceptance-controller.ts",
@@ -269,9 +269,11 @@
       "source": "server/src/agent-runtime.ts",
       "target": "src/core/agent-runtime.ts",
       "sourceSha256": "81a598b4113b6e2131eb6e707b8d772effdcdb46d7a24019a827931c778470af",
-      "sharedFixes": [],
+      "sharedFixes": [
+        "sdk-host-configurable-gateway-probe-deadline"
+      ],
       "brandingEdits": [],
-      "sha256": "81a598b4113b6e2131eb6e707b8d772effdcdb46d7a24019a827931c778470af"
+      "sha256": "adf9fd353b6f44d64ab6f15fa2adef4463a1f5f2264fbe0c3fb6854846a42638"
     },
     {
       "source": "server/src/agent-scheduler.ts",
