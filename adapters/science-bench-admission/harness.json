@@ -1,0 +1,5 @@
+{
+  "name": "scienceevolve-software-development",
+  "command": ["/harness/scienceevolve-bench"],
+  "args": []
+}
