@@ -21,7 +21,7 @@
 
 ---
 
-ScienceEvolve 是论文 [Rethinking Scientific Discovery in the Agentic Era](https://arxiv.org/abs/2607.03863) 中的全自动科研框架。你可以组建自己的 Agent 团队，查看真实执行轨迹，让团队根据评估反馈改进任务，也可以授权 Main 调整工作流本身。
+ScienceEvolve 是论文 [Rethinking Scientific Discovery in the Agentic Era](https://arxiv.org/abs/2607.03863) 所介绍科研框架的自主运行版本，将研究、实验、编码和评审连接成工作流。你可以组建自己的 Agent 团队，查看真实执行轨迹，让团队根据评估反馈改进任务，也可以授权 Main 调整工作流本身。
 
 <a id="sdk"></a>
 
