@@ -19,6 +19,7 @@ const executionSchema = z.object({
 }).strict().refine((value) => (value.retryBaseMs ?? 2_000) <= (value.retryMaxMs ?? 60_000),
   "retryBaseMs must not exceed retryMaxMs (including runtime defaults)");
 const timeoutsSchema = z.object({
+  gatewayProbeTimeoutMs: duration.optional(),
   residentModelInactivityTimeoutMs: duration.optional(), residentToolInactivityTimeoutMs: duration.optional(),
   protocolProxyTimeoutMs: duration.optional(), dshHandshakeTimeoutMs: duration.optional(), dshTurnIdleTimeoutMs: duration.optional()
 }).strict();

@@ -110,13 +110,15 @@ export async function createMainResearchSdk(options: MainResearchSdkOptions): Pr
       if (managed?.args.length === 1) harnesses.pi = managed.args[0];
     }
     const resolver = options.git?.credentialResolver ?? gitCredentialHelperResolver();
+    const { gatewayProbeTimeoutMs, ...runnerTimeouts } = options.timeouts ?? {};
     const runtime = await createMainApplicationRuntime({ dataDir: options.dataDir,
+      ...(gatewayProbeTimeoutMs === undefined ? {} : { gatewayOptions: { timeoutMs: gatewayProbeTimeoutMs } }),
       nativeCodexProfiles: options.nativeCodexProfiles,
       sii: options.sii,
       skillRoots: [fileURLToPath(new URL("../assets/skills/", import.meta.url)), ...(options.skillRoots ?? [])],
       userSkillRoot: options.userSkillRoot,
       execution: options.execution ? { retryBaseMs: 2_000, retryMaxMs: 60_000, ...options.execution } : undefined,
-      runnerOptions: { harnessExecutables: harnesses, ...options.timeouts },
+      runnerOptions: { harnessExecutables: harnesses, ...runnerTimeouts },
       git: { credentialResolver: async (signal) => {
         const credential = await resolver(signal); redactor.remember(credential.token); return credential;
       }, ...(options.git?.expectedIdentity ? { expectedIdentity: { ...options.git.expectedIdentity } } : {}) }

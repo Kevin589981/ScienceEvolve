@@ -23,6 +23,11 @@ in-process alias; no IP connection to it is attempted. The SDK's local HTTP/MCP
 services run inside the existing isolated network namespace. The official
 namespace/seccomp policy stays intact and external networking remains blocked.
 
+The adapter sets SDK gateway and protocol probe timeouts to the formal 5400-second
+trial allowance; the external runner still enforces the selected 300/600/5400
+second whole-harness deadline. This prevents the SDK's default 60-second gateway
+probe from prematurely failing an otherwise live inference request.
+
 Runtime state lives in per-trial `/tmp`; logs and snapshots go to `outputs/`.
 Scientific repairs must be produced under `source/` during the current run.
 No task-specific answers, patches or development repairs are bundled.
@@ -46,7 +51,7 @@ After assembling the portable submission, validate and run from the official exa
 
 ```sh
 python3 tools/check_harness_submission.py /path/to/handoff/20260002/harness
-python3 -m native_exam run --task 020 --grading full --timeout 120 \
+python3 -m native_exam run --task 020 --grading full --timeout 300 \
   --harness /path/to/handoff/20260002/harness --provider-file /private/provider.json
 python3 -m native_exam batch --group all --grading full --timeout 600 --jobs 0 \
   --harness /path/to/handoff/20260002/harness --provider-file /private/provider.json

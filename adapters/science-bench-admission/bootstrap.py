@@ -13,7 +13,7 @@ with tarfile.open(submission/'runtime-payload.tar.gz', 'r:gz') as archive:
         path = PurePosixPath(member.name)
         if path.is_absolute() or '..' in path.parts or not (member.isdir() or member.isfile()):
             raise ValueError('Invalid portable runtime member')
-    archive.extractall(payload, members=members)
+    archive.extractall(payload, members=members, filter='data')
 runtime = payload/'runtime'
 environment = dict(os.environ, PATH=str(runtime)+':'+os.environ.get('PATH', ''))
 os.execve(runtime/'node', [str(runtime/'node'), '--require', str(payload/'ipc.cjs'),
