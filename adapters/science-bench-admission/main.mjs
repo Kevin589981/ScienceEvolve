@@ -44,7 +44,7 @@ for (const agent of Object.values(workflow.agents)) {
   agent.webSearch = false;
 }
 const sdk = await createResearchSdk({ dataDir,
-  harnesses: { pi: path.join(root, 'vendor/node_modules/@earendil-works/pi-coding-agent/dist/cli.js') },
+  harnesses: { pi: path.join(root, 'pi-entry.py') },
   timeouts: { gatewayProbeTimeoutMs: 5_400_000, protocolProxyTimeoutMs: 5_400_000, residentModelInactivityTimeoutMs: 5_400_000,
     residentToolInactivityTimeoutMs: 5_400_000 } });
 try {

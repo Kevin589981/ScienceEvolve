@@ -5,7 +5,23 @@ import { spawn } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 const root = path.dirname(fileURLToPath(import.meta.url));
-const pi = spawn(path.join(root, 'vendor/node_modules/@earendil-works/pi-coding-agent/dist/cli.js'), ['--version'],
+const { buildInvocationEnvironment } = await import('./vendor/sdk/dist/core/harness-runtime/process-host.js');
+const scrubbed = buildInvocationEnvironment({ common: { PATH: process.env.PATH, HOME: '/tmp/pi-env-probe-home' } });
+assert.equal(scrubbed.PYTHONPATH, undefined);
+const envProbe = spawn(path.join(root, 'pi-entry.py'), ['--exam-environment-probe', 'deepmd'],
+  { env: scrubbed, stdio: ['ignore', 'pipe', 'pipe'] });
+let envOut = '', envErr = '';
+envProbe.stdout.on('data', bytes => { envOut += bytes; });
+envProbe.stderr.on('data', bytes => { envErr += bytes; });
+const envCode = await new Promise(resolve => envProbe.once('close', resolve));
+assert.equal(envCode, 0, envErr);
+const restored = JSON.parse(envOut);
+for (const key of ['PYTHONPATH', 'LD_LIBRARY_PATH', 'OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS']) {
+  assert.equal(restored.environment[key], process.env[key], key);
+}
+assert.ok(restored.python_path.includes('/workspace/source'));
+assert.ok(restored.imported_module_file.startsWith('/workspace/source/deepmd/'));
+const pi = spawn(path.join(root, 'pi-entry.py'), ['--version'],
   { env: { ...process.env, PATH: path.join(root, 'runtime') + ':' + process.env.PATH }, stdio: ['ignore', 'pipe', 'pipe'] });
 let piOut = '', piErr = '';
 pi.stdout.on('data', bytes => { piOut += bytes; });
@@ -40,5 +56,6 @@ try {
   });
   assert.ok(['EPERM', 'EACCES', 'ENETUNREACH'].includes(externalError), externalError);
   console.log(JSON.stringify({ accepted: true, sameProcessLoopbackHttp: true, childProcessLoopbackHttp: true,
-    externalTcpBlocked: true, externalError, bundledPiExecutableViaPath: true }));
+    externalTcpBlocked: true, externalError, bundledPiExecutableViaPath: true,
+    sdkFilteredEnvironmentRestored: true, scientificSourceImportPassed: true }));
 } finally { await new Promise(resolve => server.close(resolve)); }

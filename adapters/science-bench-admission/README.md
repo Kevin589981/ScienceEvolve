@@ -23,6 +23,13 @@ in-process alias; no IP connection to it is attempted. The SDK's local HTTP/MCP
 services run inside the existing isolated network namespace. The official
 namespace/seccomp policy stays intact and external networking remains blocked.
 
+`pi-entry.py` restores the exam's scientific Python, library and thread settings
+after the SDK constructs its minimal invocation environment. Bootstrap captures
+an explicit list of non-secret runtime variables inside this trial's `/tmp`;
+the wrapper keeps the SDK's HOME, gateway authentication and control identity.
+The transport check covers the SDK's actual environment filter, source imports,
+loopback HTTP and blocked external TCP. It uses an unmodified A020 workspace.
+
 The adapter sets SDK gateway and protocol probe timeouts to the formal 5400-second
 trial allowance; the external runner still enforces the selected 300/600/5400
 second whole-harness deadline. This prevents the SDK's default 60-second gateway

@@ -25,8 +25,9 @@ for name in ['harness.json', 'README.md', 'scienceevolve-bench', 'bootstrap.py']
 (destination/'scienceevolve-bench').chmod(0o755)
 with tempfile.TemporaryDirectory(prefix='scienceevolve-package-') as temporary:
     payload = Path(temporary)
-    for name in ['main.mjs', 'ipc.cjs', 'transport-test.mjs']:
+    for name in ['main.mjs', 'ipc.cjs', 'transport-test.mjs', 'pi-entry.py']:
         shutil.copyfile(source/name, payload/name)
+    (payload/'pi-entry.py').chmod(0o755)
     shutil.copyfile(repo/'example/02-software-development/workflow.json', payload/'workflow.json')
     (payload/'runtime').mkdir()
     shutil.copyfile(args.node, payload/'runtime/node')
