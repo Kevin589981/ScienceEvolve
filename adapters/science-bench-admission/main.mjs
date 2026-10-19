@@ -50,10 +50,15 @@ try {
     modelReasoning: { [values.model]: { parameter: 'reasoning_effort',
       options: [{ id: 'high', label: 'High', value: 'high' }] } } });
   console.log(JSON.stringify({ event: 'scienceevolve_gateway_probe_started' }));
-  const probe = await sdk.gateways.test(gateway.id, 'pi', values.model, { reasoningOptionId: 'high' });
+  const probeStarted = performance.now();
+  const probe = await sdk.gateways.test(gateway.id, 'pi', values.model, { reasoningOptionId: 'high',
+    onStage: stage => console.log(JSON.stringify({ event: 'scienceevolve_gateway_stage',
+      stage: stage.stage ?? stage.id ?? stage.name, status: stage.status,
+      elapsed_seconds: (performance.now() - probeStarted) / 1000 })) });
   await writeFile(path.join(output, 'scienceevolve-gateway-probe.json'), JSON.stringify(probe, null, 2) + '\n');
   if (probe.status !== 'passed') throw new Error('ScienceEvolve gateway/adapter readiness failed: ' + (probe.error || 'unknown'));
-  console.log(JSON.stringify({ event: 'scienceevolve_gateway_probe_passed' }));
+  console.log(JSON.stringify({ event: 'scienceevolve_gateway_probe_passed',
+    elapsed_seconds: (performance.now() - probeStarted) / 1000 }));
   const run = await sdk.start({ title: 'Science Bench scientific software repair', workflow,
     requirement: prompt + rules, workspace: path.resolve('.'),
     gatewayBindings: { defaultGatewayId: gateway.id } });
