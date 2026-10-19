@@ -23,6 +23,21 @@ Runtime state lives in per-trial `/tmp`; logs and snapshots go to `outputs/`.
 Scientific repairs must be produced under `source/` during the current run.
 No task-specific answers, patches or development repairs are bundled.
 
+Build the SDK on an online Linux preparation machine with Node 24 on PATH:
+
+```sh
+npm ci
+npm run build
+npm prune --omit=dev --ignore-scripts --no-audit --no-fund
+python3 adapters/science-bench-admission/assemble.py --sdk-root "$PWD" \
+  --node /path/to/node-v24-linux-x64/bin/node --output /path/to/handoff/20260002/harness
+```
+
+The normal build happens before dependency pruning. `assemble.py` copies the
+exact workflow from this repository and preserves required executable modes.
+Symlinks from npm are resolved into ordinary files; npm command shims and the
+workspace self-link are excluded because runtime imports use explicit SDK paths.
+
 After assembling the portable submission, validate and run from the official exam:
 
 ```sh
